@@ -21,5 +21,6 @@
 ---
 
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/effectual)
+
 [Modrinth](https://modrinth.com/mod/effectual)
 
