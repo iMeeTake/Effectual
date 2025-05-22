@@ -1,0 +1,62 @@
+{
+  "text.config.effectual.title": "Налады Effectual",
+
+  "text.config.effectual.option.bubbleBreath": "Бурбалкі пад вадой",
+  "text.config.effectual.option.bubbleBreath.tooltip": "Стварае бурбалкі пры дыханні пад вадой, калі ў гульца ёсць запас кіслароду.",
+
+  "text.config.effectual.option.bubbleChests": "Бурбалкі з куфараў",
+  "text.config.effectual.option.bubbleChests.tooltip": "З адкрытага пад вадой куфара часам вылятаюць бурбалкі.",
+
+  "text.config.effectual.option.caveDust": "Пыл у пячорах",
+  "text.config.effectual.option.caveDust.tooltip": "У пячорах з'яўляюцца часціцы пылу.",
+
+  "text.config.effectual.option.caveDustFrequency": "Частата пылу ў пячорах",
+  "text.config.effectual.option.caveDustFrequency.tooltip": "Як часта з'яўляецца пыл у пячорах (больш = часцей).",
+
+  "text.config.effectual.option.fireImprovements": "Іскры ад агню",
+  "text.config.effectual.option.fireImprovements.tooltip": "Новыя часціцы іскраў ад агню і агню душ.",
+
+  "text.config.effectual.option.campfireImprovements": "Іскры ад вогнішча",
+  "text.config.effectual.option.campfireImprovements.tooltip": "Новыя часціцы ад вогнішча і вогнішча душ.",
+
+  "text.config.effectual.option.lanternImprovements": "Іскры ад ліхтароў",
+  "text.config.effectual.option.lanternImprovements.tooltip": "Новыя часціцы іскраў ад ліхтароў і ліхтароў душ.",
+
+  "text.config.effectual.option.fireflyEffect": "Светлячкі ў балотах",
+  "text.config.effectual.option.fireflyEffect.tooltip": "Светлячкі з'яўляюцца ў балотных біёмах.",
+
+  "text.config.effectual.option.fireflySpawnRate": "Частата з'яўлення светлячкоў",
+  "text.config.effectual.option.fireflySpawnRate.tooltip": "Частата з'яўлення светлячкоў (больш = часцей).",
+
+  "text.config.effectual.option.mouthSteam": "Пар з рота",
+  "text.config.effectual.option.mouthSteam.tooltip": "Дадае пар пры дыханні ў халодных біёмах.",
+
+  "text.config.effectual.option.dynamicBreathSpeed": "Дынамічная хуткасць дыхання",
+  "text.config.effectual.option.dynamicBreathSpeed.tooltip": "Калі ўключана, дыханне (у халодных біёмах) пачашчаецца пры бегу або скачку.",
+
+  "text.config.effectual.option.runDust": "Пыл пры бегу",
+  "text.config.effectual.option.runDust.tooltip": "Стварае дадатковыя часціцы пры бегу па пяску або снезе.",
+
+  "text.config.effectual.option.fireEntitySparks": "Іскры ад палаючых істот",
+  "text.config.effectual.option.fireEntitySparks.tooltip": "Калі істота гарыць (напрыклад, у агні ці лаве), з яе вылятаюць іскры.",
+
+  "text.config.effectual.option.minecartSparks": "Іскры ад ваганеткі",
+  "text.config.effectual.option.minecartSparks.tooltip": "Іскры пры руху ваганеткі на высокай хуткасці.",
+
+  "text.config.effectual.option.steamEffect": "Бруі пара",
+  "text.config.effectual.option.steamEffect.tooltip": "Калі вада датыкаецца з гарачымі блокамі (напрыклад, лавай або катлом з ёй), ствараецца бруя пара.",
+
+  "text.config.effectual.option.waterDrip": "Кроплі вады",
+  "text.config.effectual.option.waterDrip.tooltip": "Калі гулец выходзіць з вады, з яго капаюць кроплі.",
+
+  "text.config.effectual.option.blockPlaceEffect": "Часціцы пры пастаноўцы блока",
+  "text.config.effectual.option.blockPlaceEffect.tooltip": "Калі ставіцца снег, пясок або жвір, з'яўляюцца адпаведныя часціцы.",
+
+  "text.config.effectual.option.bubblePots": "Бурбалкі з гаршкоў",
+  "text.config.effectual.option.bubblePots.tooltip": "Калі дэкаратыўны гаршчок знаходзіцца пад вадой, час ад часу з яго вылятаюць бурбалкі.",
+
+  "text.config.effectual.option.metalHitSparks": "Іскры пры ўдары па метале",
+  "text.config.effectual.option.metalHitSparks.tooltip": "Калі ўдарыць металічнай зброяй або інструментам па металічным блоку, з'яўляюцца іскры.",
+
+  "modmenu.descriptionTranslation.effectual": "Атмасферныя эфекты і дэкаратыўныя часцінкі."
+}

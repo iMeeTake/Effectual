@@ -1,0 +1,62 @@
+{
+  "text.config.effectual.title": "Effectual 设置",
+
+  "text.config.effectual.option.bubbleBreath": "水下气泡",
+  "text.config.effectual.option.bubbleBreath.tooltip": "在水下呼吸时生成气泡，只要玩家有氧气供应。",
+
+  "text.config.effectual.option.bubbleChests": "宝箱气泡",
+  "text.config.effectual.option.bubbleChests.tooltip": "水下打开的宝箱偶尔会冒出气泡。",
+
+  "text.config.effectual.option.caveDust": "洞穴尘埃",
+  "text.config.effectual.option.caveDust.tooltip": "洞穴中出现尘埃粒子。",
+
+  "text.config.effectual.option.caveDustFrequency": "洞穴尘埃频率",
+  "text.config.effectual.option.caveDustFrequency.tooltip": "控制洞穴中尘埃的出现频率（值越高，尘埃越多）。",
+
+  "text.config.effectual.option.fireImprovements": "火焰改进",
+  "text.config.effectual.option.fireImprovements.tooltip": "新增火焰和灵魂火焰的火花粒子。",
+
+  "text.config.effectual.option.campfireImprovements": "篝火改进",
+  "text.config.effectual.option.campfireImprovements.tooltip": "新增篝火和灵魂篝火的火花粒子。",
+
+  "text.config.effectual.option.lanternImprovements": "灯笼改进",
+  "text.config.effectual.option.lanternImprovements.tooltip": "新增灯笼和灵魂灯笼的火花粒子。",
+
+  "text.config.effectual.option.fireflyEffect": "沼泽萤火虫",
+  "text.config.effectual.option.fireflyEffect.tooltip": "萤火虫会在沼泽生物群系中生成。",
+
+  "text.config.effectual.option.fireflySpawnRate": "萤火虫生成率",
+  "text.config.effectual.option.fireflySpawnRate.tooltip": "萤火虫的生成频率（值越高，生成越多）。",
+
+  "text.config.effectual.option.mouthSteam": "呼吸蒸汽",
+  "text.config.effectual.option.mouthSteam.tooltip": "在寒冷生物群系中会出现可见的呼吸蒸汽。",
+
+  "text.config.effectual.option.dynamicBreathSpeed": "动态呼吸速度",
+  "text.config.effectual.option.dynamicBreathSpeed.tooltip": "如果启用，在寒冷生物群系中，奔跑或跳跃时呼吸速度会加快。",
+
+  "text.config.effectual.option.runDust": "奔跑尘埃",
+  "text.config.effectual.option.runDust.tooltip": "在沙地或雪地上奔跑时会产生额外的尘埃粒子。",
+
+  "text.config.effectual.option.fireEntitySparks": "燃烧实体的火花",
+  "text.config.effectual.option.fireEntitySparks.tooltip": "当一个实体着火时（例如在岩浆或火中），它会产生火花。",
+
+  "text.config.effectual.option.minecartSparks": "矿车火花",
+  "text.config.effectual.option.minecartSparks.tooltip": "当矿车高速行驶时会产生火花粒子。",
+
+  "text.config.effectual.option.steamEffect": "蒸汽喷射",
+  "text.config.effectual.option.steamEffect.tooltip": "当水接触到高温方块（如岩浆或装有岩浆的炼药锅）时，会产生蒸汽喷射。",
+
+  "text.config.effectual.option.waterDrip": "水滴",
+  "text.config.effectual.option.waterDrip.tooltip": "当玩家从水中出来时，水滴会从其身上滴落。",
+
+  "text.config.effectual.option.blockPlaceEffect": "放置方块时的粒子",
+  "text.config.effectual.option.blockPlaceEffect.tooltip": "放置雪、沙子或砂砾时，会生成与方块匹配的粒子效果。",
+
+  "text.config.effectual.option.bubblePots": "装饰陶罐的气泡",
+  "text.config.effectual.option.bubblePots.tooltip": "如果装饰陶罐在水下，它会偶尔释放气泡。",
+
+  "text.config.effectual.option.metalHitSparks": "击打金属时产生火花",
+  "text.config.effectual.option.metalHitSparks.tooltip": "用金属武器或工具击打金属方块时，会出现火花。",
+
+  "modmenu.descriptionTranslation.effectual": "环境效果与装饰性粒子"
+}
