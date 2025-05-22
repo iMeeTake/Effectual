@@ -3,7 +3,8 @@
 	"package": "com.imeetake.effectual.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+		"BlockPlaceMixin",
+		"MetalHitMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

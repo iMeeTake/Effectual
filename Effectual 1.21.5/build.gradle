@@ -11,11 +11,11 @@ base {
 }
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	maven { url 'https://maven.wispforest.io/releases/' }
+	maven {
+		name = "iMeeTake GitHub Maven"
+		url = "https://raw.githubusercontent.com/iMeeTake/tlib-maven/main/"
+	}
 }
 
 loom {
@@ -38,7 +38,10 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+	modImplementation("com.imeetake:tlib:1.2.0-1.21.5")
+	modImplementation "io.wispforest:owo-lib:0.12.21+1.21.5"
+	include "io.wispforest:owo-sentinel:0.12.21+1.21.5"
+	annotationProcessor modImplementation("io.wispforest:owo-lib:0.12.21+1.21.5")
 }
 
 processResources {

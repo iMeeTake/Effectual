@@ -1,0 +1,62 @@
+{
+  "text.config.effectual.title": "Paramètres d'Effectual",
+
+  "text.config.effectual.option.bubbleBreath": "Bulles sous-marines",
+  "text.config.effectual.option.bubbleBreath.tooltip": "Crée des bulles lors de la respiration sous l'eau, tant que le joueur a une source d'oxygène.",
+
+  "text.config.effectual.option.bubbleChests": "Bulles des coffres",
+  "text.config.effectual.option.bubbleChests.tooltip": "Des bulles montent occasionnellement depuis un coffre ouvert sous l'eau.",
+
+  "text.config.effectual.option.caveDust": "Poussière de grotte",
+  "text.config.effectual.option.caveDust.tooltip": "Des particules de poussière apparaissent dans les grottes.",
+
+  "text.config.effectual.option.caveDustFrequency": "Fréquence de la poussière de grotte",
+  "text.config.effectual.option.caveDustFrequency.tooltip": "Détermine la fréquence d’apparition de la poussière dans les grottes (plus élevé = plus de poussière).",
+
+  "text.config.effectual.option.fireImprovements": "Améliorations du feu",
+  "text.config.effectual.option.fireImprovements.tooltip": "Nouvelles particules d’étincelles pour le feu et le feu des âmes.",
+
+  "text.config.effectual.option.campfireImprovements": "Améliorations des feux de camp",
+  "text.config.effectual.option.campfireImprovements.tooltip": "Nouvelles particules d’étincelles pour les feux de camp et les feux de camp des âmes.",
+
+  "text.config.effectual.option.lanternImprovements": "Améliorations des lanternes",
+  "text.config.effectual.option.lanternImprovements.tooltip": "Nouvelles particules d’étincelles pour les lanternes et les lanternes des âmes.",
+
+  "text.config.effectual.option.fireflyEffect": "Lucioles dans les marais",
+  "text.config.effectual.option.fireflyEffect.tooltip": "Des lucioles apparaissent dans les biomes marécageux.",
+
+  "text.config.effectual.option.fireflySpawnRate": "Taux d’apparition des lucioles",
+  "text.config.effectual.option.fireflySpawnRate.tooltip": "Détermine la fréquence d’apparition des lucioles (plus élevé = plus de lucioles).",
+
+  "text.config.effectual.option.mouthSteam": "Vapeur de respiration",
+  "text.config.effectual.option.mouthSteam.tooltip": "Ajoute une vapeur visible lorsque l'on respire dans les biomes froids.",
+
+  "text.config.effectual.option.dynamicBreathSpeed": "Vitesse de respiration dynamique",
+  "text.config.effectual.option.dynamicBreathSpeed.tooltip": "Si activé, la respiration (dans les biomes froids) s’accélère lors de la course ou des sauts.",
+
+  "text.config.effectual.option.runDust": "Poussière de course",
+  "text.config.effectual.option.runDust.tooltip": "Génère des particules de poussière supplémentaires lors de la course sur le sable ou la neige.",
+
+  "text.config.effectual.option.fireEntitySparks": "Étincelles des entités en feu",
+  "text.config.effectual.option.fireEntitySparks.tooltip": "Lorsqu’une entité est en feu (par exemple dans la lave ou les flammes), des étincelles en sortent.",
+
+  "text.config.effectual.option.minecartSparks": "Étincelles des wagonnets",
+  "text.config.effectual.option.minecartSparks.tooltip": "Des étincelles apparaissent lorsque les wagonnets se déplacent à grande vitesse.",
+
+  "text.config.effectual.option.steamEffect": "Jets de vapeur",
+  "text.config.effectual.option.steamEffect.tooltip": "Lorsque l'eau touche des blocs chauds (comme la lave ou un chaudron avec de la lave), un jet de vapeur est créé.",
+
+  "text.config.effectual.option.waterDrip": "Gouttes d'eau",
+  "text.config.effectual.option.waterDrip.tooltip": "Quand le joueur sort de l’eau, des gouttes d’eau tombent de lui.",
+
+  "text.config.effectual.option.blockPlaceEffect": "Particules lors du placement de blocs",
+  "text.config.effectual.option.blockPlaceEffect.tooltip": "Des particules apparaissent lors du placement de neige, de sable ou de gravier, correspondant au bloc placé.",
+
+  "text.config.effectual.option.bubblePots": "Bulles du pot décoré",
+  "text.config.effectual.option.bubblePots.tooltip": "Si un pot décoré est sous l'eau, il libère parfois des bulles.",
+
+  "text.config.effectual.option.metalHitSparks": "Étincelles lors des coups sur le métal",
+  "text.config.effectual.option.metalHitSparks.tooltip": "Lorsque vous frappez un bloc métallique avec une arme ou un outil en métal, des étincelles apparaissent.",
+
+  "modmenu.descriptionTranslation.effectual": "Effets atmosphériques et particules décoratives."
+}

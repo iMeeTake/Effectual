@@ -8,7 +8,9 @@
 		"iMeeTake"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/effectual"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/effectual",
+		"sources": "https://github.com/iMeeTake/Effectual",
+		"issues": "https://github.com/iMeeTake/Effectual/issues"
 	},
 	"license": "All Rights Reserved",
 	"icon": "assets/effectual/icon.png",
@@ -39,9 +41,7 @@
 	"custom": {
 		"modmenu": {
 			"links": {
-				"modmenu.wiki": "https://github.com/iMeeTake/TLib/wiki",
-				"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/tlib",
-				"modmenu.modrinth": "https://modrinth.com/mod/tlib"
+				"modmenu.modrinth": "https://modrinth.com/mod/effectual"
 			}
 		}
 	},

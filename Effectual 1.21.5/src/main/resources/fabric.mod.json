@@ -3,17 +3,18 @@
 	"id": "effectual",
 	"version": "${version}",
 	"name": "Effectual",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "modmenu.descriptionTranslation.effectual",
 	"authors": [
-		"Me!"
+		"iMeeTake"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/effectual",
+		"sources": "https://github.com/iMeeTake/Effectual",
+		"issues": "https://github.com/iMeeTake/Effectual/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "All Rights Reserved",
 	"icon": "assets/effectual/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"com.imeetake.effectual.Effectual"
@@ -29,11 +30,21 @@
 			"environment": "client"
 		}
 	],
+
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.5",
+		"minecraft": "1.21.5",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"owo": "*",
+		"tlib": ">=1.2.0-1.21.5"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.modrinth": "https://modrinth.com/mod/effectual"
+			}
+		}
 	},
 	"suggests": {
 		"another-mod": "*"
