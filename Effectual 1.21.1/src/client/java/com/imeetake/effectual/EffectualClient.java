@@ -4,10 +4,8 @@ import com.imeetake.effectual.effects.MouthSteam.MouthSteamParticleFactory;
 import com.imeetake.effectual.effects.WaterDrip.WaterDripParticleFactory;
 import com.imeetake.tlib.client.particle.TParticles;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleType;
-import com.imeetake.effectual.effects.MouthSteam.MouthSteamParticle;
 import com.imeetake.effectual.effects.Firefly.FireflyParticle;
 import com.imeetake.effectual.effects.GoldGlow.GoldGlowParticle;
 import com.imeetake.effectual.effects.Sparks.SparkParticle;
@@ -17,7 +15,6 @@ import com.imeetake.effectual.effects.PlayerRunEffect.SandDustParticle;
 import com.imeetake.effectual.effects.PlayerRunEffect.SnowDustParticle;
 import com.imeetake.effectual.effects.PlayerRunEffect.GravelDustParticle;
 import com.imeetake.effectual.effects.PlayerRunEffect.RedSandDustParticle;
-import com.imeetake.effectual.effects.WaterDrip.WaterDripParticle;
 
 public class EffectualClient implements ClientModInitializer {
 	public static final com.imeetake.effectual.EffectualConfig CONFIG = com.imeetake.effectual.EffectualConfig.createAndLoad();
