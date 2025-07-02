@@ -58,5 +58,17 @@
   "text.config.effectual.option.metalHitSparks": "Étincelles lors des coups sur le métal",
   "text.config.effectual.option.metalHitSparks.tooltip": "Lorsque vous frappez un bloc métallique avec une arme ou un outil en métal, des étincelles apparaissent.",
 
+  "text.config.effectual.option.airTrail": "Traînée d'air (Elytra)",
+  "text.config.effectual.option.airTrail.tooltip": "Laisse une traînée légère lors du vol avec des Elytras.",
+
+  "text.config.effectual.option.levitationAura": "Aura de Lévitation",
+  "text.config.effectual.option.levitationAura.tooltip": "Un léger effet visuel lors de la lévitation (visible uniquement sur vous).",
+
+  "text.config.effectual.option.speedAura": "Aura de Vitesse",
+  "text.config.effectual.option.speedAura.tooltip": "Crée un effet de vent en sprintant avec Vitesse (visible uniquement sur vous).",
+
+  "text.config.effectual.option.witherDecay": "Décomposition du Wither",
+  "text.config.effectual.option.witherDecay.tooltip": "Ajoute de la fumée noire sous l'effet de Wither (visible uniquement sur vous).",
+
   "modmenu.descriptionTranslation.effectual": "Effets atmosphériques et particules décoratives."
 }

@@ -13,6 +13,7 @@ public class EffectualConfigModel {
     public boolean bubbleChests = true;
     public boolean bubblePots = true;
     public boolean waterDrip = true;
+    public boolean goldShine = true;
     public boolean steamEffect = true;
     public boolean blockPlaceEffect = true;
     public boolean fireImprovements = true;
@@ -25,5 +26,9 @@ public class EffectualConfigModel {
     public boolean fireflyEffect = true;
     public int fireflySpawnRate = 5;
     public boolean runDust = true;
+    public boolean airTrail = true;
+    public boolean speedAura = true;
+    public boolean levitationAura = true;
+    public boolean witherDecay = true;
     public boolean minecartSparks = true;
 }

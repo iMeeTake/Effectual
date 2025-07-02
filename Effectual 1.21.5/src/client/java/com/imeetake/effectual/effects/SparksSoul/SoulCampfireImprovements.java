@@ -13,63 +13,48 @@ import net.minecraft.util.math.random.Random;
 import static com.imeetake.effectual.EffectualClient.CONFIG;
 
 public class SoulCampfireImprovements {
-    private static final Random RANDOM = Random.create();
+
+    private static final Random RAND = Random.create();
     private static int tickCounter = 0;
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (!CONFIG.campfireImprovements()) return;
-            if (client.world == null || client.player == null) return;
-            if (client.isPaused()) return;
+            if (!CONFIG.campfireImprovements() || client.world == null || client.player == null || client.isPaused()) return;
             if (++tickCounter < 5) return;
             tickCounter = 0;
-
             spawnSparks(client);
         });
     }
 
     private static void spawnSparks(MinecraftClient client) {
-        BlockPos playerPos = client.player.getBlockPos();
-
-
+        BlockPos base = client.player.getBlockPos();
         for (int x = -8; x <= 8; x++) {
             for (int y = -8; y <= 8; y++) {
                 for (int z = -8; z <= 8; z++) {
-                    BlockPos pos = playerPos.add(x, y, z);
-
-
+                    BlockPos pos = base.add(x, y, z);
                     var state = client.world.getBlockState(pos);
-                    if (state.isOf(Blocks.SOUL_CAMPFIRE)
-                            && state.getOrEmpty(Properties.LIT).orElse(false)) {
-
-
-                        if (RANDOM.nextFloat() < 0.5) {
-                            spawnSparkParticle(client, pos);
-                        }
+                    if (state.isOf(Blocks.SOUL_CAMPFIRE) && state.getOrEmpty(Properties.LIT).orElse(false)) {
+                        if (RAND.nextFloat() < 0.5f) spawnSparkParticle(pos);
                     }
                 }
             }
         }
     }
 
-    private static void spawnSparkParticle(MinecraftClient client, BlockPos blockPos) {
-        double x = blockPos.getX() + 0.5 + (RANDOM.nextDouble() - 0.5) * 0.1;
-        double y = blockPos.getY() + 0.85 + RANDOM.nextDouble() * 0.05;
-        double z = blockPos.getZ() + 0.5 + (RANDOM.nextDouble() - 0.5) * 0.1;
+    private static void spawnSparkParticle(BlockPos pos) {
+        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.1;
+        double y = pos.getY() + 0.85 + RAND.nextDouble() * 0.05;
+        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.1;
 
-        double angle = RANDOM.nextDouble() * 2 * Math.PI;
-        double horizontalSpeed = RANDOM.nextDouble() * 0.005;
-        double verticalSpeed = 0.04 + RANDOM.nextDouble() * 0.01;
-
-        double dx = Math.cos(angle) * horizontalSpeed;
-        double dz = Math.sin(angle) * horizontalSpeed;
-        double dy = verticalSpeed;
-
+        double angle = RAND.nextDouble() * Math.PI * 2;
+        double h = RAND.nextDouble() * 0.005;
+        double dx = Math.cos(angle) * h;
+        double dz = Math.sin(angle) * h;
+        double dy = 0.04 + RAND.nextDouble() * 0.01;
 
         TClientParticles.spawn(
                 new TParticleEffectSimple(ModParticles.SOUL_SPARK),
                 x, y, z,
-                dx, dy, dz
-        );
+                dx, dy, dz);
     }
 }

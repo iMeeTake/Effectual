@@ -58,5 +58,17 @@
   "text.config.effectual.option.metalHitSparks": "Іскры пры ўдары па метале",
   "text.config.effectual.option.metalHitSparks.tooltip": "Калі ўдарыць металічнай зброяй або інструментам па металічным блоку, з'яўляюцца іскры.",
 
+  "text.config.effectual.option.airTrail": "Паветраны след",
+  "text.config.effectual.option.airTrail.tooltip": "Пакідае лёгкі след пры палёце з элітрамі.",
+
+  "text.config.effectual.option.levitationAura": "Аура левітацыі",
+  "text.config.effectual.option.levitationAura.tooltip": "Невялікі візуальны эфект пры левітацыі (бачны толькі на сабе).",
+
+  "text.config.effectual.option.speedAura": "Аура хуткасці",
+  "text.config.effectual.option.speedAura.tooltip": "Стварае эфект ветру пры бегу з эфектам хуткасці (бачны толькі на сабе).",
+
+  "text.config.effectual.option.witherDecay": "Іссушальнае тленьне",
+  "text.config.effectual.option.witherDecay.tooltip": "Дадае чорны дым пры эфекце іссушэння (бачны толькі на сабе).",
+
   "modmenu.descriptionTranslation.effectual": "Атмасферныя эфекты і дэкаратыўныя часцінкі."
 }

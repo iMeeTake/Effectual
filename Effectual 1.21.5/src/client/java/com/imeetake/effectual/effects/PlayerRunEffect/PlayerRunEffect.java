@@ -16,14 +16,11 @@ import net.minecraft.world.World;
 
 import static com.imeetake.effectual.EffectualClient.CONFIG;
 
-
 public class PlayerRunEffect {
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (!CONFIG.runDust()) return;
-            if (client.world == null) return;
-            if (client.isPaused()) return;
+            if (!CONFIG.runDust() || client.world == null || client.isPaused()) return;
 
             for (PlayerEntity player : client.world.getPlayers()) {
                 if (shouldPlayEffect(player)) {
@@ -42,59 +39,40 @@ public class PlayerRunEffect {
 
     private static void spawnDust(MinecraftClient client, PlayerEntity player) {
         World world = client.world;
-        BlockPos posAtFeet = player.getBlockPos();
-        BlockPos posBelowFeet = posAtFeet.down();
+        BlockPos pos = player.getBlockPos();
+        BlockState above = world.getBlockState(pos);
+        BlockState below = world.getBlockState(pos.down());
 
-        BlockState stateAtFeet = world.getBlockState(posAtFeet);
-        BlockState stateBelowFeet = world.getBlockState(posBelowFeet);
-
-
-        if (stateAtFeet.isOf(Blocks.SNOW) && stateAtFeet.contains(Properties.LAYERS)) {
-            spawnSnowDust(client, player);
+        if (above.isOf(Blocks.SNOW) && above.contains(Properties.LAYERS)) {
+            spawnParticle(client, ModParticles.SNOW_DUST, player);
             return;
         }
 
-
-        Block blockBelowFeet = stateBelowFeet.getBlock();
-        if (blockBelowFeet == Blocks.SAND ||blockBelowFeet == Blocks.SUSPICIOUS_SAND) {
-            spawnSandDust(client, player);
-        } else if (blockBelowFeet == Blocks.SNOW || blockBelowFeet == Blocks.SNOW_BLOCK || blockBelowFeet == Blocks.POWDER_SNOW) {
-            spawnSnowDust(client, player);
-        } else if (blockBelowFeet == Blocks.GRAVEL || blockBelowFeet == Blocks.SUSPICIOUS_GRAVEL) {
-            spawnGravelDust(client, player);
-        } else if (blockBelowFeet == Blocks.RED_SAND) {
-            spawnRedSandDust(client, player);
+        Block block = below.getBlock();
+        if (block == Blocks.SAND || block == Blocks.SUSPICIOUS_SAND) {
+            spawnParticle(client, ModParticles.SAND_DUST, player);
+        } else if (block == Blocks.RED_SAND) {
+            spawnParticle(client, ModParticles.RED_SAND_DUST, player);
+        } else if (block == Blocks.SNOW || block == Blocks.SNOW_BLOCK || block == Blocks.POWDER_SNOW) {
+            spawnParticle(client, ModParticles.SNOW_DUST, player);
+        } else if (block == Blocks.GRAVEL || block == Blocks.SUSPICIOUS_GRAVEL) {
+            spawnParticle(client, ModParticles.GRAVEL_DUST, player);
         }
     }
 
-    private static void spawnSandDust(MinecraftClient client, PlayerEntity player) {
-        spawnParticle(client, ModParticles.SAND_DUST , player);
-    }
-
-    private static void spawnRedSandDust(MinecraftClient client, PlayerEntity player) {
-        spawnParticle(client, ModParticles.RED_SAND_DUST , player);
-    }
-
-    private static void spawnSnowDust(MinecraftClient client, PlayerEntity player) {
-        spawnParticle(client, ModParticles.SNOW_DUST , player);
-    }
-
-    private static void spawnGravelDust(MinecraftClient client, PlayerEntity player) {
-        spawnParticle(client, ModParticles.GRAVEL_DUST , player);
-    }
-
     private static void spawnParticle(MinecraftClient client, ParticleType<?> type, PlayerEntity player) {
-        double x = player.getX() + (client.world.random.nextDouble() - 0.5) * 0.5;
-        double y = player.getY() + 0.1;
-        double z = player.getZ() + (client.world.random.nextDouble() - 0.5) * 0.5;
+        var rand = client.world.random;
 
-        double velocityX = (client.world.random.nextDouble() - 0.5) * 0.02;
-        double velocityY = 0.00;
-        double velocityZ = (client.world.random.nextDouble() - 0.5) * 0.02;
+        double x = player.getX() + (rand.nextDouble() - 0.5) * 0.5;
+        double y = player.getY() + 0.1;
+        double z = player.getZ() + (rand.nextDouble() - 0.5) * 0.5;
+
+        double vx = (rand.nextDouble() - 0.5) * 0.02;
+        double vz = (rand.nextDouble() - 0.5) * 0.02;
 
         TClientParticles.spawn(
                 new TParticleEffectSimple(type),
                 x, y, z,
-                velocityX, velocityY, velocityZ);
+                vx, 0, vz);
     }
 }

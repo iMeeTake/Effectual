@@ -15,40 +15,36 @@ import static com.imeetake.effectual.EffectualClient.CONFIG;
 public class MouthSteamEffect {
 
     private static final Random RANDOM = Random.create();
-    private static final Map<PlayerEntity, Integer> tickers = new HashMap<>();
-    private static final Map<PlayerEntity, MovementState> lastStates = new HashMap<>();
+    private static final Map<Integer, Integer> tickCounters = new HashMap<>();
+    private static final Map<Integer, MovementState> lastStates = new HashMap<>();
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (!CONFIG.mouthSteam()) return;
-            if (client.world == null) return;
-            if (client.isPaused()) return;
-
+            if (!CONFIG.mouthSteam() || client.world == null || client.isPaused()) return;
 
             for (PlayerEntity player : client.world.getPlayers()) {
-                if (shouldPlayEffect(player)) {
-                    MovementState newState = getMovementState(player);
-                    MovementState lastState = lastStates.getOrDefault(player, MovementState.STANDING);
-                    int ticker = tickers.getOrDefault(player, 0);
+                int id = player.getId();
 
-                    if (newState != lastState) {
-                        ticker = 0;
-                    }
-
-                    ticker++;
-                    int frequency = getRandomFrequency(newState);
-
-                    if (ticker >= frequency) {
-                        spawnSteamParticle(client, player);
-                        ticker = 0;
-                    }
-
-                    tickers.put(player, ticker);
-                    lastStates.put(player, newState);
-                } else {
-                    tickers.remove(player);
-                    lastStates.remove(player);
+                if (!shouldPlayEffect(player)) {
+                    tickCounters.remove(id);
+                    lastStates.remove(id);
+                    continue;
                 }
+
+                MovementState current = getMovementState(player);
+                MovementState previous = lastStates.getOrDefault(id, MovementState.STANDING);
+                int tickCounter = tickCounters.getOrDefault(id, 0);
+                if (current != previous) tickCounter = 0;
+                tickCounter++;
+
+                int frequency = getRandomFrequency(current);
+                if (tickCounter >= frequency) {
+                    spawn(client, player);
+                    tickCounter = 0;
+                }
+
+                tickCounters.put(id, tickCounter);
+                lastStates.put(id, current);
             }
         });
     }
@@ -61,19 +57,17 @@ public class MouthSteamEffect {
     }
 
     private static boolean isColdEnough(PlayerEntity player) {
-        var biome = player.getWorld().getBiome(player.getBlockPos()).value();
-        return biome.getTemperature() < 0.15F;
+        return player.getWorld().getBiome(player.getBlockPos()).value().getTemperature() < 0.15F;
     }
 
-    private static void spawnSteamParticle(MinecraftClient client, PlayerEntity player) {
+    private static void spawn(MinecraftClient client, PlayerEntity player) {
         double x = player.getX();
         double y = player.getEyeY() - 0.1;
         double z = player.getZ();
+        double yaw = Math.toRadians(player.getYaw());
 
-        float yaw = player.getYaw() * 0.017453292F;
-        double offsetForward = 0.3D;
-        x += -Math.sin(yaw) * offsetForward;
-        z += Math.cos(yaw) * offsetForward;
+        x += -Math.sin(yaw) * 0.3;
+        z += Math.cos(yaw) * 0.3;
 
         TClientParticles.spawn(
                 new MouthSteamParticleEffect(ModParticles.MOUTH_STEAM),
@@ -83,41 +77,20 @@ public class MouthSteamEffect {
     }
 
     private static int getRandomFrequency(MovementState state) {
-        if (!CONFIG.dynamicBreathSpeed()) {
-            return 90 + RANDOM.nextInt(21);
-        }
-
+        if (!CONFIG.dynamicBreathSpeed()) return 90 + RANDOM.nextInt(21);
         return (state == MovementState.SPRINTING || state == MovementState.JUMPING)
                 ? 30 + RANDOM.nextInt(21)
                 : 90 + RANDOM.nextInt(21);
     }
 
-    private static MovementState getMovementState(PlayerEntity player) {
-        if (player.isSprinting()) {
-            return MovementState.SPRINTING;
-        } else if (isJumping(player)) {
-            return MovementState.JUMPING;
-        } else if (isPlayerMoving(player)) {
-            return MovementState.WALKING;
-        } else {
-            return MovementState.STANDING;
-        }
-    }
-
-    private static boolean isPlayerMoving(PlayerEntity player) {
-        double speedSquared = player.getVelocity().x * player.getVelocity().x
-                + player.getVelocity().z * player.getVelocity().z;
-        return speedSquared > 0.1;
-    }
-
-    private static boolean isJumping(PlayerEntity player) {
-        return !player.isOnGround() && player.getVelocity().y > 0.0;
+    private static MovementState getMovementState(PlayerEntity p) {
+        if (p.isSprinting()) return MovementState.SPRINTING;
+        if (!p.isOnGround() && p.getVelocity().y > 0.0) return MovementState.JUMPING;
+        if (p.getVelocity().horizontalLengthSquared() > 0.1) return MovementState.WALKING;
+        return MovementState.STANDING;
     }
 
     private enum MovementState {
-        STANDING,
-        WALKING,
-        SPRINTING,
-        JUMPING
+        STANDING, WALKING, SPRINTING, JUMPING
     }
 }

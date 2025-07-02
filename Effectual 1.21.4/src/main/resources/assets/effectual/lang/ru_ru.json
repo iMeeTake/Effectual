@@ -58,5 +58,17 @@
   "text.config.effectual.option.minecartSparks": "Искры от вагонетки",
   "text.config.effectual.option.minecartSparks.tooltip": "Искры при движении вагонетки на высокой скорости.",
 
+  "text.config.effectual.option.airTrail": "Воздушный шлейф",
+  "text.config.effectual.option.airTrail.tooltip": "Оставляет лёгкий шлейф при полёте на элитрах.",
+
+  "text.config.effectual.option.levitationAura": "Аура левитации",
+  "text.config.effectual.option.levitationAura.tooltip": "Небольшой визуальный эффект при левитации (виден только на себе).",
+
+  "text.config.effectual.option.speedAura": "Аура скорости",
+  "text.config.effectual.option.speedAura.tooltip": "Создаёт эффект ветра при беге с эффектом скорости (виден только на себе).",
+
+  "text.config.effectual.option.witherDecay": "Иссушающее тление",
+  "text.config.effectual.option.witherDecay.tooltip": "Добавляет чёрный дым при эффекте иссушения (виден только на себе).",
+
   "modmenu.descriptionTranslation.effectual": "Атмосферные эффекты и декоративные частицы."
 }

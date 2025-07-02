@@ -12,59 +12,43 @@ import net.minecraft.util.math.random.Random;
 import static com.imeetake.effectual.EffectualClient.CONFIG;
 
 public class LanternGlowEffect {
-    private static final Random RANDOM = Random.create();
-    private static int tickCounter = 0;
 
+    private static final Random RAND = Random.create();
+    private static int tickCounter = 0;
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (!CONFIG.lanternImprovements()) return;
-            if (client.world == null || client.player == null) return;
-            if (client.isPaused()) return;
+            if (!CONFIG.lanternImprovements() || client.world == null || client.player == null || client.isPaused()) return;
             if (++tickCounter < 5) return;
             tickCounter = 0;
-
-
-            spawnParticlesAroundLantern(client);
+            spawn(client);
         });
     }
 
-    private static void spawnParticlesAroundLantern(MinecraftClient client) {
-        BlockPos playerPos = client.player.getBlockPos();
+    private static void spawn(MinecraftClient client) {
+        BlockPos center = client.player.getBlockPos();
+        BlockPos.Mutable pos = new BlockPos.Mutable();
 
-
-        for (int x = -8; x <= 8; x++) {
-            for (int y = -8; y <= 8; y++) {
-                for (int z = -8; z <= 8; z++) {
-                    BlockPos pos = playerPos.add(x, y, z);
-
-
-                    if (client.world.getBlockState(pos).isOf(Blocks.LANTERN)) {
-                        if (!client.world.getFluidState(pos).isEmpty()) return;
-
-                        if (RANDOM.nextFloat() < 0.20) {
-                            spawnGlowParticle(client, pos);
-                        }
-                    }
+        for (int dx = -8; dx <= 8; dx++) {
+            for (int dy = -8; dy <= 8; dy++) {
+                for (int dz = -8; dz <= 8; dz++) {
+                    pos.set(center.getX() + dx, center.getY() + dy, center.getZ() + dz);
+                    if (!client.world.getBlockState(pos).isOf(Blocks.LANTERN)) continue;
+                    if (!client.world.getFluidState(pos).isEmpty()) continue;
+                    if (RAND.nextFloat() >= 0.2f) continue;
+                    glow(pos);
                 }
             }
         }
     }
 
-    private static void spawnGlowParticle(MinecraftClient client, BlockPos lanternPos) {
-        double offsetXZ = 0.8;
-        double x = lanternPos.getX() + 0.5 + (RANDOM.nextDouble() - 0.5) * offsetXZ;
-        double z = lanternPos.getZ() + 0.5 + (RANDOM.nextDouble() - 0.5) * offsetXZ;
-        double y = lanternPos.getY() + 0.25;
-
-        double dx = 0.0;
-        double dy = -0.002;
-        double dz = 0.0;
-
+    private static void glow(BlockPos pos) {
+        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.8;
+        double y = pos.getY() + 0.25;
+        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.8;
         TClientParticles.spawn(
                 new TParticleEffectSimple(ModParticles.GOLD_GLOW),
                 x, y, z,
-                dx, dy, dz
-        );
+                0, -0.002, 0);
     }
 }

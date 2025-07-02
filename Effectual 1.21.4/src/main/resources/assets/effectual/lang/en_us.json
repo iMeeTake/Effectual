@@ -58,5 +58,17 @@
   "text.config.effectual.option.metalHitSparks": "Sparks When Hitting Metal",
   "text.config.effectual.option.metalHitSparks.tooltip": "When hitting a metal block with a metal weapon or tool, sparks appear.",
 
+  "text.config.effectual.option.airTrail": "Elytra Air Trail",
+  "text.config.effectual.option.airTrail.tooltip": "Leaves a subtle trail while gliding with Elytra.",
+
+  "text.config.effectual.option.levitationAura": "Levitation Aura",
+  "text.config.effectual.option.levitationAura.tooltip": "A gentle visual effect when levitating (only visible on yourself).",
+
+  "text.config.effectual.option.speedAura": "Speed Aura",
+  "text.config.effectual.option.speedAura.tooltip": "Creates a wind-like effect while sprinting with Speed (only visible on yourself).",
+
+  "text.config.effectual.option.witherDecay": "Wither Decay",
+  "text.config.effectual.option.witherDecay.tooltip": "Adds black smoke while Wither effect is active (only visible on yourself).",
+
   "modmenu.descriptionTranslation.effectual": "Atmospheric effects and decorative particles."
 }

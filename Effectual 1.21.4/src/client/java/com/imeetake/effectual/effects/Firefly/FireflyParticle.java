@@ -20,7 +20,7 @@ public class FireflyParticle extends SpriteBillboardParticle {
     public void tick() {
         super.tick();
 
-        this.alpha = 0.5F + 0.5F * (float) Math.sin(this.age * 0.2); // мерцание
+        this.alpha = 0.5F + 0.5F * (float) Math.sin(this.age * 0.2);
     }
 
     @Override

@@ -12,40 +12,43 @@ import net.minecraft.world.World;
 
 import static com.imeetake.effectual.EffectualClient.CONFIG;
 
-
 public class CaveDustEffect {
 
-    private static final Random RANDOM = Random.create();
+    private static final Random RAND = Random.create();
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (!CONFIG.caveDust()) return;
-            if (client.player == null || client.world == null) return;
+            if (client.player == null || client.world == null || client.isPaused()) return;
             if (!client.world.getRegistryKey().equals(World.OVERWORLD)) return;
-            if (client.isPaused()) return;
 
-            BlockPos playerPos = client.player.getBlockPos();
+            BlockPos pos = client.player.getBlockPos();
+            if (pos.getY() >= 60) return;
+            if (client.world.isSkyVisible(pos.up(5))) return;
+            if (!isInNaturalCave(client, pos)) return;
 
-
-            if (playerPos.getY() < 60 && !client.world.isSkyVisible(playerPos.up(5)) && isInNaturalCave(client, playerPos)) {
-                spawnDustParticles(client, playerPos);
-            }
+            spawnDustParticles(client, pos);
         });
     }
 
     private static boolean isInNaturalCave(MinecraftClient client, BlockPos center) {
-        int solidCount = 0;
-        int artificialCount = 0;
+        int solid = 0;
+        int artificial = 0;
+        BlockPos.Mutable pos = new BlockPos.Mutable();
 
-        for (BlockPos pos : BlockPos.iterate(center.add(-4, -2, -4), center.add(4, 2, 4))) {
-            var state = client.world.getBlockState(pos);
-
-            if (state.isAir()) continue;
-            if (isArtificialBlock(state)) artificialCount++;
-            else solidCount++;
+        for (int dx = -4; dx <= 4; dx++) {
+            for (int dy = -2; dy <= 2; dy++) {
+                for (int dz = -4; dz <= 4; dz++) {
+                    pos.set(center.getX() + dx, center.getY() + dy, center.getZ() + dz);
+                    BlockState state = client.world.getBlockState(pos);
+                    if (state.isAir()) continue;
+                    if (isArtificialBlock(state)) artificial++;
+                    else solid++;
+                }
+            }
         }
-        if (solidCount == 0) return false;
-        return solidCount > artificialCount;
+
+        return solid > artificial && solid > 0;
     }
 
     private static boolean isArtificialBlock(BlockState state) {
@@ -58,29 +61,23 @@ public class CaveDustEffect {
                 || state.isOf(Blocks.BEACON);
     }
 
-    private static void spawnDustParticles(MinecraftClient client, BlockPos playerPos) {
-        int particleCount = CONFIG.caveDustFrequency();
-        int attempts = particleCount * 3;
+    private static void spawnDustParticles(MinecraftClient client, BlockPos center) {
+        int count = CONFIG.caveDustFrequency();
+        int attempts = count * 3;
         int spawned = 0;
 
-        for (int i = 0; i < attempts && spawned < particleCount; i++) {
-            int x = playerPos.getX() + RANDOM.nextInt(61) - 30;
-            int y = playerPos.getY() + RANDOM.nextInt(10) - 5;
-            int z = playerPos.getZ() + RANDOM.nextInt(61) - 30;
+        for (int i = 0; i < attempts && spawned < count; i++) {
+            int x = center.getX() + RAND.nextInt(61) - 30;
+            int y = center.getY() + RAND.nextInt(10) - 5;
+            int z = center.getZ() + RAND.nextInt(61) - 30;
+            BlockPos pos = new BlockPos(x, y, z);
 
-            BlockPos randomPos = new BlockPos(x, y, z);
+            if (!client.world.getBlockState(pos).isAir()) continue;
 
-
-            if (client.world.getBlockState(randomPos).isAir()) {
-                TClientParticles.spawn(
-                        ParticleTypes.WHITE_ASH,
-                        x + 0.5,
-                        y + 0.5,
-                        z + 0.5,
-                        0, -0.02, 0
-                );
-                spawned++;
-            }
+            TClientParticles.spawn(ParticleTypes.WHITE_ASH,
+                    x + 0.5, y + 0.5, z + 0.5,
+                    0, -0.02, 0);
+            spawned++;
         }
     }
 }

@@ -25,5 +25,9 @@ public class EffectualConfigModel {
     public boolean fireflyEffect = true;
     public int fireflySpawnRate = 5;
     public boolean runDust = true;
+    public boolean airTrail = true;
+    public boolean speedAura = true;
+    public boolean levitationAura = true;
+    public boolean witherDecay = true;
     public boolean minecartSparks = true;
 }

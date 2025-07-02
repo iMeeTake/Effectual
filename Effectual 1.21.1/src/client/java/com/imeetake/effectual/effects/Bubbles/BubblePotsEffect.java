@@ -12,38 +12,34 @@ import net.minecraft.util.math.random.Random;
 import static com.imeetake.effectual.EffectualClient.CONFIG;
 
 public class BubblePotsEffect {
-    private static final Random RANDOM = Random.create();
+
+    private static final Random RAND = Random.create();
+    private static final int RADIUS = 5;
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-
-            if (!CONFIG.bubblePots()) return;
-            if (client.world == null) return;
-            if (client.isPaused()) return;
+            if (!CONFIG.bubblePots() || client.world == null || client.isPaused()) return;
 
             ClientWorld world = client.world;
+            BlockPos center = client.player.getBlockPos();
+            BlockPos.Mutable pos = new BlockPos.Mutable();
 
+            for (int dx = -RADIUS; dx <= RADIUS; dx++) {
+                for (int dy = -RADIUS; dy <= RADIUS; dy++) {
+                    for (int dz = -RADIUS; dz <= RADIUS; dz++) {
+                        pos.set(center.getX() + dx, center.getY() + dy, center.getZ() + dz);
 
-            BlockPos playerPos = client.player.getBlockPos();
-            int radius = 5;
+                        if (!world.getBlockState(pos).isOf(Blocks.DECORATED_POT)) continue;
+                        if (!world.getFluidState(pos).isStill()) continue;
+                        if (RAND.nextInt(15) != 0) continue;
 
-            for (BlockPos pos : BlockPos.iterate(
-                    playerPos.add(-radius, -radius, -radius),
-                    playerPos.add(radius, radius, radius)
-            )) {
-
-                if (world.getBlockState(pos).isOf(Blocks.DECORATED_POT)) {
-                    BlockEntity blockEntity = world.getBlockEntity(pos);
-
-
-                    if (world.getFluidState(pos).isStill()) {
-                        if (RANDOM.nextInt(15) == 0) {
-                            TClientParticles.spawn(ParticleTypes.BUBBLE,
-                                    pos.getX() + 0.5,
-                                    pos.getY() + 1.3,
-                                    pos.getZ() + 0.5,
-                                    0, 0.1, 0);
-                        }
+                        TClientParticles.spawn(
+                                ParticleTypes.BUBBLE,
+                                pos.getX() + 0.5,
+                                pos.getY() + 1.3,
+                                pos.getZ() + 0.5,
+                                0, 0.1, 0
+                        );
                     }
                 }
             }

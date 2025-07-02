@@ -58,5 +58,17 @@
   "text.config.effectual.option.metalHitSparks": "Funken beim Schlagen von Metall",
   "text.config.effectual.option.metalHitSparks.tooltip": "Wenn man mit einer Metallwaffe oder einem Metallwerkzeug auf einen Metallblock schlägt, erscheinen Funken.",
 
+  "text.config.effectual.option.airTrail": "Luftspur (Elytra)",
+  "text.config.effectual.option.airTrail.tooltip": "Hinterlässt eine leichte Spur beim Fliegen mit Elytren.",
+
+  "text.config.effectual.option.levitationAura": "Schwebe-Aura",
+  "text.config.effectual.option.levitationAura.tooltip": "Ein sanfter visueller Effekt beim Schweben (nur auf dich sichtbar).",
+
+  "text.config.effectual.option.speedAura": "Geschwindigkeits-Aura",
+  "text.config.effectual.option.speedAura.tooltip": "Erzeugt einen windähnlichen Effekt beim Sprinten mit Geschwindigkeit (nur auf dich sichtbar).",
+
+  "text.config.effectual.option.witherDecay": "Verfall (Wither)",
+  "text.config.effectual.option.witherDecay.tooltip": "Fügt schwarzen Rauch während des Wither-Effekts hinzu (nur auf dich sichtbar).",
+
   "modmenu.descriptionTranslation.effectual": "Atmosphärische Effekte und dekorative Partikel."
 }

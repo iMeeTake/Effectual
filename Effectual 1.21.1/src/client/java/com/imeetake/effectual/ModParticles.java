@@ -18,7 +18,12 @@ public class ModParticles {
     public static final ParticleType<?> SNOW_DUST = TParticles.simple(Effectual.MOD_ID, "snow_dust");
     public static final ParticleType<?> GRAVEL_DUST = TParticles.simple(Effectual.MOD_ID, "gravel_dust");
     public static final ParticleType<?> RED_SAND_DUST = TParticles.simple(Effectual.MOD_ID, "red_sand_dust");
+    public static final ParticleType<?> AIR_TRAIL = TParticles.simple(Effectual.MOD_ID, "air_trail");
     public static final ParticleType<?> WATER_DRIP = TParticles.simple(Effectual.MOD_ID, "water_drip");
+    public static final ParticleType<?> LEVITATION_AURA = TParticles.simple(Effectual.MOD_ID, "levitation_aura");
+    public static final ParticleType<?> SPEED_AURA = TParticles.simple(Effectual.MOD_ID, "speed_aura");
+
+
 
     public static void register() {
 

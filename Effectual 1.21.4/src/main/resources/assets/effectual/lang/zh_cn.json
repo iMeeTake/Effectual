@@ -58,5 +58,18 @@
   "text.config.effectual.option.metalHitSparks": "击打金属时产生火花",
   "text.config.effectual.option.metalHitSparks.tooltip": "用金属武器或工具击打金属方块时，会出现火花。",
 
+  "text.config.effectual.option.airTrail": "鞘翅飞行轨迹",
+  "text.config.effectual.option.airTrail.tooltip": "使用鞘翅滑翔时留下淡淡的轨迹。",
+
+  "text.config.effectual.option.levitationAura": "漂浮光环",
+  "text.config.effectual.option.levitationAura.tooltip": "漂浮时的轻微视觉效果（仅自己可见，无法看到他人）。",
+
+  "text.config.effectual.option.speedAura": "速度光环",
+  "text.config.effectual.option.speedAura.tooltip": "使用速度效果冲刺时出现风的视觉效果（仅自己可见，无法看到他人）。",
+
+  "text.config.effectual.option.witherDecay": "凋零腐蚀",
+  "text.config.effectual.option.witherDecay.tooltip": "凋零效果激活时添加黑烟（仅自己可见，无法看到他人）。",
+
+
   "modmenu.descriptionTranslation.effectual": "环境效果与装饰性粒子"
 }

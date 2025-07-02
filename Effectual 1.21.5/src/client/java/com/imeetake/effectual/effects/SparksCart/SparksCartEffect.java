@@ -13,56 +13,37 @@ import java.util.Random;
 
 import static com.imeetake.effectual.EffectualClient.CONFIG;
 
-
 public class SparksCartEffect {
 
-    private static final Random RANDOM = new Random();
+    private static final Random RAND = new Random();
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (!CONFIG.minecartSparks()) return;
-            if (client.world == null || client.player == null) return;
-            if (client.isPaused()) return;
-
-
+            if (!CONFIG.minecartSparks() || client.world == null || client.player == null || client.isPaused()) return;
             ClientWorld world = client.world;
-
-
-            for (var entity : world.getEntities()) {
-                if (entity instanceof AbstractMinecartEntity minecart) {
-                    spawnSparks(client, minecart, world);
-                }
-            }
+            world.getEntities().forEach(e -> {
+                if (e instanceof AbstractMinecartEntity cart) spark(client, cart);
+            });
         });
     }
 
-    private static void spawnSparks(MinecraftClient client, AbstractMinecartEntity minecart, ClientWorld world) {
-        Vec3d velocity = minecart.getVelocity();
-        double speed = velocity.horizontalLength();
+    private static void spark(MinecraftClient client, AbstractMinecartEntity cart) {
+        Vec3d vel = cart.getVelocity();
+        if (vel.horizontalLength() < 0.4) return;
+        if (RAND.nextFloat() > 0.1f) return;
 
-
-        if (speed < 0.4) return;
-
-
-        double chance = 0.1;
-        if (RANDOM.nextFloat() > chance) return;
-
-
-        double cartWidth = 1.15;
-        double cartLength = 0.7;
-        double yOffset = 0.1;
-
+        double y = cart.getY() + 0.1;
+        double len = 0.7;
+        double wid = 1.15;
 
         for (int side = -1; side <= 1; side += 2) {
-            double x = minecart.getX() + side * (cartWidth / 2);
-            double z = minecart.getZ() + RANDOM.nextDouble() * cartLength - (cartLength / 2);
-            double y = minecart.getY() + yOffset;
-
+            double x = cart.getX() + side * wid / 2;
+            double z = cart.getZ() + RAND.nextDouble() * len - len / 2;
 
             TClientParticles.spawn(
                     new TParticleEffectSimple(ModParticles.SPARK),
                     x, y, z,
-                    velocity.x * 0.2, 0.01, velocity.z * 0.2
+                    vel.x * 0.2, 0.01, vel.z * 0.2
             );
         }
     }
