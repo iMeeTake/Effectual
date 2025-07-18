@@ -1,0 +1,74 @@
+{
+  "text.config.effectual.title": "Налаштування Effectual",
+
+  "text.config.effectual.option.bubbleBreath": "Підводні бульбашки",
+  "text.config.effectual.option.bubbleBreath.tooltip": "Створює бульбашки під час дихання під водою, якщо у гравця є запас кисню.",
+
+  "text.config.effectual.option.bubbleChests": "Бульбашки з скринь",
+  "text.config.effectual.option.bubbleChests.tooltip": "З відкритої скрині під водою час від часу піднімаються бульбашки.",
+
+  "text.config.effectual.option.caveDust": "Печерний пил",
+  "text.config.effectual.option.caveDust.tooltip": "У печерах з’являються частинки пилу.",
+
+  "text.config.effectual.option.caveDustFrequency": "Частота печерного пилу",
+  "text.config.effectual.option.caveDustFrequency.tooltip": "Як часто з’являється пил у печерах (чим вище значення, тим більше пилу).",
+
+  "text.config.effectual.option.fireImprovements": "Покращення вогню",
+  "text.config.effectual.option.fireImprovements.tooltip": "Нові частинки іскор від вогню та адського вогню.",
+
+  "text.config.effectual.option.campfireImprovements": "Покращення вогнищ",
+  "text.config.effectual.option.campfireImprovements.tooltip": "Нові частинки іскор від вогнищ та адських вогнищ.",
+
+  "text.config.effectual.option.lanternImprovements": "Покращення ліхтарів",
+  "text.config.effectual.option.lanternImprovements.tooltip": "Нові частинки іскор від ліхтарів та адських ліхтарів.",
+
+  "text.config.effectual.option.fireflyEffect": "Світлячки в болотах",
+  "text.config.effectual.option.fireflyEffect.tooltip": "Світлячки з’являються у болотних біомах.",
+
+  "text.config.effectual.option.fireflySpawnRate": "Частота появи світлячків",
+  "text.config.effectual.option.fireflySpawnRate.tooltip": "Частота появи світлячків (чим вище значення, тим більше світлячків).",
+
+  "text.config.effectual.option.mouthSteam": "Пар з рота",
+  "text.config.effectual.option.mouthSteam.tooltip": "В холодних біомах з рота гравця йде видимий пар.",
+
+  "text.config.effectual.option.dynamicBreathSpeed": "Динамічна швидкість дихання",
+  "text.config.effectual.option.dynamicBreathSpeed.tooltip": "Якщо увімкнено, швидкість дихання (в холодних біомах) збільшується під час бігу або стрибків.",
+
+  "text.config.effectual.option.runDust": "Пил при бігу",
+  "text.config.effectual.option.runDust.tooltip": "Створює додаткові частинки пилу під час бігу по піску або снігу.",
+
+  "text.config.effectual.option.fireEntitySparks": "Іскри від палаючих істот",
+  "text.config.effectual.option.fireEntitySparks.tooltip": "Якщо істота горить (наприклад, у вогні чи лаві), з неї вилітають іскри.",
+
+  "text.config.effectual.option.minecartSparks": "Іскри від вагонеток",
+  "text.config.effectual.option.minecartSparks.tooltip": "З’являються іскри, коли вагонетки рухаються на великій швидкості.",
+
+  "text.config.effectual.option.steamEffect": "Парові струмені",
+  "text.config.effectual.option.steamEffect.tooltip": "Коли вода торкається гарячих блоків (наприклад, лави або казана з лавою), утворюється струмінь пари.",
+
+  "text.config.effectual.option.waterDrip": "Краплі води",
+  "text.config.effectual.option.waterDrip.tooltip": "Коли гравець виходить з води, з нього капають краплі води.",
+
+  "text.config.effectual.option.blockPlaceEffect": "Частинки під час встановлення блока",
+  "text.config.effectual.option.blockPlaceEffect.tooltip": "При встановленні снігу, піску або гравію з'являються частинки, що відповідають блоку.",
+
+  "text.config.effectual.option.bubblePots": "Бульбашки з декоративного горщика",
+  "text.config.effectual.option.bubblePots.tooltip": "Якщо декоративний горщик знаходиться під водою, з нього час від часу виходять бульбашки.",
+
+  "text.config.effectual.option.metalHitSparks": "Іскри при ударі металу",
+  "text.config.effectual.option.metalHitSparks.tooltip": "При ударі металевою зброєю або інструментом по металевому блоку з’являються іскри.",
+
+  "text.config.effectual.option.airTrail": "Повітряний слід",
+  "text.config.effectual.option.airTrail.tooltip": "Залишає легкий слід під час польоту з елітрою.",
+
+  "text.config.effectual.option.levitationAura": "Аура левітації",
+  "text.config.effectual.option.levitationAura.tooltip": "Невеликий візуальний ефект під час левітації (бачите лише на собі).",
+
+  "text.config.effectual.option.speedAura": "Аура швидкості",
+  "text.config.effectual.option.speedAura.tooltip": "Створює ефект вітру під час бігу з ефектом швидкості (бачите лише на собі).",
+
+  "text.config.effectual.option.witherDecay": "Тління зів’яння",
+  "text.config.effectual.option.witherDecay.tooltip": "Додає чорний дим при ефекті зів’яння (бачите лише на собі).",
+
+  "modmenu.descriptionTranslation.effectual": "Атмосферні ефекти та декоративні частинки."
+}

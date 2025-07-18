@@ -1,0 +1,74 @@
+{
+  "text.config.effectual.title": "Effectual Settings",
+
+  "text.config.effectual.option.bubbleBreath": "Underwater Bubbles",
+  "text.config.effectual.option.bubbleBreath.tooltip": "Creates bubbles when breathing underwater, as long as the player has an oxygen supply.",
+
+  "text.config.effectual.option.bubbleChests": "Chest Bubbles",
+  "text.config.effectual.option.bubbleChests.tooltip": "Bubbles occasionally rise from an open underwater chest.",
+
+  "text.config.effectual.option.caveDust": "Cave Dust",
+  "text.config.effectual.option.caveDust.tooltip": "Dust particles appear in caves.",
+
+  "text.config.effectual.option.caveDustFrequency": "Cave Dust Frequency",
+  "text.config.effectual.option.caveDustFrequency.tooltip": "How often dust appears in caves (higher = more).",
+
+  "text.config.effectual.option.fireImprovements": "Fire Improvements",
+  "text.config.effectual.option.fireImprovements.tooltip": "New spark particles from fire and soul fire.",
+
+  "text.config.effectual.option.campfireImprovements": "Campfire Improvements",
+  "text.config.effectual.option.campfireImprovements.tooltip": "New spark particles from campfires and soul campfires.",
+
+  "text.config.effectual.option.lanternImprovements": "Lantern Improvements",
+  "text.config.effectual.option.lanternImprovements.tooltip": "New spark particles from lanterns and soul lanterns.",
+
+  "text.config.effectual.option.fireflyEffect": "Fireflies in Swamps",
+  "text.config.effectual.option.fireflyEffect.tooltip": "Fireflies appear in swamp biomes.",
+
+  "text.config.effectual.option.fireflySpawnRate": "Firefly Spawn Rate",
+  "text.config.effectual.option.fireflySpawnRate.tooltip": "The spawn rate of fireflies (higher = more).",
+
+  "text.config.effectual.option.mouthSteam": "Breath Steam",
+  "text.config.effectual.option.mouthSteam.tooltip": "Adds visible breath steam in cold biomes.",
+
+  "text.config.effectual.option.dynamicBreathSpeed": "Dynamic Breath Speed",
+  "text.config.effectual.option.dynamicBreathSpeed.tooltip": "If enabled, breathing (in cold biomes) speeds up when sprinting or jumping.",
+
+  "text.config.effectual.option.runDust": "Running Dust",
+  "text.config.effectual.option.runDust.tooltip": "Creates additional dust particles when running on sand or snow.",
+
+  "text.config.effectual.option.fireEntitySparks": "Sparks from Burning Entities",
+  "text.config.effectual.option.fireEntitySparks.tooltip": "When an entity is on fire (e.g. in lava or flames), sparks will fly out of it.",
+
+  "text.config.effectual.option.minecartSparks": "Minecart Sparks",
+  "text.config.effectual.option.minecartSparks.tooltip": "Sparks appear when minecarts move at high speed.",
+
+  "text.config.effectual.option.steamEffect": "Steam Jets",
+  "text.config.effectual.option.steamEffect.tooltip": "When water touches hot blocks (such as lava or a cauldron with lava), it creates a steam jet.",
+
+  "text.config.effectual.option.waterDrip": "Water Droplets",
+  "text.config.effectual.option.waterDrip.tooltip": "When the player exits water, droplets fall from them.",
+
+  "text.config.effectual.option.blockPlaceEffect": "Block Placement Particles",
+  "text.config.effectual.option.blockPlaceEffect.tooltip": "Particles appear when placing snow, sand, or gravel, matching the placed block.",
+
+  "text.config.effectual.option.bubblePots": "Bubbles from Decorated Pot",
+  "text.config.effectual.option.bubblePots.tooltip": "If a decorated pot is underwater, it occasionally releases bubbles.",
+
+  "text.config.effectual.option.metalHitSparks": "Sparks When Hitting Metal",
+  "text.config.effectual.option.metalHitSparks.tooltip": "When hitting a metal block with a metal weapon or tool, sparks appear.",
+
+  "text.config.effectual.option.airTrail": "Elytra Air Trail",
+  "text.config.effectual.option.airTrail.tooltip": "Leaves a subtle trail while gliding with Elytra.",
+
+  "text.config.effectual.option.levitationAura": "Levitation Aura",
+  "text.config.effectual.option.levitationAura.tooltip": "A gentle visual effect when levitating (only visible on yourself).",
+
+  "text.config.effectual.option.speedAura": "Speed Aura",
+  "text.config.effectual.option.speedAura.tooltip": "Creates a wind-like effect while sprinting with Speed (only visible on yourself).",
+
+  "text.config.effectual.option.witherDecay": "Wither Decay",
+  "text.config.effectual.option.witherDecay.tooltip": "Adds black smoke while Wither effect is active (only visible on yourself).",
+
+  "modmenu.descriptionTranslation.effectual": "Atmospheric effects and decorative particles."
+}

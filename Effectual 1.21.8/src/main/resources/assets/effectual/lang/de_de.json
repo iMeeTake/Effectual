@@ -1,0 +1,74 @@
+{
+  "text.config.effectual.title": "Effectual Einstellungen",
+
+  "text.config.effectual.option.bubbleBreath": "Unterwasserblasen",
+  "text.config.effectual.option.bubbleBreath.tooltip": "Erzeugt Blasen beim Atmen unter Wasser, solange der Spieler über eine Sauerstoffquelle verfügt.",
+
+  "text.config.effectual.option.bubbleChests": "Truhenblasen",
+  "text.config.effectual.option.bubbleChests.tooltip": "Blasen steigen gelegentlich aus einer geöffneten Truhe unter Wasser auf.",
+
+  "text.config.effectual.option.caveDust": "Höhlenstaub",
+  "text.config.effectual.option.caveDust.tooltip": "Staubpartikel erscheinen in Höhlen.",
+
+  "text.config.effectual.option.caveDustFrequency": "Höhlenstaub-Frequenz",
+  "text.config.effectual.option.caveDustFrequency.tooltip": "Wie oft Staub in Höhlen erscheint (höher = mehr).",
+
+  "text.config.effectual.option.fireImprovements": "Feuer-Verbesserungen",
+  "text.config.effectual.option.fireImprovements.tooltip": "Neue Funkenpartikel von Feuer und Seelenfeuer.",
+
+  "text.config.effectual.option.campfireImprovements": "Lagerfeuer-Verbesserungen",
+  "text.config.effectual.option.campfireImprovements.tooltip": "Neue Funkenpartikel von Lagerfeuern und Seelenlagerfeuern.",
+
+  "text.config.effectual.option.lanternImprovements": "Laternen-Verbesserungen",
+  "text.config.effectual.option.lanternImprovements.tooltip": "Neue Funkenpartikel von Laternen und Seelenlaternen.",
+
+  "text.config.effectual.option.fireflyEffect": "Glühwürmchen in Sümpfen",
+  "text.config.effectual.option.fireflyEffect.tooltip": "Glühwürmchen erscheinen in Sumpfbiomen.",
+
+  "text.config.effectual.option.fireflySpawnRate": "Glühwürmchen-Spawnrate",
+  "text.config.effectual.option.fireflySpawnRate.tooltip": "Die Spawnrate der Glühwürmchen (höher = mehr).",
+
+  "text.config.effectual.option.mouthSteam": "Atemdampf",
+  "text.config.effectual.option.mouthSteam.tooltip": "Sichtbarer Atemdampf in kalten Biomen.",
+
+  "text.config.effectual.option.dynamicBreathSpeed": "Dynamische Atemgeschwindigkeit",
+  "text.config.effectual.option.dynamicBreathSpeed.tooltip": "Wenn aktiviert, wird das Atmen (in kalten Biomen) beim Sprinten oder Springen schneller.",
+
+  "text.config.effectual.option.runDust": "Laufstaub",
+  "text.config.effectual.option.runDust.tooltip": "Erzeugt zusätzliche Staubpartikel beim Laufen auf Sand oder Schnee.",
+
+  "text.config.effectual.option.fireEntitySparks": "Funken von brennenden Wesen",
+  "text.config.effectual.option.fireEntitySparks.tooltip": "Wenn eine Entität brennt (z. B. in Lava oder Feuer), fliegen Funken aus ihr heraus.",
+
+  "text.config.effectual.option.minecartSparks": "Lorenfunken",
+  "text.config.effectual.option.minecartSparks.tooltip": "Funken erscheinen, wenn Loren mit hoher Geschwindigkeit fahren.",
+
+  "text.config.effectual.option.steamEffect": "Dampfausstoß",
+  "text.config.effectual.option.steamEffect.tooltip": "Wenn Wasser auf heiße Blöcke trifft (z. B. Lava oder ein Kessel mit Lava), entsteht ein Dampfausstoß.",
+
+  "text.config.effectual.option.waterDrip": "Wassertropfen",
+  "text.config.effectual.option.waterDrip.tooltip": "Wenn der Spieler aus dem Wasser steigt, fallen Tropfen von ihm herab.",
+
+  "text.config.effectual.option.blockPlaceEffect": "Partikel beim Platzieren von Blöcken",
+  "text.config.effectual.option.blockPlaceEffect.tooltip": "Beim Platzieren von Schnee, Sand oder Kies erscheinen Partikel, die dem Block entsprechen.",
+
+  "text.config.effectual.option.bubblePots": "Blasen aus dekoriertem Topf",
+  "text.config.effectual.option.bubblePots.tooltip": "Wenn ein dekorierter Topf unter Wasser steht, steigen gelegentlich Blasen auf.",
+
+  "text.config.effectual.option.metalHitSparks": "Funken beim Schlagen von Metall",
+  "text.config.effectual.option.metalHitSparks.tooltip": "Wenn man mit einer Metallwaffe oder einem Metallwerkzeug auf einen Metallblock schlägt, erscheinen Funken.",
+
+  "text.config.effectual.option.airTrail": "Luftspur (Elytra)",
+  "text.config.effectual.option.airTrail.tooltip": "Hinterlässt eine leichte Spur beim Fliegen mit Elytren.",
+
+  "text.config.effectual.option.levitationAura": "Schwebe-Aura",
+  "text.config.effectual.option.levitationAura.tooltip": "Ein sanfter visueller Effekt beim Schweben (nur auf dich sichtbar).",
+
+  "text.config.effectual.option.speedAura": "Geschwindigkeits-Aura",
+  "text.config.effectual.option.speedAura.tooltip": "Erzeugt einen windähnlichen Effekt beim Sprinten mit Geschwindigkeit (nur auf dich sichtbar).",
+
+  "text.config.effectual.option.witherDecay": "Verfall (Wither)",
+  "text.config.effectual.option.witherDecay.tooltip": "Fügt schwarzen Rauch während des Wither-Effekts hinzu (nur auf dich sichtbar).",
+
+  "modmenu.descriptionTranslation.effectual": "Atmosphärische Effekte und dekorative Partikel."
+}

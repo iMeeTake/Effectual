@@ -21,7 +21,7 @@ import net.minecraft.particle.ParticleType;
 
 public class EffectualClient implements ClientModInitializer {
 
-	public static final com.imeetake.effectual.EffectualConfig CONFIG = com.imeetake.effectual.EffectualConfig.createAndLoad();
+	public static final EffectualConfig CONFIG = EffectualConfig.createAndLoad();
 
 	@Override
 	public void onInitializeClient() {
