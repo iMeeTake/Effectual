@@ -8,25 +8,23 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleEffect;
 
 public class WaterDripParticleFactory implements ParticleFactory<ParticleEffect> {
-    private final SpriteProvider spriteProvider;
+    private final SpriteProvider sprites;
 
-    public WaterDripParticleFactory(SpriteProvider spriteProvider) {
-        this.spriteProvider = spriteProvider;
+    public WaterDripParticleFactory(SpriteProvider sprites) {
+        this.sprites = sprites;
     }
 
     @Override
-    public Particle createParticle(ParticleEffect parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ) {
-        PlayerEntity player = world.getClosestPlayer(x, y, z, 2.0, null);
-
-        if (player == null) {
-            return null;
-        }
-
-        double offsetX = x - player.getX();
-        double offsetY = y - player.getY();
-        double offsetZ = z - player.getZ();
-
-        WaterDripParticle particle = new WaterDripParticle(world, player, offsetX, offsetY, offsetZ, this.spriteProvider);
-        return particle;
+    public Particle createParticle(ParticleEffect parameters, ClientWorld world, double x, double y, double z, double vx, double vy, double vz) {
+        PlayerEntity player = world.getClosestPlayer(x, y, z, 1.2, p -> p != null && p.isAlive());
+        if (player == null) return null;
+        float yaw = player.getYaw(0);
+        double ry = Math.toRadians(yaw);
+        double ox = x - player.getX();
+        double oz = z - player.getZ();
+        double lx = ox * Math.cos(ry) + oz * Math.sin(ry);
+        double lz = -ox * Math.sin(ry) + oz * Math.cos(ry);
+        double ly = y - player.getY();
+        return new WaterDripParticle(world, player, lx, ly, lz, this.sprites);
     }
 }

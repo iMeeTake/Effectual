@@ -36,7 +36,7 @@ public class MetalHitMixin {
         PlayerEntity player = client.player;
 
         ItemStack mainHandItem = player.getMainHandStack();
-        if (!mainHandItem.isIn(TagKey.of(RegistryKeys.ITEM, Identifier.of("effectual", "metal_tools")))) return;
+        if (!mainHandItem.isIn(TagKey.of(RegistryKeys.ITEM, Identifier.of("effectual", "metal_items")))) return;
 
         BlockState blockState = world.getBlockState(pos);
         if (!blockState.isIn(TagKey.of(RegistryKeys.BLOCK, Identifier.of("effectual", "metal_blocks")))) return;

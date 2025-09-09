@@ -41,7 +41,7 @@ public class SparksCartEffect {
             double z = cart.getZ() + RAND.nextDouble() * len - len / 2;
 
             TClientParticles.spawn(
-                    new TParticleEffectSimple(ModParticles.SPARK),
+                    new TParticleEffectSimple(ModParticles.METAL_SPARK),
                     x, y, z,
                     vel.x * 0.2, 0.01, vel.z * 0.2
             );

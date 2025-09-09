@@ -19,8 +19,17 @@
   "text.config.effectual.option.campfireImprovements": "篝火改进",
   "text.config.effectual.option.campfireImprovements.tooltip": "新增篝火和灵魂篝火的火花粒子。",
 
+  "text.config.effectual.option.torchImprovements": "火把改进",
+  "text.config.effectual.option.torchImprovements.tooltip": "新增火把和灵魂火把的火花粒子。",
+
   "text.config.effectual.option.lanternImprovements": "灯笼改进",
   "text.config.effectual.option.lanternImprovements.tooltip": "新增灯笼和灵魂灯笼的火花粒子。",
+
+  "text.config.effectual.option.furnaceSparks": "熔炉火花",
+  "text.config.effectual.option.furnaceSparks.tooltip": "熔炉与高炉点燃时会产生细小火花。",
+
+  "text.config.effectual.option.cauldronFillEffect": "炼药锅填充粒子",
+  "text.config.effectual.option.cauldronFillEffect.tooltip": "向炼药锅注入水、岩浆或粉雪时出现溅水/烟雾粒子。",
 
   "text.config.effectual.option.fireflyEffect": "沼泽萤火虫",
   "text.config.effectual.option.fireflyEffect.tooltip": "萤火虫会在沼泽生物群系中生成。",
@@ -51,6 +60,9 @@
 
   "text.config.effectual.option.blockPlaceEffect": "放置方块时的粒子",
   "text.config.effectual.option.blockPlaceEffect.tooltip": "放置雪、沙子或砂砾时，会生成与方块匹配的粒子效果。",
+
+  "text.config.effectual.option.stripEffect": "剥皮粒子",
+  "text.config.effectual.option.stripEffect.tooltip": "用斧头剥去原木树皮时会出现粒子。",
 
   "text.config.effectual.option.bubblePots": "装饰陶罐的气泡",
   "text.config.effectual.option.bubblePots.tooltip": "如果装饰陶罐在水下，它会偶尔释放气泡。",

@@ -19,8 +19,17 @@
   "text.config.effectual.option.campfireImprovements": "Lagerfeuer-Verbesserungen",
   "text.config.effectual.option.campfireImprovements.tooltip": "Neue Funkenpartikel von Lagerfeuern und Seelenlagerfeuern.",
 
+  "text.config.effectual.option.torchImprovements": "Fackel-Verbesserungen",
+  "text.config.effectual.option.torchImprovements.tooltip": "Neue Funkenpartikel von Fackeln und Seelenfackeln.",
+
   "text.config.effectual.option.lanternImprovements": "Laternen-Verbesserungen",
   "text.config.effectual.option.lanternImprovements.tooltip": "Neue Funkenpartikel von Laternen und Seelenlaternen.",
+
+  "text.config.effectual.option.furnaceSparks": "Funken aus dem Ofen",
+  "text.config.effectual.option.furnaceSparks.tooltip": "Kleine Funken aus Öfen und Hochöfen, wenn sie brennen.",
+
+  "text.config.effectual.option.cauldronFillEffect": "Partikel beim Befüllen des Kessels",
+  "text.config.effectual.option.cauldronFillEffect.tooltip": "Spritz-/Rauchpartikel beim Befüllen von Kesseln mit Wasser, Lava oder Pulverschnee.",
 
   "text.config.effectual.option.fireflyEffect": "Glühwürmchen in Sümpfen",
   "text.config.effectual.option.fireflyEffect.tooltip": "Glühwürmchen erscheinen in Sumpfbiomen.",
@@ -51,6 +60,9 @@
 
   "text.config.effectual.option.blockPlaceEffect": "Partikel beim Platzieren von Blöcken",
   "text.config.effectual.option.blockPlaceEffect.tooltip": "Beim Platzieren von Schnee, Sand oder Kies erscheinen Partikel, die dem Block entsprechen.",
+
+  "text.config.effectual.option.stripEffect": "Partikel beim Entrinden",
+  "text.config.effectual.option.stripEffect.tooltip": "Es erscheinen Partikel beim Entrinden von Stämmen mit einer Axt.",
 
   "text.config.effectual.option.bubblePots": "Blasen aus dekoriertem Topf",
   "text.config.effectual.option.bubblePots.tooltip": "Wenn ein dekorierter Topf unter Wasser steht, steigen gelegentlich Blasen auf.",

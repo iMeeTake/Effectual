@@ -34,6 +34,8 @@ public class PlayerRunEffect {
         return player.isSprinting()
                 && !player.isSneaking()
                 && player.isOnGround()
+                && !player.isSubmergedInWater()
+                && !player.isTouchingWater()
                 && !player.isSpectator();
     }
 

@@ -16,11 +16,9 @@ public class WaterDripParticleEffect implements ParticleEffect {
         return type;
     }
 
-
     public void write(PacketByteBuf buf) {
 
     }
-
 
     public String asString() {
         return "WaterDripParticleEffect";

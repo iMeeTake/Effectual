@@ -12,7 +12,7 @@
 		"sources": "https://github.com/iMeeTake/Effectual",
 		"issues": "https://github.com/iMeeTake/Effectual/issues"
 	},
-	"license": "All Rights Reserved",
+	"license": "MIT",
 	"icon": "assets/effectual/icon.png",
 	"environment": "client",
 	"entrypoints": {

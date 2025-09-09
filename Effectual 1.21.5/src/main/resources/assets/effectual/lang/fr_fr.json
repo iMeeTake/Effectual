@@ -19,8 +19,17 @@
   "text.config.effectual.option.campfireImprovements": "Améliorations des feux de camp",
   "text.config.effectual.option.campfireImprovements.tooltip": "Nouvelles particules d’étincelles pour les feux de camp et les feux de camp des âmes.",
 
+  "text.config.effectual.option.torchImprovements": "Améliorations des torches",
+  "text.config.effectual.option.torchImprovements.tooltip": "Nouvelles particules d’étincelles pour les torches et les torches des âmes.",
+
   "text.config.effectual.option.lanternImprovements": "Améliorations des lanternes",
   "text.config.effectual.option.lanternImprovements.tooltip": "Nouvelles particules d’étincelles pour les lanternes et les lanternes des âmes.",
+
+  "text.config.effectual.option.furnaceSparks": "Étincelles du four",
+  "text.config.effectual.option.furnaceSparks.tooltip": "De petites étincelles sortent des fours et hauts-fourneaux lorsqu’ils sont allumés.",
+
+  "text.config.effectual.option.cauldronFillEffect": "Particules lors du remplissage du chaudron",
+  "text.config.effectual.option.cauldronFillEffect.tooltip": "Éclaboussures/fumée lors du remplissage des chaudrons avec de l’eau, de la lave ou de la neige poudreuse.",
 
   "text.config.effectual.option.fireflyEffect": "Lucioles dans les marais",
   "text.config.effectual.option.fireflyEffect.tooltip": "Des lucioles apparaissent dans les biomes marécageux.",
@@ -51,6 +60,9 @@
 
   "text.config.effectual.option.blockPlaceEffect": "Particules lors du placement de blocs",
   "text.config.effectual.option.blockPlaceEffect.tooltip": "Des particules apparaissent lors du placement de neige, de sable ou de gravier, correspondant au bloc placé.",
+
+  "text.config.effectual.option.stripEffect": "Particules d’écorçage",
+  "text.config.effectual.option.stripEffect.tooltip": "Des particules apparaissent lors de l’écorçage des bûches avec une hache.",
 
   "text.config.effectual.option.bubblePots": "Bulles du pot décoré",
   "text.config.effectual.option.bubblePots.tooltip": "Si un pot décoré est sous l'eau, il libère parfois des bulles.",

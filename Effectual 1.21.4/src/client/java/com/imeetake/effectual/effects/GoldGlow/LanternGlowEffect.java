@@ -4,6 +4,7 @@ import com.imeetake.effectual.ModParticles;
 import com.imeetake.tlib.client.particle.TClientParticles;
 import com.imeetake.tlib.client.particle.TParticleEffectSimple;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.math.BlockPos;
@@ -19,23 +20,26 @@ public class LanternGlowEffect {
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (!CONFIG.lanternImprovements() || client.world == null || client.player == null || client.isPaused()) return;
-            if (++tickCounter < 5) return;
+            if (++tickCounter < 6) return;
             tickCounter = 0;
-            spawn(client);
+            spawnNearPlayer(client);
         });
     }
 
-    private static void spawn(MinecraftClient client) {
+    private static void spawnNearPlayer(MinecraftClient client) {
         BlockPos center = client.player.getBlockPos();
         BlockPos.Mutable pos = new BlockPos.Mutable();
 
-        for (int dx = -8; dx <= 8; dx++) {
-            for (int dy = -8; dy <= 8; dy++) {
-                for (int dz = -8; dz <= 8; dz++) {
+        int radius = 6;
+        for (int dx = -radius; dx <= radius; dx++) {
+            for (int dy = -2; dy <= 2; dy++) {
+                for (int dz = -radius; dz <= radius; dz++) {
                     pos.set(center.getX() + dx, center.getY() + dy, center.getZ() + dz);
-                    if (!client.world.getBlockState(pos).isOf(Blocks.LANTERN)) continue;
+                    BlockState state = client.world.getBlockState(pos);
+                    if (!state.isOf(Blocks.LANTERN)) continue;
                     if (!client.world.getFluidState(pos).isEmpty()) continue;
-                    if (RAND.nextFloat() >= 0.2f) continue;
+                    if (RAND.nextFloat() > 0.55f) continue;
+
                     glow(pos);
                 }
             }
@@ -43,12 +47,13 @@ public class LanternGlowEffect {
     }
 
     private static void glow(BlockPos pos) {
-        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.8;
-        double y = pos.getY() + 0.25;
-        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.8;
+        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.55;
+        double y = pos.getY() + 0.15;
+        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.55;
         TClientParticles.spawn(
                 new TParticleEffectSimple(ModParticles.GOLD_GLOW),
                 x, y, z,
-                0, -0.002, 0);
+                0, -0.002, 0
+        );
     }
 }

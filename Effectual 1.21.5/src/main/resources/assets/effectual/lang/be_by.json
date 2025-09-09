@@ -19,8 +19,17 @@
   "text.config.effectual.option.campfireImprovements": "Іскры ад вогнішча",
   "text.config.effectual.option.campfireImprovements.tooltip": "Новыя часціцы ад вогнішча і вогнішча душ.",
 
+  "text.config.effectual.option.torchImprovements": "Іскры ад факелаў",
+  "text.config.effectual.option.torchImprovements.tooltip": "Новыя часціцы іскраў ад факелаў і факелаў душ.",
+
   "text.config.effectual.option.lanternImprovements": "Іскры ад ліхтароў",
   "text.config.effectual.option.lanternImprovements.tooltip": "Новыя часціцы іскраў ад ліхтароў і ліхтароў душ.",
+
+  "text.config.effectual.option.furnaceSparks": "Іскры з печы",
+  "text.config.effectual.option.furnaceSparks.tooltip": "Невялікія іскры з печаў і плаўляльных печаў, калі яны гаруць.",
+
+  "text.config.effectual.option.cauldronFillEffect": "Часціцы пры напаўненні кацела",
+  "text.config.effectual.option.cauldronFillEffect.tooltip": "Пырскі/дым пры напаўненні кацела вадой, лавай або пухкім снегам.",
 
   "text.config.effectual.option.fireflyEffect": "Светлячкі ў балотах",
   "text.config.effectual.option.fireflyEffect.tooltip": "Светлячкі з'яўляюцца ў балотных біёмах.",
@@ -51,6 +60,9 @@
 
   "text.config.effectual.option.blockPlaceEffect": "Часціцы пры пастаноўцы блока",
   "text.config.effectual.option.blockPlaceEffect.tooltip": "Калі ставіцца снег, пясок або жвір, з'яўляюцца адпаведныя часціцы.",
+
+  "text.config.effectual.option.stripEffect": "Часціцы пры абтэсванні",
+  "text.config.effectual.option.stripEffect.tooltip": "З’яўляюцца часціцы пры абтэсванні бервёнаў сякерай.",
 
   "text.config.effectual.option.bubblePots": "Бурбалкі з гаршкоў",
   "text.config.effectual.option.bubblePots.tooltip": "Калі дэкаратыўны гаршчок знаходзіцца пад вадой, час ад часу з яго вылятаюць бурбалкі.",

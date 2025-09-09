@@ -9,6 +9,7 @@ public class ModParticles {
     public static final ParticleType<?> GOLD_GLOW = TParticles.simple(Effectual.MOD_ID, "gold_glow");
     public static final ParticleType<?> SPARK = TParticles.simple(Effectual.MOD_ID, "spark");
     public static final ParticleType<?> SOUL_SPARK = TParticles.simple(Effectual.MOD_ID, "soul_spark");
+    public static final ParticleType<?> METAL_SPARK = TParticles.simple(Effectual.MOD_ID, "metal_spark");
     public static final ParticleType<?> SOUL_GLOW = TParticles.simple(Effectual.MOD_ID, "soul_glow");
     public static final ParticleType<?> SAND_DUST = TParticles.simple(Effectual.MOD_ID, "sand_dust");
     public static final ParticleType<?> SNOW_DUST = TParticles.simple(Effectual.MOD_ID, "snow_dust");

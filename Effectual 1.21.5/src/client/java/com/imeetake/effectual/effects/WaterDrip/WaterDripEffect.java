@@ -19,44 +19,42 @@ public class WaterDripEffect {
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (!CONFIG.waterDrip() || client.world == null || client.isPaused()) return;
-
             ClientWorld world = client.world;
-
             for (PlayerEntity player : world.getPlayers()) {
-                if (shouldPlayEffect(player)) {
-                    spawnWaterDripParticles(world, player);
-                }
+                if (shouldPlayEffect(player)) spawnWaterDripParticles(world, player);
             }
         });
     }
 
     private static boolean shouldPlayEffect(PlayerEntity player) {
         if (player.isSpectator() || player.isCreative()) return false;
-
-        long worldTime = player.getWorld().getTime();
-
+        long time = player.getWorld().getTime();
         if (player.isSubmergedInWater()) {
-            lastFullySubmergedTicks.put(player, worldTime);
+            lastFullySubmergedTicks.put(player, time);
             return false;
         }
-
-        long lastSubmerged = lastFullySubmergedTicks.getOrDefault(player, -101L);
-        return worldTime - lastSubmerged <= 100;
+        long last = lastFullySubmergedTicks.getOrDefault(player, -200L);
+        if (time - last > 100) return false;
+        if (player.isTouchingWater()) return true;
+        return player.getVelocity().lengthSquared() > 0.0004 || player.isSprinting();
     }
 
     private static void spawnWaterDripParticles(ClientWorld world, PlayerEntity player) {
-        if (RANDOM.nextFloat() < 0.2f) {
-            double offsetX = RANDOM.nextFloat() * 0.4 - 0.25;
-            double offsetY = RANDOM.nextFloat() * 0.8 + 1.0;
-            double offsetZ = RANDOM.nextFloat() * 0.4 - 0.25;
-
-            TClientParticles.spawn(
-                    new WaterDripParticleEffect(ModParticles.WATER_DRIP),
-                    player.getX() + offsetX,
-                    player.getY() + offsetY,
-                    player.getZ() + offsetZ,
-                    0, -0.02, 0
-            );
+        int count = 1 + (RANDOM.nextFloat() < 0.12f ? 1 : 0);
+        float yaw = player.getYaw(0);
+        double ry = Math.toRadians(-yaw);
+        for (int i = 0; i < count; i++) {
+            double ring = 0.32 + RANDOM.nextDouble() * 0.08;
+            double ang = RANDOM.nextDouble() * Math.PI * 2.0;
+            double lx = Math.cos(ang) * ring;
+            double lz = Math.sin(ang) * ring;
+            double ly = 0.95 + RANDOM.nextDouble() * 0.7;
+            double rx = lx * Math.cos(ry) - lz * Math.sin(ry);
+            double rz = lx * Math.sin(ry) + lz * Math.cos(ry);
+            double x = player.getX() + rx;
+            double y = player.getY() + ly;
+            double z = player.getZ() + rz;
+            TClientParticles.spawn(new WaterDripParticleEffect(ModParticles.WATER_DRIP), x, y, z, 0, 0, 0);
         }
     }
 }

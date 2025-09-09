@@ -20,41 +20,47 @@ public class SoulCampfireImprovements {
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (!CONFIG.campfireImprovements() || client.world == null || client.player == null || client.isPaused()) return;
-            if (++tickCounter < 5) return;
+            if (++tickCounter < 3) return;
             tickCounter = 0;
-            spawnSparks(client);
+            spawn(client);
         });
     }
 
-    private static void spawnSparks(MinecraftClient client) {
-        BlockPos base = client.player.getBlockPos();
-        for (int x = -8; x <= 8; x++) {
-            for (int y = -8; y <= 8; y++) {
-                for (int z = -8; z <= 8; z++) {
-                    BlockPos pos = base.add(x, y, z);
+    private static void spawn(MinecraftClient client) {
+        BlockPos center = client.player.getBlockPos();
+        BlockPos.Mutable pos = new BlockPos.Mutable();
+
+        for (int dx = -8; dx <= 8; dx++) {
+            for (int dy = -8; dy <= 8; dy++) {
+                for (int dz = -8; dz <= 8; dz++) {
+                    pos.set(center.getX() + dx, center.getY() + dy, center.getZ() + dz);
                     var state = client.world.getBlockState(pos);
-                    if (state.isOf(Blocks.SOUL_CAMPFIRE) && state.getOrEmpty(Properties.LIT).orElse(false)) {
-                        if (RAND.nextFloat() < 0.5f) spawnSparkParticle(pos);
-                    }
+                    if (!state.isOf(Blocks.SOUL_CAMPFIRE)) continue;
+                    if (!state.getOrEmpty(Properties.LIT).orElse(false)) continue;
+                    if (RAND.nextFloat() >= 0.35f) continue;
+                    spark(pos);
                 }
             }
         }
     }
 
-    private static void spawnSparkParticle(BlockPos pos) {
-        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.1;
-        double y = pos.getY() + 0.85 + RAND.nextDouble() * 0.05;
-        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.1;
+    private static void spark(BlockPos pos) {
+        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.55;
+        double y = pos.getY() + 0.70 + RAND.nextDouble() * 0.05;
+        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.55;
 
         double angle = RAND.nextDouble() * Math.PI * 2;
-        double h = RAND.nextDouble() * 0.005;
-        double dx = Math.cos(angle) * h;
-        double dz = Math.sin(angle) * h;
-        double dy = 0.04 + RAND.nextDouble() * 0.01;
+        double speed = RAND.nextDouble() * 0.002;
 
-        TClientParticles.spawn(
-                new TParticleEffectSimple(ModParticles.SOUL_SPARK),
-                x, y, z,
-                dx, dy, dz);
+        double dy = 0.012 + RAND.nextDouble() * 0.005;
+        double dx = Math.cos(angle) * speed;
+        double dz = Math.sin(angle) * speed;
+
+        int n = 1 + RAND.nextInt(2);
+        for (int i = 0; i < n; i++) {
+            double jx = dx + (RAND.nextDouble() - 0.5) * 0.0008;
+            double jz = dz + (RAND.nextDouble() - 0.5) * 0.0008;
+            TClientParticles.spawn(new TParticleEffectSimple(ModParticles.SOUL_SPARK), x, y, z, jx, dy, jz);
+        }
     }
 }

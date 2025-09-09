@@ -36,7 +36,7 @@ public class MetalHitMixin {
         PlayerEntity player = client.player;
 
         ItemStack mainHandItem = player.getMainHandStack();
-        if (!mainHandItem.isIn(TagKey.of(RegistryKeys.ITEM, Identifier.of("effectual", "metal_tools")))) return;
+        if (!mainHandItem.isIn(TagKey.of(RegistryKeys.ITEM, Identifier.of("effectual", "metal_items")))) return;
 
         BlockState blockState = world.getBlockState(pos);
         if (!blockState.isIn(TagKey.of(RegistryKeys.BLOCK, Identifier.of("effectual", "metal_blocks")))) return;
@@ -60,7 +60,7 @@ public class MetalHitMixin {
             double velocityY = (random.nextDouble() - 0.5) * 0.1 + direction.getOffsetY() * 0.1;
             double velocityZ = (random.nextDouble() - 0.5) * 0.1 + direction.getOffsetZ() * 0.1;
 
-            TClientParticles.spawn(new TParticleEffectSimple(ModParticles.SPARK), offsetX, offsetY, offsetZ, velocityX, velocityY, velocityZ);
+            TClientParticles.spawn(new TParticleEffectSimple(ModParticles.METAL_SPARK), offsetX, offsetY, offsetZ, velocityX, velocityY, velocityZ);
         }
     }
 }

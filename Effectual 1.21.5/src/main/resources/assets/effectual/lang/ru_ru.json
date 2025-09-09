@@ -25,14 +25,26 @@
   "text.config.effectual.option.blockPlaceEffect": "Частицы при установке блока",
   "text.config.effectual.option.blockPlaceEffect.tooltip": "При установке снега, песка или гравия появляются частицы, соответствующие блоку.",
 
+  "text.config.effectual.option.stripEffect": "Частицы при обтёсывании",
+  "text.config.effectual.option.stripEffect.tooltip": "Появляются частицы при обтёсывании брёвен топором.",
+
   "text.config.effectual.option.fireImprovements": "Искры от огня",
   "text.config.effectual.option.fireImprovements.tooltip": "Новые частицы искр от огня и огня душ.",
 
   "text.config.effectual.option.campfireImprovements": "Искры от костра",
   "text.config.effectual.option.campfireImprovements.tooltip": "Новые частицы искр от костра и костра душ.",
 
+  "text.config.effectual.option.torchImprovements": "Искры от факелов",
+  "text.config.effectual.option.torchImprovements.tooltip": "Новые частицы искр от факелов и факелов душ.",
+
   "text.config.effectual.option.lanternImprovements": "Искры от фонарей",
   "text.config.effectual.option.lanternImprovements.tooltip": "Новые частицы искр от фонарей и фонарей душ.",
+
+  "text.config.effectual.option.furnaceSparks": "Искры из печки",
+  "text.config.effectual.option.furnaceSparks.tooltip": "Небольшие искры из печей и плавилен, когда они горят.",
+
+  "text.config.effectual.option.cauldronFillEffect": "Частицы при наполнении котла",
+  "text.config.effectual.option.cauldronFillEffect.tooltip": "Брызги/дым при наливании в котёл воды, лавы или рыхлого снега.",
 
   "text.config.effectual.option.fireEntitySparks": "Искры от горящих мобов",
   "text.config.effectual.option.fireEntitySparks.tooltip": "Если сущность горит (например, в огне или лаве), из неё вылетают искры.",

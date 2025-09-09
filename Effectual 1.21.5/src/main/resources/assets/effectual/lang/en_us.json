@@ -19,8 +19,17 @@
   "text.config.effectual.option.campfireImprovements": "Campfire Improvements",
   "text.config.effectual.option.campfireImprovements.tooltip": "New spark particles from campfires and soul campfires.",
 
+  "text.config.effectual.option.torchImprovements": "Torch Improvements",
+  "text.config.effectual.option.torchImprovements.tooltip": "New spark particles from torches and soul torches.",
+
   "text.config.effectual.option.lanternImprovements": "Lantern Improvements",
   "text.config.effectual.option.lanternImprovements.tooltip": "New spark particles from lanterns and soul lanterns.",
+
+  "text.config.effectual.option.furnaceSparks": "Furnace sparks",
+  "text.config.effectual.option.furnaceSparks.tooltip": "Tiny sparks from furnaces and blast furnaces while lit.",
+
+  "text.config.effectual.option.cauldronFillEffect": "Cauldron fill particles",
+  "text.config.effectual.option.cauldronFillEffect.tooltip": "Splash/smoke particles when filling cauldrons with water, lava, or powder snow.",
 
   "text.config.effectual.option.fireflyEffect": "Fireflies in Swamps",
   "text.config.effectual.option.fireflyEffect.tooltip": "Fireflies appear in swamp biomes.",
@@ -51,6 +60,9 @@
 
   "text.config.effectual.option.blockPlaceEffect": "Block Placement Particles",
   "text.config.effectual.option.blockPlaceEffect.tooltip": "Particles appear when placing snow, sand, or gravel, matching the placed block.",
+
+  "text.config.effectual.option.stripEffect": "Stripping particles",
+  "text.config.effectual.option.stripEffect.tooltip": "Particles appear when stripping logs with an axe.",
 
   "text.config.effectual.option.bubblePots": "Bubbles from Decorated Pot",
   "text.config.effectual.option.bubblePots.tooltip": "If a decorated pot is underwater, it occasionally releases bubbles.",

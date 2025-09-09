@@ -19,8 +19,17 @@
   "text.config.effectual.option.campfireImprovements": "Покращення вогнищ",
   "text.config.effectual.option.campfireImprovements.tooltip": "Нові частинки іскор від вогнищ та адських вогнищ.",
 
+  "text.config.effectual.option.torchImprovements": "Покращення факелів",
+  "text.config.effectual.option.torchImprovements.tooltip": "Нові частинки іскор від факелів та адських факелів.",
+
   "text.config.effectual.option.lanternImprovements": "Покращення ліхтарів",
   "text.config.effectual.option.lanternImprovements.tooltip": "Нові частинки іскор від ліхтарів та адських ліхтарів.",
+
+  "text.config.effectual.option.furnaceSparks": "Іскри з печі",
+  "text.config.effectual.option.furnaceSparks.tooltip": "Невеликі іскри з печей і плавильних печей, коли вони горять.",
+
+  "text.config.effectual.option.cauldronFillEffect": "Частинки при наповненні казана",
+  "text.config.effectual.option.cauldronFillEffect.tooltip": "Бризки/дим під час наповнення казана водою, лавою або пухким снігом.",
 
   "text.config.effectual.option.fireflyEffect": "Світлячки в болотах",
   "text.config.effectual.option.fireflyEffect.tooltip": "Світлячки з’являються у болотних біомах.",
@@ -51,6 +60,9 @@
 
   "text.config.effectual.option.blockPlaceEffect": "Частинки під час встановлення блока",
   "text.config.effectual.option.blockPlaceEffect.tooltip": "При встановленні снігу, піску або гравію з'являються частинки, що відповідають блоку.",
+
+  "text.config.effectual.option.stripEffect": "Частинки під час обтісування",
+  "text.config.effectual.option.stripEffect.tooltip": "З’являються частинки під час обтісування колод сокирою.",
 
   "text.config.effectual.option.bubblePots": "Бульбашки з декоративного горщика",
   "text.config.effectual.option.bubblePots.tooltip": "Якщо декоративний горщик знаходиться під водою, з нього час від часу виходять бульбашки.",

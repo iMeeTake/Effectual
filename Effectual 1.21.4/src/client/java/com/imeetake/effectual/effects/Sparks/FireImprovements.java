@@ -19,7 +19,7 @@ public class FireImprovements {
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (!CONFIG.fireImprovements() || client.world == null || client.player == null || client.isPaused()) return;
-            if (++tickCounter < 5) return;
+            if (++tickCounter < 3) return;
             tickCounter = 0;
             spawn(client);
         });
@@ -34,7 +34,7 @@ public class FireImprovements {
                 for (int dz = -8; dz <= 8; dz++) {
                     pos.set(center.getX() + dx, center.getY() + dy, center.getZ() + dz);
                     if (!client.world.getBlockState(pos).isOf(Blocks.FIRE)) continue;
-                    if (RAND.nextFloat() >= 0.5f) continue;
+                    if (RAND.nextFloat() >= 0.35f) continue;
                     spark(pos);
                 }
             }
@@ -42,19 +42,22 @@ public class FireImprovements {
     }
 
     private static void spark(BlockPos pos) {
-        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.1;
-        double y = pos.getY() + 0.85 + RAND.nextDouble() * 0.05;
-        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.1;
+        double x = pos.getX() + 0.5 + (RAND.nextDouble() - 0.5) * 0.05;
+        double y = pos.getY() + 0.82 + RAND.nextDouble() * 0.03;
+        double z = pos.getZ() + 0.5 + (RAND.nextDouble() - 0.5) * 0.05;
 
         double angle = RAND.nextDouble() * Math.PI * 2;
-        double speed = RAND.nextDouble() * 0.005;
+        double speed = RAND.nextDouble() * 0.0016;
+
         double dx = Math.cos(angle) * speed;
         double dz = Math.sin(angle) * speed;
-        double dy = 0.04 + RAND.nextDouble() * 0.01;
+        double dy = 0.009 + RAND.nextDouble() * 0.004;
 
-        TClientParticles.spawn(
-                new TParticleEffectSimple(ModParticles.SPARK),
-                x, y, z,
-                dx, dy, dz);
+        int n = 1 + RAND.nextInt(2);
+        for (int i = 0; i < n; i++) {
+            double jx = dx + (RAND.nextDouble() - 0.5) * 0.0006;
+            double jz = dz + (RAND.nextDouble() - 0.5) * 0.0006;
+            TClientParticles.spawn(new TParticleEffectSimple(ModParticles.SPARK), x, y, z, jx, dy, jz);
+        }
     }
 }
