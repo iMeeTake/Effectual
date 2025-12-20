@@ -1,0 +1,95 @@
+{
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-12-18 23:10:07 +0500"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2025-12-18 23:11:11 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_pine_taiga": "2025-12-18 23:11:44 +0500",
+      "minecraft:forest": "2025-12-18 23:11:36 +0500",
+      "minecraft:taiga": "2025-12-18 23:11:39 +0500",
+      "minecraft:cherry_grove": "2025-12-18 23:10:13 +0500",
+      "minecraft:river": "2025-12-18 23:12:00 +0500",
+      "minecraft:grove": "2025-12-18 23:11:49 +0500",
+      "minecraft:meadow": "2025-12-18 23:10:12 +0500",
+      "minecraft:old_growth_spruce_taiga": "2025-12-18 23:12:11 +0500",
+      "minecraft:plains": "2025-12-18 23:10:08 +0500"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2025-12-18 23:13:01 +0500"
+    },
+    "done": true
+  },
+  "DataVersion": 4440
+}

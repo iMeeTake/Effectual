@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" factoryName="Application" name="Minecraft Client (:neoforge)" type="Application">
+    <option name="MAIN_CLASS_NAME" value="dev.architectury.transformer.TransformerRuntime"/>
+    <module name="effectual.neoforge.main"/>
+    <option name="PROGRAM_PARAMETERS" value=""/>
+    <option name="VM_PARAMETERS" value="-Dfabric.dli.config=/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual@@00201.21.10/neoforge/.gradle/loom-cache/launch.cfg -Dfabric.dli.env=client --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-exports jdk.naming.dns/com.sun.jndi.dns=java.naming -XstartOnFirstThread -XstartOnFirstThread -XstartOnFirstThread -XstartOnFirstThread -Dfabric.dli.main=net.neoforged.fml.startup.Client &quot;-Darchitectury.main.class=/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/neoforge/.gradle/architectury/.main_class&quot; &quot;-Darchitectury.runtime.transformer=/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/neoforge/.gradle/architectury/.transforms&quot; &quot;-Darchitectury.properties=/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/neoforge/.gradle/architectury/.properties&quot; -Djdk.attach.allowAttachSelf=true &quot;-javaagent:/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/.gradle/architectury/architectury-transformer-agent.jar&quot;"/>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neoforge/run/"/>
+    <method v="2">
+      <option enabled="true" name="Make"/>
+    </method>
+    <envs>
+      <env name="MOD_CLASSES" value="main%%/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/neoforge/build/resources/main:main%%/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/neoforge/build/classes/java/main:main%%/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/neoforge/out/production/classes:main%%/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.10/neoforge/out/production/resources"/>
+    </envs>
+    <shortenClasspath name="ARGS_FILE"/>
+  <classpathModifications/></configuration>
+</component>

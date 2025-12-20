@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "effectual"
+version = "1.3.0-1.21.5"
+displayName = "Effectual"
+authors = "iMeeTake"
+description = '''
+Atmospheric effects and decorative particles.
+'''
+#logoFile = ""
+
+[[dependencies.effectual]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.5,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.effectual]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.5]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.effectual]]
+modId = "architectury"
+type = "required"
+versionRange = "[16.1.4,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "effectual.mixins.json"

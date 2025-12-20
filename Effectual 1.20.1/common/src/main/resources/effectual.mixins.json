@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.imeetake.effectual.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+      "BlockPlaceMixin",
+      "MetalHitMixin",
+      "CampfireBlockMixin",
+      "EntityMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

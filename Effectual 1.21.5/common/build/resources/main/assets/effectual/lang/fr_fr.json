@@ -1,0 +1,74 @@
+{
+    "text.autoconfig.effectual.title": "Paramètres d'Effectual",
+
+    "text.autoconfig.effectual.option.bubbleBreath": "Bulles sous-marines",
+    "text.autoconfig.effectual.option.bubbleBreath.@Tooltip": "Crée des bulles lors de la respiration sous l'eau, tant que le joueur a une source d'oxygène.",
+
+    "text.autoconfig.effectual.option.bubbleChests": "Bulles des coffres",
+    "text.autoconfig.effectual.option.bubbleChests.@Tooltip": "Des bulles montent occasionnellement depuis un coffre ouvert sous l'eau.",
+
+    "text.autoconfig.effectual.option.caveDust": "Poussière de grotte",
+    "text.autoconfig.effectual.option.caveDust.@Tooltip": "Des particules de poussière apparaissent dans les grottes.",
+
+    "text.autoconfig.effectual.option.caveDustFrequency": "Fréquence de la poussière de grotte",
+    "text.autoconfig.effectual.option.caveDustFrequency.@Tooltip": "Détermine la fréquence d’apparition de la poussière dans les grottes (plus élevé = plus de poussière).",
+
+    "text.autoconfig.effectual.option.fireImprovements": "Améliorations du feu",
+    "text.autoconfig.effectual.option.fireImprovements.@Tooltip": "Nouvelles particules d’étincelles pour le feu et le feu des âmes.",
+
+    "text.autoconfig.effectual.option.campfireImprovements": "Améliorations des feux de camp",
+    "text.autoconfig.effectual.option.campfireImprovements.@Tooltip": "Nouvelles particules d’étincelles pour les feux de camp et les feux de camp des âmes.",
+
+    "text.autoconfig.effectual.option.torchImprovements": "Améliorations des torches",
+    "text.autoconfig.effectual.option.torchImprovements.@Tooltip": "Nouvelles particules d’étincelles pour les torches et les torches des âmes.",
+
+    "text.autoconfig.effectual.option.lanternImprovements": "Améliorations des lanternes",
+    "text.autoconfig.effectual.option.lanternImprovements.@Tooltip": "Nouvelles particules d’étincelles pour les lanternes et les lanternes des âmes.",
+
+    "text.autoconfig.effectual.option.furnaceSparks": "Étincelles du four",
+    "text.autoconfig.effectual.option.furnaceSparks.@Tooltip": "De petites étincelles sortent des fours et hauts-fourneaux lorsqu’ils sont allumés.",
+
+    "text.autoconfig.effectual.option.cauldronFillEffect": "Particules lors du remplissage du chaudron",
+    "text.autoconfig.effectual.option.cauldronFillEffect.@Tooltip": "Éclaboussures/fumée lors du remplissage des chaudrons avec de l’eau, de la lave ou de la neige poudreuse.",
+
+    "text.autoconfig.effectual.option.mouthSteam": "Vapeur de respiration",
+    "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "Ajoute une vapeur visible lorsque l'on respire dans les biomes froids.",
+
+    "text.autoconfig.effectual.option.dynamicBreathSpeed": "Vitesse de respiration dynamique",
+    "text.autoconfig.effectual.option.dynamicBreathSpeed.@Tooltip": "Si activé, la respiration (dans les biomes froids) s’accélère lors de la course ou des sauts.",
+
+    "text.autoconfig.effectual.option.runDust": "Poussière de course",
+    "text.autoconfig.effectual.option.runDust.@Tooltip": "Génère des particules de poussière supplémentaires lors de la course sur le sable ou la neige.",
+
+    "text.autoconfig.effectual.option.fireEntitySparks": "Étincelles des entités en feu",
+    "text.autoconfig.effectual.option.fireEntitySparks.@Tooltip": "Lorsqu’une entité est en feu (par exemple dans la lave ou les flammes), des étincelles en sortent.",
+
+    "text.autoconfig.effectual.option.minecartSparks": "Étincelles des wagonnets",
+    "text.autoconfig.effectual.option.minecartSparks.@Tooltip": "Des étincelles apparaissent lorsque les wagonnets se déplacent à grande vitesse.",
+
+    "text.autoconfig.effectual.option.steamEffect": "Jets de vapeur",
+    "text.autoconfig.effectual.option.steamEffect.@Tooltip": "Lorsque l'eau touche des blocs chauds (comme la lave ou un chaudron avec de la lave), un jet de vapeur est créé.",
+
+    "text.autoconfig.effectual.option.waterDrip": "Gouttes d'eau",
+    "text.autoconfig.effectual.option.waterDrip.@Tooltip": "Quand le joueur sort de l’eau, des gouttes d’eau tombent de lui.",
+
+    "text.autoconfig.effectual.option.blockPlaceEffect": "Particules lors du placement de blocs",
+    "text.autoconfig.effectual.option.blockPlaceEffect.@Tooltip": "Des particules apparaissent lors du placement de neige, de sable ou de gravier, correspondant au bloc placé.",
+
+    "text.autoconfig.effectual.option.stripEffect": "Particules d’écorçage",
+    "text.autoconfig.effectual.option.stripEffect.@Tooltip": "Des particules apparaissent lors de l’écorçage des bûches avec une hache.",
+
+    "text.autoconfig.effectual.option.bubblePots": "Bulles du pot décoré",
+    "text.autoconfig.effectual.option.bubblePots.@Tooltip": "Si un pot décoré est sous l'eau, il libère parfois des bulles.",
+
+    "text.autoconfig.effectual.option.metalHitSparks": "Étincelles lors des coups sur le métal",
+    "text.autoconfig.effectual.option.metalHitSparks.@Tooltip": "Lorsque vous frappez un bloc métallique avec une arme ou un outil en métal, des étincelles apparaissent.",
+
+    "text.autoconfig.effectual.option.airTrail": "Traînée d'air (Elytra)",
+    "text.autoconfig.effectual.option.airTrail.@Tooltip": "Laisse une traînée légère lors du vol avec des Elytras.",
+
+    "text.autoconfig.effectual.option.witherDecay": "Décomposition du Wither",
+    "text.autoconfig.effectual.option.witherDecay.@Tooltip": "Ajoute de la fumée noire sous l'effet de Wither (visible uniquement sur vous).",
+
+    "modmenu.descriptionTranslation.effectual": "Effets atmosphériques et particules décoratives."
+}

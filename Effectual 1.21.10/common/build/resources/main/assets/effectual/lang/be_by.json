@@ -1,0 +1,74 @@
+{
+    "text.autoconfig.effectual.title": "Налады Effectual",
+
+    "text.autoconfig.effectual.option.bubbleBreath": "Бурбалкі пад вадой",
+    "text.autoconfig.effectual.option.bubbleBreath.@Tooltip": "Стварае бурбалкі пры дыханні пад вадой, калі ў гульца ёсць запас кіслароду.",
+
+    "text.autoconfig.effectual.option.bubbleChests": "Бурбалкі з куфараў",
+    "text.autoconfig.effectual.option.bubbleChests.@Tooltip": "З адкрытага пад вадой куфара часам вылятаюць бурбалкі.",
+
+    "text.autoconfig.effectual.option.caveDust": "Пыл у пячорах",
+    "text.autoconfig.effectual.option.caveDust.@Tooltip": "У пячорах з'яўляюцца часціцы пылу.",
+
+    "text.autoconfig.effectual.option.caveDustFrequency": "Частата пылу ў пячорах",
+    "text.autoconfig.effectual.option.caveDustFrequency.@Tooltip": "Як часта з'яўляецца пыл у пячорах (больш = часцей).",
+
+    "text.autoconfig.effectual.option.fireImprovements": "Іскры ад агню",
+    "text.autoconfig.effectual.option.fireImprovements.@Tooltip": "Новыя часціцы іскраў ад агню і агню душ.",
+
+    "text.autoconfig.effectual.option.campfireImprovements": "Іскры ад вогнішча",
+    "text.autoconfig.effectual.option.campfireImprovements.@Tooltip": "Новыя часціцы ад вогнішча і вогнішча душ.",
+
+    "text.autoconfig.effectual.option.torchImprovements": "Іскры ад факелаў",
+    "text.autoconfig.effectual.option.torchImprovements.@Tooltip": "Новыя часціцы іскраў ад факелаў і факелаў душ.",
+
+    "text.autoconfig.effectual.option.lanternImprovements": "Іскры ад ліхтароў",
+    "text.autoconfig.effectual.option.lanternImprovements.@Tooltip": "Новыя часціцы іскраў ад ліхтароў і ліхтароў душ.",
+
+    "text.autoconfig.effectual.option.furnaceSparks": "Іскры з печы",
+    "text.autoconfig.effectual.option.furnaceSparks.@Tooltip": "Невялікія іскры з печаў і плаўляльных печаў, калі яны гаруць.",
+
+    "text.autoconfig.effectual.option.cauldronFillEffect": "Часціцы пры напаўненні кацела",
+    "text.autoconfig.effectual.option.cauldronFillEffect.@Tooltip": "Пырскі/дым пры напаўненні кацела вадой, лавай або пухкім снегам.",
+
+    "text.autoconfig.effectual.option.mouthSteam": "Пар з рота",
+    "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "Дадае пар пры дыханні ў халодных біёмах.",
+
+    "text.autoconfig.effectual.option.dynamicBreathSpeed": "Дынамічная хуткасць дыхання",
+    "text.autoconfig.effectual.option.dynamicBreathSpeed.@Tooltip": "Калі ўключана, дыханне (у халодных біёмах) пачашчаецца пры бегу або скачку.",
+
+    "text.autoconfig.effectual.option.runDust": "Пыл пры бегу",
+    "text.autoconfig.effectual.option.runDust.@Tooltip": "Стварае дадатковыя часціцы пры бегу па пяску або снезе.",
+
+    "text.autoconfig.effectual.option.fireEntitySparks": "Іскры ад палаючых істот",
+    "text.autoconfig.effectual.option.fireEntitySparks.@Tooltip": "Калі істота гарыць (напрыклад, у агні ці лаве), з яе вылятаюць іскры.",
+
+    "text.autoconfig.effectual.option.minecartSparks": "Іскры ад ваганеткі",
+    "text.autoconfig.effectual.option.minecartSparks.@Tooltip": "Іскры пры руху ваганеткі на высокай хуткасці.",
+
+    "text.autoconfig.effectual.option.steamEffect": "Бруі пара",
+    "text.autoconfig.effectual.option.steamEffect.@Tooltip": "Калі вада датыкаецца з гарачымі блокамі (напрыклад, лавай або катлом з ёй), ствараецца бруя пара.",
+
+    "text.autoconfig.effectual.option.waterDrip": "Кроплі вады",
+    "text.autoconfig.effectual.option.waterDrip.@Tooltip": "Калі гулец выходзіць з вады, з яго капаюць кроплі.",
+
+    "text.autoconfig.effectual.option.blockPlaceEffect": "Часціцы пры пастаноўцы блока",
+    "text.autoconfig.effectual.option.blockPlaceEffect.@Tooltip": "Калі ставіцца снег, пясок або жвір, з'яўляюцца адпаведныя часціцы.",
+
+    "text.autoconfig.effectual.option.stripEffect": "Часціцы пры абтэсванні",
+    "text.autoconfig.effectual.option.stripEffect.@Tooltip": "З’яўляюцца часціцы пры абтэсванні бервёнаў сякерай.",
+
+    "text.autoconfig.effectual.option.bubblePots": "Бурбалкі з гаршкоў",
+    "text.autoconfig.effectual.option.bubblePots.@Tooltip": "Калі дэкаратыўны гаршчок знаходзіцца пад вадой, час ад часу з яго вылятаюць бурбалкі.",
+
+    "text.autoconfig.effectual.option.metalHitSparks": "Іскры пры ўдары па метале",
+    "text.autoconfig.effectual.option.metalHitSparks.@Tooltip": "Калі ўдарыць металічнай зброяй або інструментам па металічным блоку, з'яўляюцца іскры.",
+
+    "text.autoconfig.effectual.option.airTrail": "Паветраны след",
+    "text.autoconfig.effectual.option.airTrail.@Tooltip": "Пакідае лёгкі след пры палёце з элітрамі.",
+
+    "text.autoconfig.effectual.option.witherDecay": "Іссушальнае тленьне",
+    "text.autoconfig.effectual.option.witherDecay.@Tooltip": "Дадае чорны дым пры эфекце іссушэння (бачны толькі на сабе).",
+
+    "modmenu.descriptionTranslation.effectual": "Атмосферныя эфекты і дэкаратыўныя часцінкі."
+}

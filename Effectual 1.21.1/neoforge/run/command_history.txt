@@ -1,0 +1,6 @@
+/particle effectual:entity_spark
+/particle effectual:metal_spark
+/locate structure minecraft:trial_chambers
+/tp @s 288 ~ 192
+/locate structure minecraft:stronghold
+/tp @s 704 ~ 2000

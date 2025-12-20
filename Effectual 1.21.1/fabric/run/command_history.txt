@@ -1,0 +1,15 @@
+/particle effectual:entity_spark
+/particle effectual:entity_spark ~ ~ ~
+/particle effectual:spark
+/particle effectual:spark ~ ~ ~ 50
+/particle effectual:air_trail
+/particle effectual:entity_spark
+/particle effectual:snow_dust
+/particle effectual:entity_spark
+/particle effectual:water_drip
+/particle effectual:spark
+/particle effectual:metal_spark
+/particle effectual:entity_spark
+/particle effectual:metal_spark
+/particle effectual:entity_spark
+/particle effectual:metal_spark

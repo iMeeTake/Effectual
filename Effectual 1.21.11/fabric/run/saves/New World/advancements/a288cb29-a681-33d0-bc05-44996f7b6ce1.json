@@ -1,0 +1,23 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-12-20 15:40:22 +0500"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2025-12-20 15:40:22 +0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2025-12-20 15:41:02 +0500",
+      "minecraft:dark_forest": "2025-12-20 15:40:53 +0500",
+      "minecraft:stony_shore": "2025-12-20 15:40:49 +0500"
+    },
+    "done": false
+  },
+  "DataVersion": 4556
+}
