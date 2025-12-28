@@ -6,9 +6,9 @@ import com.imeetake.tlib.client.particle.TClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class FireImprovements {
@@ -46,11 +46,16 @@ public class FireImprovements {
     }
 
     private static void spark(Minecraft client, BlockPos pos) {
-        Direction attachedFace = getFireAttachmentFace(client, pos);
+        BlockState state = client.level.getBlockState(pos);
+
+        boolean isFloorFire = !state.getValue(FireBlock.NORTH)
+                && !state.getValue(FireBlock.SOUTH)
+                && !state.getValue(FireBlock.EAST)
+                && !state.getValue(FireBlock.WEST);
 
         double x, y, z;
 
-        if (attachedFace == Direction.DOWN) {
+        if (isFloorFire) {
             x = pos.getX() + RAND.nextDouble();
             y = pos.getY() + 0.4 + RAND.nextDouble() * 0.5;
             z = pos.getZ() + RAND.nextDouble();
@@ -59,15 +64,41 @@ public class FireImprovements {
             y = pos.getY() + 0.3 + RAND.nextDouble() * 0.5;
             z = pos.getZ() + 0.5;
 
-            double offset = 0.3 + RAND.nextDouble() * 0.15;
-            x += attachedFace.getStepX() * offset;
-            z += attachedFace.getStepZ() * offset;
+            double offsetX = 0;
+            double offsetZ = 0;
+            int sides = 0;
 
-            double perpX = attachedFace.getStepZ();
-            double perpZ = -attachedFace.getStepX();
-            double lateral = (RAND.nextDouble() - 0.5) * 0.6;
-            x += perpX * lateral;
-            z += perpZ * lateral;
+            if (state.getValue(FireBlock.NORTH)) {
+                offsetZ -= 1;
+                sides++;
+            }
+            if (state.getValue(FireBlock.SOUTH)) {
+                offsetZ += 1;
+                sides++;
+            }
+            if (state.getValue(FireBlock.EAST)) {
+                offsetX += 1;
+                sides++;
+            }
+            if (state.getValue(FireBlock.WEST)) {
+                offsetX -= 1;
+                sides++;
+            }
+
+            if (sides > 0) {
+                double offset = 0.3 + RAND.nextDouble() * 0.15;
+                double normX = offsetX / sides;
+                double normZ = offsetZ / sides;
+
+                x += normX * offset;
+                z += normZ * offset;
+
+                double perpX = -normZ;
+                double perpZ = normX;
+                double lateral = (RAND.nextDouble() - 0.5) * 0.8;
+                x += perpX * lateral;
+                z += perpZ * lateral;
+            }
         }
 
         double angle = RAND.nextDouble() * Math.PI * 2;
@@ -78,21 +109,5 @@ public class FireImprovements {
         double dz = Math.sin(angle) * speed;
 
         TClientParticles.spawn(ModParticles.SPARK.get(), x, y, z, dx, dy, dz);
-    }
-
-    private static Direction getFireAttachmentFace(Minecraft client, BlockPos firePos) {
-        BlockPos below = firePos.below();
-        if (client.level.getBlockState(below).isSolidRender(client.level, below)) {
-            return Direction.DOWN;
-        }
-
-        for (Direction dir : Direction.Plane.HORIZONTAL) {
-            BlockPos adjacent = firePos.relative(dir);
-            if (client.level.getBlockState(adjacent).isSolidRender(client.level, adjacent)) {
-                return dir;
-            }
-        }
-
-        return Direction.DOWN;
     }
 }

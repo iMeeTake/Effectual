@@ -6,7 +6,6 @@ import com.imeetake.tlib.client.particle.TClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -39,36 +38,16 @@ public class SoulFireImprovements {
                     if (!state.is(Blocks.SOUL_FIRE)) continue;
                     if (RAND.nextFloat() >= 0.65f) continue;
 
-                    spark(client, pos);
+                    spark(pos);
                 }
             }
         }
     }
 
-    private static void spark(Minecraft client, BlockPos pos) {
-        Direction attachedFace = getFireAttachmentFace(client, pos);
-
-        double x, y, z;
-
-        if (attachedFace == Direction.DOWN) {
-            x = pos.getX() + RAND.nextDouble();
-            y = pos.getY() + 0.4 + RAND.nextDouble() * 0.5;
-            z = pos.getZ() + RAND.nextDouble();
-        } else {
-            x = pos.getX() + 0.5;
-            y = pos.getY() + 0.3 + RAND.nextDouble() * 0.5;
-            z = pos.getZ() + 0.5;
-
-            double offset = 0.3 + RAND.nextDouble() * 0.15;
-            x += attachedFace.getStepX() * offset;
-            z += attachedFace.getStepZ() * offset;
-
-            double perpX = attachedFace.getStepZ();
-            double perpZ = -attachedFace.getStepX();
-            double lateral = (RAND.nextDouble() - 0.5) * 0.6;
-            x += perpX * lateral;
-            z += perpZ * lateral;
-        }
+    private static void spark(BlockPos pos) {
+        double x = pos.getX() + RAND.nextDouble();
+        double y = pos.getY() + 0.4 + RAND.nextDouble() * 0.5;
+        double z = pos.getZ() + RAND.nextDouble();
 
         double angle = RAND.nextDouble() * Math.PI * 2;
         double speed = 0.01 + RAND.nextDouble() * 0.03;
@@ -78,21 +57,5 @@ public class SoulFireImprovements {
         double dz = Math.sin(angle) * speed;
 
         TClientParticles.spawn(ModParticles.SOUL_SPARK.get(), x, y, z, dx, dy, dz);
-    }
-
-    private static Direction getFireAttachmentFace(Minecraft client, BlockPos firePos) {
-        BlockPos below = firePos.below();
-        if (client.level.getBlockState(below).isSolidRender(client.level, below)) {
-            return Direction.DOWN;
-        }
-
-        for (Direction dir : Direction.Plane.HORIZONTAL) {
-            BlockPos adjacent = firePos.relative(dir);
-            if (client.level.getBlockState(adjacent).isSolidRender(client.level, adjacent)) {
-                return dir;
-            }
-        }
-
-        return Direction.DOWN;
     }
 }

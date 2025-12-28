@@ -98,28 +98,28 @@
 [Architectury Transformer DEBUG]  - /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/.gradle/loom-cache/remapped_mods/remapped/dev/architectury/architectury-neoforge-0311eecf/13.0.8/architectury-neoforge-0311eecf-13.0.8.jar
 [Architectury Transformer DEBUG]  - /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/.gradle/loom-cache/remapped_mods/remapped/com/imeetake/tlib-neoforge-0311eecf/1.4.1-1.21.1/tlib-neoforge-0311eecf-1.4.1-1.21.1.jar
 [Architectury Transformer DEBUG]  - /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/.gradle/loom-cache/remapped_mods/remapped/me/shedaniel/cloth/cloth-config-neoforge-0311eecf/15.0.140/cloth-config-neoforge-0311eecf-15.0.140-neoforge.jar
-[Architectury Transformer] Read classpath in 1.217 s
+[Architectury Transformer] Read classpath in 1.256 s
 [Architectury Transformer DEBUG] Closed File Systems for /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/common/build/devlibs/effectual-common-1.3.0-1.21.1-dev.jar
-[Architectury Transformer DEBUG] Transforming 6 transformer(s) from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/common/build/devlibs/effectual-common-1.3.0-1.21.1-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/14012657878327069492.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@b62fe6d
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@13acb0d1
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@3e3047e6
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeAnnotations@37e547da
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment@2b6856dd
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeNeoForgeMod@5db45159
-[Architectury Transformer DEBUG] Transforming from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/common/build/devlibs/effectual-common-1.3.0-1.21.1-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/14012657878327069492.jar with 6 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 6 transformer(s) from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/common/build/devlibs/effectual-common-1.3.0-1.21.1-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/8786652557480219463.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@5c1a8622
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@5ad851c9
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@6156496
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeAnnotations@3c153a1
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment@b62fe6d
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeNeoForgeMod@13acb0d1
+[Architectury Transformer DEBUG] Transforming from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/common/build/devlibs/effectual-common-1.3.0-1.21.1-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/8786652557480219463.jar with 6 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$9 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$8 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$7 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$2 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$8 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$9 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$7 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$6 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$5 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$4 with maxs=true frames=true
@@ -130,8 +130,8 @@
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/EffectualClient with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/mixin/EntityMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/mixin/MetalHitMixin with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing com/imeetake/effectual/mixin/BlockPlaceMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/mixin/CampfireBlockMixin with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/imeetake/effectual/mixin/BlockPlaceMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/AirTrail/AirTrailEffect with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/AirTrail/AirTrailParticle with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect with maxs=true frames=true
@@ -146,12 +146,12 @@
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Snapshot with maxs=true frames=true
@@ -184,541 +184,550 @@
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripParticle with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SteamEffect/SteamEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Closed File Systems for /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/14012657878327069492.jar
+[Architectury Transformer DEBUG] Closed File Systems for /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/8786652557480219463.jar
 [Architectury Transformer] Listening at /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/common/build/devlibs/effectual-common-1.3.0-1.21.1-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [/var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/14012657878327069492.jar] contains packages: com.imeetake.effectual.effects.CauldronFill, com.imeetake.effectual, com.imeetake.effectual.mixin, com.imeetake.effectual.effects.AirTrail, com.imeetake.effectual.effects.PlayerRunEffect, com.imeetake.effectual.effects.StripEffect, com.imeetake.effectual.effects.SoulGlow, com.imeetake.effectual.effects.SteamEffect, com.imeetake.effectual.effects.FireEntitySparks, com.imeetake.effectual.effects.WaterDrip, com.imeetake.effectual.effects.CaveDust, com.imeetake.effectual.effects.MetalSparks, com.imeetake.effectual.effects.SparksSoul, com.imeetake.effectual.effects.Bubbles, com.imeetake.effectual.effects.Sparks, com.imeetake.effectual.effects.MouthSteam, com.imeetake.effectual.effects.WitherDecay, com.imeetake.effectual.effects.GoldGlow, com.imeetake.effectual.effects.PlayerRunEffect.DustParticles
+[Architectury Transformer DEBUG] Temporary jar [/var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/8786652557480219463.jar] contains packages: com.imeetake.effectual.effects.CauldronFill, com.imeetake.effectual, com.imeetake.effectual.mixin, com.imeetake.effectual.effects.AirTrail, com.imeetake.effectual.effects.PlayerRunEffect, com.imeetake.effectual.effects.StripEffect, com.imeetake.effectual.effects.SoulGlow, com.imeetake.effectual.effects.SteamEffect, com.imeetake.effectual.effects.FireEntitySparks, com.imeetake.effectual.effects.WaterDrip, com.imeetake.effectual.effects.CaveDust, com.imeetake.effectual.effects.MetalSparks, com.imeetake.effectual.effects.SparksSoul, com.imeetake.effectual.effects.Bubbles, com.imeetake.effectual.effects.Sparks, com.imeetake.effectual.effects.MouthSteam, com.imeetake.effectual.effects.WitherDecay, com.imeetake.effectual.effects.GoldGlow, com.imeetake.effectual.effects.PlayerRunEffect.DustParticles
 [Architectury Transformer DEBUG] Closed File Systems for /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/common/build/devlibs/effectual-common-1.3.0-1.21.1-dev.jar
 [Architectury Transformer DEBUG] Classpath entry [/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/neoforge/build/classes/java/main] contains packages: com.imeetake.effectual.neoforge.client, com.imeetake.effectual.neoforge
 [Architectury Transformer DEBUG] Classpath entry [/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.1/neoforge/build/resources/main] contains packages: 
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/Effectual.class to com/imeetake/effectual/Effectual.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/Effectual with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/Effectual in 50.44 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/Effectual in 57.26 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/EffectualConfig.class to com/imeetake/effectual/EffectualConfig.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/EffectualConfig with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualConfig in 11.44 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualConfig in 12.63 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/EffectualClient.class to com/imeetake/effectual/EffectualClient.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/EffectualClient with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualClient in 10.25 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualClient in 12.14 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/EffectRegistry.class to com/imeetake/effectual/EffectRegistry.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/EffectRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectRegistry in 9.017 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectRegistry in 10.48 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect.class to com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect in 12.50 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect in 10.02 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Bubbles/BubbleChestEffect.class to com/imeetake/effectual/effects/Bubbles/BubbleChestEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Bubbles/BubbleChestEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleChestEffect in 10.67 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleChestEffect in 10.98 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Bubbles/BubblePotsEffect.class to com/imeetake/effectual/effects/Bubbles/BubblePotsEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Bubbles/BubblePotsEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubblePotsEffect in 10.74 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubblePotsEffect in 9.567 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect.class to com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect in 5.286 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect in 6.042 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/CaveDust/CaveDustEffect.class to com/imeetake/effectual/effects/CaveDust/CaveDustEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/CaveDust/CaveDustEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CaveDust/CaveDustEffect in 5.032 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CaveDust/CaveDustEffect in 5.994 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect.class to com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect in 4.339 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect in 5.070 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SteamEffect/SteamEffect.class to com/imeetake/effectual/effects/SteamEffect/SteamEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SteamEffect/SteamEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SteamEffect/SteamEffect in 5.071 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SteamEffect/SteamEffect in 4.401 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/StripEffect/StripEffect.class to com/imeetake/effectual/effects/StripEffect/StripEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/StripEffect/StripEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/StripEffect/StripEffect in 4.524 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/StripEffect/StripEffect in 5.675 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect.class to com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect in 4.358 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect in 5.215 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect.class to com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect in 4.759 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect in 6.215 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WaterDrip/WaterDripEffect.class to com/imeetake/effectual/effects/WaterDrip/WaterDripEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripEffect in 3.516 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripEffect in 4.227 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/AirTrail/AirTrailEffect.class to com/imeetake/effectual/effects/AirTrail/AirTrailEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/AirTrail/AirTrailEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailEffect in 3.391 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailEffect in 3.958 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect.class to com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect in 3.708 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect in 4.320 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect.class to com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect in 3.634 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect in 4.705 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect.class to com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect in 3.090 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect in 5.434 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect.class to com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect in 2.947 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect in 3.621 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect.class to com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect in 3.152 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect in 5.497 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Sparks/FireImprovements.class to com/imeetake/effectual/effects/Sparks/FireImprovements.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Sparks/FireImprovements with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FireImprovements in 2.961 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FireImprovements in 4.902 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MetalSparks/SparksCartEffect.class to com/imeetake/effectual/effects/MetalSparks/SparksCartEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MetalSparks/SparksCartEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/SparksCartEffect in 2.760 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/SparksCartEffect in 3.456 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements.class to com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements in 2.902 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements in 4.049 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles.class to com/imeetake/effectual/ModParticles.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles in 3.216 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles in 5.095 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$9.class to com/imeetake/effectual/ModParticles$9.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$9 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$9 in 2.852 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$9 in 3.378 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$8.class to com/imeetake/effectual/ModParticles$8.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$8 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$8 in 2.460 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$8 in 3.271 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$7.class to com/imeetake/effectual/ModParticles$7.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$7 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$7 in 2.587 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$7 in 4.407 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$6.class to com/imeetake/effectual/ModParticles$6.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$6 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$6 in 3.383 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$6 in 5.691 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$5.class to com/imeetake/effectual/ModParticles$5.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$5 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$5 in 3.162 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$5 in 4.082 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$4.class to com/imeetake/effectual/ModParticles$4.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$4 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$4 in 3.294 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$4 in 3.796 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$3.class to com/imeetake/effectual/ModParticles$3.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$3 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$3 in 3.114 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$3 in 4.105 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$1.class to com/imeetake/effectual/ModParticles$1.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$1 in 3.096 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$1 in 4.920 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$2.class to com/imeetake/effectual/ModParticles$2.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$2 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$2 in 3.202 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$2 in 3.627 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle.class to com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle in 4.844 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle in 4.672 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Sparks/SparkParticle.class to com/imeetake/effectual/effects/Sparks/SparkParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Sparks/SparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/SparkParticle in 4.149 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/SparkParticle in 4.139 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle.class to com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle in 3.972 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle in 5.433 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle.class to com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle in 3.925 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle in 4.152 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/AirTrail/AirTrailParticle.class to com/imeetake/effectual/effects/AirTrail/AirTrailParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/AirTrail/AirTrailParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailParticle in 3.481 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailParticle in 4.300 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory in 4.130 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory in 6.032 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle in 2.850 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle in 4.001 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle in 3.256 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle in 4.752 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory in 3.274 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory in 4.399 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle in 2.963 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle in 4.904 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory in 2.961 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory in 4.914 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle in 3.314 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle in 3.744 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory in 3.066 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory in 4.319 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle in 2.919 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle in 5.199 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory in 3.374 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory in 5.157 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle in 3.202 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle in 5.672 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory.class to com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory in 3.221 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory in 6.716 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle.class to com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle in 3.201 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle in 7.316 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory.class to com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory in 3.395 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory in 6.483 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WaterDrip/WaterDripParticle.class to com/imeetake/effectual/effects/WaterDrip/WaterDripParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticle in 3.533 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticle in 5.077 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory.class to com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory in 3.097 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory in 5.899 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle.class to com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle in 3.238 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle in 6.240 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory.class to com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory in 3.292 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory in 4.674 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle.class to com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle in 3.630 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle in 5.450 ms
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind.class to com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x0000000f0102dc00@3bd40a57
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind in 5.712 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind in 4.773 ms
+[Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/FireEntitySparks/FireEntitySparksEffect.class to com/imeetake/effectual/effects/FireEntitySparks/FireEntitySparksEffect.class with 6 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x00007e000102fd38@5e4c8041
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
+[Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/FireEntitySparks/FireEntitySparksEffect with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/FireEntitySparksEffect in 5.239 ms

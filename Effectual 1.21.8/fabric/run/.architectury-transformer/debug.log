@@ -124,15 +124,15 @@
 [Architectury Transformer DEBUG]  - /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/.gradle/loom-cache/remapped_mods/remapped/me/shedaniel/cloth/cloth-config-fabric-c1c451a1/19.0.147/cloth-config-fabric-c1c451a1-19.0.147-fabric.jar
 [Architectury Transformer DEBUG]  - /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/.gradle/loom-cache/remapped_mods/remapped/com/terraformersmc/modmenu-c1c451a1/15.0.0/modmenu-c1c451a1-15.0.0.jar
 [Architectury Transformer DEBUG]  - /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/.gradle/loom-cache/remapped_mods/remapped/me/shedaniel/cloth/basic-math-c1c451a1/0.6.1/basic-math-c1c451a1-0.6.1.jar
-[Architectury Transformer] Read classpath in 1.376 s
+[Architectury Transformer] Read classpath in 1.285 s
 [Architectury Transformer DEBUG] Closed File Systems for /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/common/build/devlibs/effectual-common-1.3.0-1.21.8-dev.jar
-[Architectury Transformer DEBUG] Transforming 5 transformer(s) from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/common/build/devlibs/effectual-common-1.3.0-1.21.8-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/9995555679327297852.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@1b68b9a4
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@4f9a3314
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@3b2c72c2
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@491666ad
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@176d53b2
-[Architectury Transformer DEBUG] Transforming from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/common/build/devlibs/effectual-common-1.3.0-1.21.8-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/9995555679327297852.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 5 transformer(s) from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/common/build/devlibs/effectual-common-1.3.0-1.21.8-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/15066958035223735163.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@29ba4338
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@57175e74
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@7bb58ca3
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@c540f5a
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@770c2e6b
+[Architectury Transformer DEBUG] Transforming from /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/common/build/devlibs/effectual-common-1.3.0-1.21.8-dev.jar to /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/15066958035223735163.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$9 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$8 with maxs=true frames=true
@@ -206,249 +206,245 @@
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$7 with maxs=true frames=true
 [Architectury Transformer DEBUG] Checking whether /effectual-common-common-refmap.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /effectual.mixins.json is a mixin config.
-[Architectury Transformer DEBUG] Closed File Systems for /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/9995555679327297852.jar
+[Architectury Transformer DEBUG] Closed File Systems for /var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/15066958035223735163.jar
 [Architectury Transformer] Listening at /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/common/build/devlibs/effectual-common-1.3.0-1.21.8-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [/var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/9995555679327297852.jar] contains packages: com.imeetake.effectual.effects.CauldronFill, com.imeetake.effectual, com.imeetake.effectual.mixin, com.imeetake.effectual.effects.AirTrail, com.imeetake.effectual.effects.PlayerRunEffect, com.imeetake.effectual.effects.StripEffect, com.imeetake.effectual.effects.SoulGlow, com.imeetake.effectual.effects.SteamEffect, com.imeetake.effectual.effects.FireEntitySparks, com.imeetake.effectual.effects.WaterDrip, com.imeetake.effectual.effects.CaveDust, com.imeetake.effectual.effects.MetalSparks, com.imeetake.effectual.effects.SparksSoul, com.imeetake.effectual.effects.Bubbles, com.imeetake.effectual.effects.Sparks, com.imeetake.effectual.effects.MouthSteam, com.imeetake.effectual.effects.WitherDecay, com.imeetake.effectual.effects.GoldGlow, com.imeetake.effectual.effects.PlayerRunEffect.DustParticles
+[Architectury Transformer DEBUG] Temporary jar [/var/folders/b_/cxn8yk8s5pl079xlzj6txdjm0000gn/T/15066958035223735163.jar] contains packages: com.imeetake.effectual.effects.CauldronFill, com.imeetake.effectual, com.imeetake.effectual.mixin, com.imeetake.effectual.effects.AirTrail, com.imeetake.effectual.effects.PlayerRunEffect, com.imeetake.effectual.effects.StripEffect, com.imeetake.effectual.effects.SoulGlow, com.imeetake.effectual.effects.SteamEffect, com.imeetake.effectual.effects.FireEntitySparks, com.imeetake.effectual.effects.WaterDrip, com.imeetake.effectual.effects.CaveDust, com.imeetake.effectual.effects.MetalSparks, com.imeetake.effectual.effects.SparksSoul, com.imeetake.effectual.effects.Bubbles, com.imeetake.effectual.effects.Sparks, com.imeetake.effectual.effects.MouthSteam, com.imeetake.effectual.effects.WitherDecay, com.imeetake.effectual.effects.GoldGlow, com.imeetake.effectual.effects.PlayerRunEffect.DustParticles
 [Architectury Transformer DEBUG] Closed File Systems for /Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/common/build/devlibs/effectual-common-1.3.0-1.21.8-dev.jar
 [Architectury Transformer DEBUG] Classpath entry [/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/fabric/build/classes/java/main] contains packages: com.imeetake.effectual.fabric, com.imeetake.effectual.fabric.client
 [Architectury Transformer DEBUG] Classpath entry [/Users/arseniyradaev/Documents/IdeaProjects/Effectual/Effectual 1.21.8/fabric/build/resources/main] contains packages: 
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/Effectual.class to com/imeetake/effectual/Effectual.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/Effectual with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/Effectual in 1.544 ms
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/Effectual in 757.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/EffectualConfig.class to com/imeetake/effectual/EffectualConfig.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/EffectualConfig with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualConfig in 446.2 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualConfig in 530.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/EffectualClient.class to com/imeetake/effectual/EffectualClient.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/EffectualClient with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualClient in 240.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectualClient in 394.7 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/EffectRegistry.class to com/imeetake/effectual/EffectRegistry.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/EffectRegistry with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectRegistry in 244.2 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/EffectRegistry in 154.9 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect.class to com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect in 758.5 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleBreathEffect in 723.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Bubbles/BubbleChestEffect.class to com/imeetake/effectual/effects/Bubbles/BubbleChestEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Bubbles/BubbleChestEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleChestEffect in 526.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubbleChestEffect in 450.4 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Bubbles/BubblePotsEffect.class to com/imeetake/effectual/effects/Bubbles/BubblePotsEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Bubbles/BubblePotsEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubblePotsEffect in 259.9 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Bubbles/BubblePotsEffect in 373.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect.class to com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect in 692.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect in 841.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/CaveDust/CaveDustEffect.class to com/imeetake/effectual/effects/CaveDust/CaveDustEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/CaveDust/CaveDustEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CaveDust/CaveDustEffect in 720.2 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CaveDust/CaveDustEffect in 705.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect.class to com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect in 400.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/PlayerRunEffect in 551.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SteamEffect/SteamEffect.class to com/imeetake/effectual/effects/SteamEffect/SteamEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SteamEffect/SteamEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SteamEffect/SteamEffect in 356.5 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SteamEffect/SteamEffect in 584.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/StripEffect/StripEffect.class to com/imeetake/effectual/effects/StripEffect/StripEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/StripEffect/StripEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/StripEffect/StripEffect in 445.4 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/StripEffect/StripEffect in 594.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect.class to com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect in 320.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WitherDecay/WitherDecayEffect in 366.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect.class to com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect in 338.5 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamEffect in 390.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WaterDrip/WaterDripEffect.class to com/imeetake/effectual/effects/WaterDrip/WaterDripEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripEffect in 289.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripEffect in 334.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/AirTrail/AirTrailEffect.class to com/imeetake/effectual/effects/AirTrail/AirTrailEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/AirTrail/AirTrailEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailEffect in 313.1 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailEffect in 323.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect.class to com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect in 253.5 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/TorchGlowEffect in 364.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect.class to com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect in 221.3 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/LanternGlowEffect in 282.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect.class to com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect in 311.7 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulTorchGlowEffect in 312.7 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect.class to com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect in 307.3 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulLanternGlowEffect in 250.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect.class to com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect in 295.7 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FurnaceSparksEffect in 310.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Sparks/FireImprovements.class to com/imeetake/effectual/effects/Sparks/FireImprovements.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Sparks/FireImprovements with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FireImprovements in 374.2 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/FireImprovements in 369.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MetalSparks/SparksCartEffect.class to com/imeetake/effectual/effects/MetalSparks/SparksCartEffect.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MetalSparks/SparksCartEffect with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/SparksCartEffect in 335.1 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/SparksCartEffect in 277.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements.class to com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements in 336.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulFireImprovements in 288.9 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles.class to com/imeetake/effectual/ModParticles.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles in 539.9 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles in 405.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$8.class to com/imeetake/effectual/ModParticles$8.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$8 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$8 in 146.2 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$8 in 116.2 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$9.class to com/imeetake/effectual/ModParticles$9.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$9 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$9 in 106.1 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$9 in 89.63 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$7.class to com/imeetake/effectual/ModParticles$7.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$7 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$7 in 98.21 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$7 in 251.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$6.class to com/imeetake/effectual/ModParticles$6.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$6 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$6 in 104.4 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$6 in 180.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$5.class to com/imeetake/effectual/ModParticles$5.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$5 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$5 in 99.00 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$5 in 128.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$4.class to com/imeetake/effectual/ModParticles$4.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$4 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$4 in 103.0 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$4 in 138.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$3.class to com/imeetake/effectual/ModParticles$3.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$3 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$3 in 95.58 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$3 in 96.92 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$1.class to com/imeetake/effectual/ModParticles$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$1 in 102.3 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$1 in 96.33 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/ModParticles$2.class to com/imeetake/effectual/ModParticles$2.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/ModParticles$2 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$2 in 106.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/ModParticles$2 in 94.92 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle.class to com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle in 745.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SparksSoul/SoulSparkParticle in 802.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Sparks/SparkParticle.class to com/imeetake/effectual/effects/Sparks/SparkParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Sparks/SparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/SparkParticle in 446.9 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/SparkParticle in 885.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle.class to com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle in 497.9 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/SoulGlow/SoulGlowParticle in 589.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle.class to com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle in 651.3 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/GoldGlow/GoldGlowParticle in 514.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/AirTrail/AirTrailParticle.class to com/imeetake/effectual/effects/AirTrail/AirTrailParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/AirTrail/AirTrailParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailParticle in 312.2 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/AirTrail/AirTrailParticle in 369.6 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory in 370.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle$Factory in 364.2 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle in 113.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SandDustParticle in 355.7 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle in 240.9 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/RunDustParticle in 418.4 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory in 164.3 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle$Factory in 272.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle in 102.0 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/RedSandDustParticle in 168.8 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory in 169.5 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle$Factory in 238.4 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle in 92.25 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/SnowDustParticle in 121.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory in 172.3 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle$Factory in 137.2 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle in 88.63 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/GravelDustParticle in 101.9 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory in 136.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle$Factory in 183.4 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle.class to com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle in 113.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/PlayerRunEffect/DustParticles/MudDustParticle in 109.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory.class to com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory in 161.7 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticleFactory in 223.5 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle.class to com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle in 195.3 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MouthSteam/MouthSteamParticle in 254.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory.class to com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory in 168.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticleFactory in 170.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/WaterDrip/WaterDripParticle.class to com/imeetake/effectual/effects/WaterDrip/WaterDripParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/WaterDrip/WaterDripParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticle in 211.8 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/WaterDrip/WaterDripParticle in 467.0 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory.class to com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory in 147.9 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle$Factory in 347.9 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle.class to com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle in 175.1 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/MetalSparks/MetalSparkParticle in 277.3 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory.class to com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory in 148.6 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle$Factory in 248.7 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle.class to com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle in 239.7 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/FireEntitySparks/EntitySparkParticle in 247.9 μs
 [Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind.class to com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind in 767.6 μs
-[Architectury Transformer DEBUG] Transforming from com/imeetake/effectual/effects/Sparks/CampfireImprovements.class to com/imeetake/effectual/effects/Sparks/CampfireImprovements.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing com/imeetake/effectual/effects/Sparks/CampfireImprovements with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/Sparks/CampfireImprovements in 639.5 μs
+[Architectury Transformer DEBUG] Transformed com/imeetake/effectual/effects/CauldronFill/CauldronFillEffect$Kind in 603.5 μs

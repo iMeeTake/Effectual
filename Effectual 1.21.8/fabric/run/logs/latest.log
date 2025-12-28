@@ -1,5 +1,5 @@
-[23:09:35] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.8 with Fabric Loader 0.18.3
-[23:09:35] [main/INFO] (FabricLoader) Loading 56 mods:
+[01:18:34] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.8 with Fabric Loader 0.18.3
+[01:18:34] [main/INFO] (FabricLoader) Loading 56 mods:
 	- architectury 17.0.8
 	- cloth-basic-math 0.6.1
 	- cloth-config 19.0.147
@@ -50,172 +50,158 @@
 	- fabric-transfer-api-v1 6.0.6+946bf4c32c
 	- fabric-transitive-access-wideners-v1 6.5.0+c847ce762c
 	- fabricloader 0.18.3
-	- generated_5f2ad69 1.0.0
+	- generated_1c033a2 1.0.0
 	- java 23
 	- minecraft 1.21.8
 	- mixinextras 0.5.0
 	- modmenu 15.0.0
 	- tlib 1.4.1-1.21.8
-[23:09:35] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/arseniyradaev/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[23:09:35] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[23:09:35] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[23:09:35] [main/WARN] (FabricLoader/Mixin) Reference map 'tlib-common-common-refmap.json' for tlib.mixins.json could not be read. If this is a development environment you can ignore this message
-[23:09:36] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[23:09:36] [Datafixer Bootstrap/INFO] (Minecraft) 269 Datafixer optimizations took 324 milliseconds
-[23:09:40] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[23:09:40] [Render thread/INFO] (Minecraft) Setting user: Player947
-[23:09:41] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[23:09:41] [Render thread/INFO] (Mod Menu/Update Checker) Checking mod updates...
-[23:09:41] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id architectury:spawn_entity_packet
-[23:09:41] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[23:09:42] [Render thread/INFO] (Minecraft) Using optional rendering extensions: 
-[23:09:43] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, cloth-config, effectual, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, generated_5f2ad69, modmenu, tlib
-[23:09:43] [Worker-Main-8/INFO] (Minecraft) Found unifont_jp_patch-16.0.03.hex, loading
-[23:09:43] [Worker-Main-5/INFO] (Minecraft) Found unifont_pua-16.0.03.hex, loading
-[23:09:43] [Worker-Main-7/INFO] (Minecraft) Found unifont_all_no_pua-16.0.03.hex, loading
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_item_entity_translucent_cull and FS minecraft:core/rendertype_item_entity_translucent_cull. Log output: WARNING: Output of vertex shader 'texCoord1' not read by fragment shader
-WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_translucent_moving_block and FS minecraft:core/rendertype_translucent_moving_block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_text_see_through and FS minecraft:core/rendertype_text_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_text_intensity_see_through and FS minecraft:core/rendertype_text_intensity_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_entity_shadow and FS minecraft:core/rendertype_entity_shadow. Log output: WARNING: Could not find vertex shader attribute 'UV1' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_crumbling and FS minecraft:core/rendertype_crumbling. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_text_background_see_through and FS minecraft:core/rendertype_text_background_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_entity_alpha and FS minecraft:core/rendertype_entity_alpha. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[01:18:34] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/arseniyradaev/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[01:18:34] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[01:18:34] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[01:18:34] [main/WARN] (FabricLoader/Mixin) Reference map 'tlib-common-common-refmap.json' for tlib.mixins.json could not be read. If this is a development environment you can ignore this message
+[01:18:35] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[01:18:36] [Datafixer Bootstrap/INFO] (Minecraft) 269 Datafixer optimizations took 199 milliseconds
+[01:18:39] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[01:18:39] [Render thread/INFO] (Minecraft) Setting user: Player332
+[01:18:40] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[01:18:40] [Render thread/INFO] (Mod Menu/Update Checker) Checking mod updates...
+[01:18:40] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id architectury:spawn_entity_packet
+[01:18:40] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[01:18:40] [ModMenu/Update Checker/Fabric Loader/INFO] (Mod Menu/Update Checker) Update available for 'fabricloader@0.18.3'
+[01:18:41] [Render thread/INFO] (Minecraft) Using optional rendering extensions: 
+[01:18:42] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, cloth-config, effectual, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, generated_1c033a2, modmenu, tlib
+[01:18:42] [Worker-Main-6/INFO] (Minecraft) Found unifont_pua-16.0.03.hex, loading
+[01:18:42] [Worker-Main-9/INFO] (Minecraft) Found unifont_all_no_pua-16.0.03.hex, loading
+[01:18:42] [Worker-Main-4/INFO] (Minecraft) Found unifont_jp_patch-16.0.03.hex, loading
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_entity_alpha and FS minecraft:core/rendertype_entity_alpha. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 WARNING: Output of vertex shader 'texCoord1' not read by fragment shader
 WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
 
-[23:09:45] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_crumbling and FS minecraft:core/rendertype_crumbling. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_translucent_moving_block and FS minecraft:core/rendertype_translucent_moving_block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_text_intensity_see_through and FS minecraft:core/rendertype_text_intensity_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
 
-[23:09:46] [Render thread/INFO] (Minecraft) OpenAL initialized on device soundcore P40i
-[23:09:46] [Render thread/INFO] (Minecraft) Sound engine started
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[23:09:46] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[23:09:59] [Render thread/INFO] (Minecraft) Loaded 1407 recipes
-[23:09:59] [Render thread/INFO] (Minecraft) Loaded 1520 advancements
-[23:10:01] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 65 new biomes in 1.139 ms
-[23:10:01] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.8
-[23:10:01] [Server thread/INFO] (Minecraft) Generating keypair
-[23:10:04] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[23:10:04] [Render thread/INFO] (Minecraft) Preparing spawn area: 2%
-[23:10:04] [Render thread/INFO] (Minecraft) Preparing spawn area: 2%
-[23:10:05] [Render thread/INFO] (Minecraft) Preparing spawn area: 2%
-[23:10:05] [Render thread/INFO] (Minecraft) Preparing spawn area: 18%
-[23:10:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 51%
-[23:10:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 51%
-[23:10:07] [Render thread/INFO] (Minecraft) Preparing spawn area: 51%
-[23:10:07] [Server thread/WARN] (TranslationConventionLogWarnings) 
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_text_background_see_through and FS minecraft:core/rendertype_text_background_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_text_see_through and FS minecraft:core/rendertype_text_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_entity_shadow and FS minecraft:core/rendertype_entity_shadow. Log output: WARNING: Could not find vertex shader attribute 'UV1' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[01:18:43] [Render thread/INFO] (Minecraft) Info log when linking program containing VS minecraft:core/rendertype_item_entity_translucent_cull and FS minecraft:core/rendertype_item_entity_translucent_cull. Log output: WARNING: Output of vertex shader 'texCoord1' not read by fragment shader
+WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
+
+[01:18:43] [Render thread/INFO] (Minecraft) OpenAL initialized on device soundcore P40i
+[01:18:43] [Render thread/INFO] (Minecraft) Sound engine started
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[01:18:43] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[01:18:48] [Render thread/WARN] (Minecraft) Missing data pack generated_be33ae9
+[01:18:48] [Render thread/INFO] (Minecraft) Found new data pack generated_1c033a2, loading it automatically
+[01:18:48] [Render thread/INFO] (Minecraft) Loaded 1407 recipes
+[01:18:48] [Render thread/INFO] (Minecraft) Loaded 1520 advancements
+[01:18:48] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 65 new biomes in 901.1 μs
+[01:18:48] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.8
+[01:18:48] [Server thread/INFO] (Minecraft) Generating keypair
+[01:18:49] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[01:18:50] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[01:18:50] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[01:18:50] [Render thread/INFO] (Minecraft) Time elapsed: 934 ms
+[01:18:50] [Server thread/WARN] (TranslationConventionLogWarnings) 
 	Dev warning - Untranslated Item Tags detected. Please translate your item tags so other mods such as recipe viewers can properly display your tag's name.
 	The format desired is tag.item.<namespace>.<path> for the translation key with slashes in path turned into periods.
 	To disable this message, set this system property in your runs: `-Dfabric-tag-conventions-v2.missingTagTranslationWarning=SILENCED`.
 	To see individual untranslated item tags found, set the system property to `-Dfabric-tag-conventions-v2.missingTagTranslationWarning=VERBOSE`.
 	Default is `SHORT`.
 
-[23:10:07] [Render thread/INFO] (Minecraft) Time elapsed: 3063 ms
-[23:10:07] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[23:10:07] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[23:10:07] [Server thread/INFO] (Minecraft) Player947[local:E:b7351008] logged in with entity id 11 at (22.5, 118.0, 0.5)
-[23:10:07] [Server thread/INFO] (Minecraft) Player947 joined the game
-[23:10:07] [Render thread/INFO] (Minecraft) Loaded 2 advancements
-[23:10:08] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
-[23:10:08] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
-[23:10:08] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[23:10:08] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
-[23:10:08] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
-[23:10:08] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
-[23:10:10] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
-[23:10:13] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
-[23:10:21] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
-[23:10:53] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 1024 reached during a single frame. New capacity will be 2048.
-[23:11:07] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[23:11:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[23:11:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[23:11:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[23:11:11] [Server thread/INFO] (Minecraft) Player947 has reached the goal [Sky's the Limit]
-[23:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Player947 has reached the goal [Sky's the Limit]
-[23:11:11] [Render thread/INFO] (Minecraft) Loaded 7 advancements
-[23:11:14] [Server thread/INFO] (Minecraft) [Player947: Set own game mode to Survival Mode]
-[23:11:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
-[23:11:16] [Server thread/INFO] (Minecraft) [Player947: Set own game mode to Creative Mode]
-[23:11:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
-[23:12:16] [Worker-Main-8/ERROR] (Minecraft) Detected setBlock in a far chunk [50, 10], pos: BlockPos{x=814, y=31, z=167}, status: minecraft:features, currently generating: ResourceKey[minecraft:worldgen/placed_feature / minecraft:large_dripstone]
-[23:12:16] [Worker-Main-8/ERROR] (Minecraft) Detected setBlock in a far chunk [50, 10], pos: BlockPos{x=814, y=31, z=168}, status: minecraft:features, currently generating: ResourceKey[minecraft:worldgen/placed_feature / minecraft:large_dripstone]
-[23:12:16] [Worker-Main-8/ERROR] (Minecraft) Detected setBlock in a far chunk [50, 10], pos: BlockPos{x=815, y=31, z=166}, status: minecraft:features, currently generating: ResourceKey[minecraft:worldgen/placed_feature / minecraft:large_dripstone]
-[23:12:16] [Worker-Main-8/ERROR] (Minecraft) Detected setBlock in a far chunk [50, 10], pos: BlockPos{x=815, y=31, z=168}, status: minecraft:features, currently generating: ResourceKey[minecraft:worldgen/placed_feature / minecraft:large_dripstone]
-[23:13:01] [Render thread/INFO] (Minecraft) Loaded 18 advancements
-[23:14:03] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[23:14:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[23:14:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[23:14:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[23:14:04] [Server thread/INFO] (Minecraft) Player947 lost connection: Disconnected
-[23:14:04] [Server thread/INFO] (Minecraft) Player947 left the game
-[23:14:04] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[23:14:04] [Server thread/INFO] (Minecraft) Stopping server
-[23:14:04] [Server thread/INFO] (Minecraft) Saving players
-[23:14:04] [Server thread/INFO] (Minecraft) Saving worlds
-[23:14:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[23:14:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[23:14:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[23:14:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[23:14:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:14:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:14:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[23:14:05] [Render thread/INFO] (Minecraft) Stopping!
+[01:18:50] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[01:18:50] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[01:18:50] [Server thread/INFO] (Minecraft) Player332[local:E:fb38e45e] logged in with entity id 6 at (857.6584433385648, 87.12373024321091, -127.43004989997281)
+[01:18:50] [Server thread/INFO] (Minecraft) Player332 joined the game
+[01:18:50] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[01:18:50] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[01:18:51] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[01:18:51] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[01:18:51] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[01:18:51] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[01:18:51] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[01:18:51] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[01:18:51] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[01:18:52] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[01:18:59] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 1024 reached during a single frame. New capacity will be 2048.
+[01:19:18] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[01:19:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[01:19:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[01:19:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[01:19:26] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[01:19:26] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[01:19:26] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[01:19:26] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[01:19:27] [Server thread/INFO] (Minecraft) Player332 lost connection: Disconnected
+[01:19:27] [Server thread/INFO] (Minecraft) Player332 left the game
+[01:19:27] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[01:19:27] [Server thread/INFO] (Minecraft) Stopping server
+[01:19:27] [Server thread/INFO] (Minecraft) Saving players
+[01:19:27] [Server thread/INFO] (Minecraft) Saving worlds
+[01:19:27] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[01:19:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[01:19:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[01:19:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[01:19:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:19:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:19:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[01:19:28] [Render thread/INFO] (Minecraft) Stopping!
