@@ -1,3 +1,0 @@
-v1	named	intermediary
-FIELD	com/imeetake/effectual/mixin/EntityMixin	Lnet/minecraft/world/level/Level;	level	field_6002
-METHOD	com/imeetake/effectual/mixin/EntityMixin	()Z	isOnFire	method_5809
