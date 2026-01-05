@@ -81,6 +81,9 @@ public class EffectualConfig implements ConfigData {
     public boolean runDust = true;
 
     @ConfigEntry.Gui.Tooltip
+    public boolean snowFootprints = false;
+
+    @ConfigEntry.Gui.Tooltip
     public boolean airTrail = true;
 
     @ConfigEntry.Gui.Tooltip

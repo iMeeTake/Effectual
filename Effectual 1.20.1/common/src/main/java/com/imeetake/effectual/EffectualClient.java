@@ -4,6 +4,7 @@ import com.imeetake.effectual.effects.AirTrail.AirTrailParticle;
 import com.imeetake.effectual.effects.GoldGlow.GoldGlowParticle;
 import com.imeetake.effectual.effects.MouthSteam.MouthSteamParticleFactory;
 import com.imeetake.effectual.effects.PlayerRunEffect.DustParticles.*;
+import com.imeetake.effectual.effects.SnowFootprints.SnowFootprintParticle;
 import com.imeetake.effectual.effects.SoulGlow.SoulGlowParticle;
 import com.imeetake.effectual.effects.FireEntitySparks.EntitySparkParticle;
 import com.imeetake.effectual.effects.MetalSparks.MetalSparkParticle;
@@ -47,6 +48,10 @@ public class EffectualClient {
         TParticles.registerOriented(
                 ModParticles.SOUL_SPARK,
                 SoulSparkParticle::new
+        );
+        TParticles.registerOriented(
+                ModParticles.SNOW_FOOTPRINT,
+                SnowFootprintParticle::new
         );
     }
 }

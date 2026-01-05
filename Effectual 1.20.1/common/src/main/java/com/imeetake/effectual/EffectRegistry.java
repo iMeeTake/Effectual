@@ -11,6 +11,7 @@ import com.imeetake.effectual.effects.GoldGlow.TorchGlowEffect;
 import com.imeetake.effectual.effects.MetalSparks.SparksCartEffect;
 import com.imeetake.effectual.effects.MouthSteam.MouthSteamEffect;
 import com.imeetake.effectual.effects.PlayerRunEffect.PlayerRunEffect;
+import com.imeetake.effectual.effects.SnowFootprints.SnowFootprintEffect;
 import com.imeetake.effectual.effects.SoulGlow.SoulLanternGlowEffect;
 import com.imeetake.effectual.effects.SoulGlow.SoulTorchGlowEffect;
 import com.imeetake.effectual.effects.Sparks.*;
@@ -43,5 +44,6 @@ public class EffectRegistry {
         FireImprovements.register();
         SparksCartEffect.register();
         SoulFireImprovements.register();
+        SnowFootprintEffect.register();
     }
 }

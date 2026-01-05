@@ -51,6 +51,8 @@ public class ModParticles {
             TParticles.simple(PARTICLE_TYPES, "spark");
     public static final RegistrySupplier<SimpleParticleType> SOUL_SPARK =
             TParticles.simple(PARTICLE_TYPES, "soul_spark");
+    public static final RegistrySupplier<SimpleParticleType> SNOW_FOOTPRINT =
+            TParticles.simple(PARTICLE_TYPES, "snow_footprint");
 
 
     public static void register() {

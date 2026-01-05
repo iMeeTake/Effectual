@@ -70,5 +70,8 @@
     "text.autoconfig.effectual.option.witherDecay": "Wither Decay",
     "text.autoconfig.effectual.option.witherDecay.@Tooltip": "Adds black smoke while Wither effect is active (only visible on yourself).",
 
+    "text.autoconfig.effectual.option.snowFootprints": "[WIP] Snow Footprints",
+    "text.autoconfig.effectual.option.snowFootprints.@Tooltip": "Leaves footprints when walking on snow. Work in progress - coming soon in a future update.",
+
     "modmenu.descriptionTranslation.effectual": "Atmospheric effects and decorative particles."
 }

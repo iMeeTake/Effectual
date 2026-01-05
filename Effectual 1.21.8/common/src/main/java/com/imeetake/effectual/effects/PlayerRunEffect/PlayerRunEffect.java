@@ -52,7 +52,7 @@ public class PlayerRunEffect {
         double vz = -velocity.z * speedFactor;
 
         if (atFeet.is(Blocks.SNOW) && atFeet.hasProperty(BlockStateProperties.LAYERS)) {
-            spawnParticle(client, ModParticles.SNOW_DUST.get(), player, vx, vz, 0.1);
+            spawnParticle(client, ModParticles.SNOW_DUST.get(), player, vx, vz, 0.25);
             return;
         }
         if (atFeet.is(Blocks.MUD) || atFeet.is(Blocks.MUDDY_MANGROVE_ROOTS)) {
