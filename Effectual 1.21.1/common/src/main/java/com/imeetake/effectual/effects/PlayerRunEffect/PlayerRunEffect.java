@@ -1,8 +1,9 @@
 package com.imeetake.effectual.effects.PlayerRunEffect;
 
 import com.imeetake.effectual.EffectualConfig;
+import com.imeetake.effectual.EffectualClientParticles;
 import com.imeetake.effectual.ModParticles;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import dev.architectury.registry.registries.RegistrySupplier;
 import dev.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -52,29 +53,29 @@ public class PlayerRunEffect {
         double vz = -velocity.z * speedFactor;
 
         if (atFeet.is(Blocks.SNOW) && atFeet.hasProperty(BlockStateProperties.LAYERS)) {
-            spawnParticle(client, ModParticles.SNOW_DUST.get(), player, vx, vz, 0.25);
+            spawnParticle(client, ModParticles.SNOW_DUST, player, vx, vz, 0.25);
             return;
         }
         if (atFeet.is(Blocks.MUD) || atFeet.is(Blocks.MUDDY_MANGROVE_ROOTS)) {
-            spawnParticle(client, ModParticles.MUD_DUST.get(), player, vx, vz, 0.5);
+            spawnParticle(client, ModParticles.MUD_DUST, player, vx, vz, 0.5);
             return;
         }
 
         Block block = below.getBlock();
         if (block == Blocks.SAND || block == Blocks.SUSPICIOUS_SAND) {
-            spawnParticle(client, ModParticles.SAND_DUST.get(), player, vx, vz, 0.1);
+            spawnParticle(client, ModParticles.SAND_DUST, player, vx, vz, 0.1);
         } else if (block == Blocks.RED_SAND) {
-            spawnParticle(client, ModParticles.RED_SAND_DUST.get(), player, vx, vz, 0.1);
+            spawnParticle(client, ModParticles.RED_SAND_DUST, player, vx, vz, 0.1);
         } else if (block == Blocks.SNOW || block == Blocks.SNOW_BLOCK || block == Blocks.POWDER_SNOW) {
-            spawnParticle(client, ModParticles.SNOW_DUST.get(), player, vx, vz, 0.1);
+            spawnParticle(client, ModParticles.SNOW_DUST, player, vx, vz, 0.1);
         } else if (block == Blocks.GRAVEL || block == Blocks.SUSPICIOUS_GRAVEL) {
-            spawnParticle(client, ModParticles.GRAVEL_DUST.get(), player, vx, vz, 0.1);
+            spawnParticle(client, ModParticles.GRAVEL_DUST, player, vx, vz, 0.1);
         } else if (block == Blocks.MUD || block == Blocks.PACKED_MUD || block == Blocks.MUDDY_MANGROVE_ROOTS) {
-            spawnParticle(client, ModParticles.MUD_DUST.get(), player, vx, vz, 0.1);
+            spawnParticle(client, ModParticles.MUD_DUST, player, vx, vz, 0.1);
         }
     }
 
-    private static void spawnParticle(Minecraft client, SimpleParticleType type, Player player, double vx, double vz, double yOffset) {
+    private static void spawnParticle(Minecraft client, RegistrySupplier<SimpleParticleType> type, Player player, double vx, double vz, double yOffset) {
         RandomSource rand = client.level.random;
 
         double x = player.getX() + (rand.nextDouble() - 0.5) * 0.6;
@@ -84,7 +85,7 @@ public class PlayerRunEffect {
         double noisyVx = vx + (rand.nextDouble() - 0.5) * 0.15;
         double noisyVz = vz + (rand.nextDouble() - 0.5) * 0.15;
 
-        TClientParticles.spawn(
+        EffectualClientParticles.spawn(
                 type,
                 x, y, z,
                 noisyVx, 0, noisyVz);

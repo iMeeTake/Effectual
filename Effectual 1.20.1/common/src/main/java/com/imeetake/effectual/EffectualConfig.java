@@ -9,6 +9,7 @@ import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 @Config(name = "effectual")
 public class EffectualConfig implements ConfigData {
 
+    @ConfigEntry.Gui.Excluded
     private static EffectualConfig INSTANCE;
 
     public static void init() {
@@ -81,7 +82,10 @@ public class EffectualConfig implements ConfigData {
     public boolean runDust = true;
 
     @ConfigEntry.Gui.Tooltip
-    public boolean snowFootprints = false;
+    public boolean snowFootprints = true;
+
+    @ConfigEntry.Gui.Tooltip
+    public boolean snowResidue = true;
 
     @ConfigEntry.Gui.Tooltip
     public boolean airTrail = true;

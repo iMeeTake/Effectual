@@ -2,7 +2,7 @@ package com.imeetake.effectual.effects.PlayerRunEffect;
 
 import com.imeetake.effectual.EffectualConfig;
 import com.imeetake.effectual.ModParticles;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -84,7 +84,7 @@ public class PlayerRunEffect {
         double noisyVx = vx + (rand.nextDouble() - 0.5) * 0.15;
         double noisyVz = vz + (rand.nextDouble() - 0.5) * 0.15;
 
-        TClientParticles.spawn(
+        EffectualClientParticles.spawn(
                 type,
                 x, y, z,
                 noisyVx, 0, noisyVz);

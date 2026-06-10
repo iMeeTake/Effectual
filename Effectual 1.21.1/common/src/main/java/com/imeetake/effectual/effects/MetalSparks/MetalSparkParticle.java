@@ -1,13 +1,8 @@
 package com.imeetake.effectual.effects.MetalSparks;
 
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.particle.ParticleRenderType;
-import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.client.particle.TextureSheetParticle;
-import net.minecraft.core.particles.SimpleParticleType;
-import org.jetbrains.annotations.Nullable;
 
 public class MetalSparkParticle extends TextureSheetParticle {
 
@@ -86,21 +81,5 @@ public class MetalSparkParticle extends TextureSheetParticle {
     @Override
     public ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
-    }
-
-    public static class Factory implements ParticleProvider<SimpleParticleType> {
-        private final SpriteSet spriteSet;
-
-        public Factory(SpriteSet spriteSet) {
-            this.spriteSet = spriteSet;
-        }
-
-        @Nullable
-        @Override
-        public Particle createParticle(SimpleParticleType type, ClientLevel level, double x, double y, double z, double dx, double dy, double dz) {
-            MetalSparkParticle particle = new MetalSparkParticle(level, x, y, z, dx, dy, dz);
-            particle.pickSprite(this.spriteSet);
-            return particle;
-        }
     }
 }

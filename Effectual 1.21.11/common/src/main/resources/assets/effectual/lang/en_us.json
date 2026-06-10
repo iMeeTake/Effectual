@@ -64,6 +64,12 @@
     "text.autoconfig.effectual.option.metalHitSparks": "Sparks When Hitting Metal",
     "text.autoconfig.effectual.option.metalHitSparks.@Tooltip": "When hitting a metal block with a metal weapon or tool, sparks appear.",
 
+    "text.autoconfig.effectual.option.snowFootprints": "Snow Footprints",
+    "text.autoconfig.effectual.option.snowFootprints.@Tooltip": "Leaves visible footprints when walking on snow.",
+
+    "text.autoconfig.effectual.option.snowResidue": "Snow Residue",
+    "text.autoconfig.effectual.option.snowResidue.@Tooltip": "Leaves small snow patches on the ground after walking off snow.",
+
     "text.autoconfig.effectual.option.airTrail": "Elytra Air Trail",
     "text.autoconfig.effectual.option.airTrail.@Tooltip": "Leaves a subtle trail while gliding with Elytra.",
 

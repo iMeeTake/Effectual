@@ -2,7 +2,7 @@ package com.imeetake.effectual.effects.AirTrail;
 
 import com.imeetake.effectual.EffectualConfig;
 import com.imeetake.effectual.ModParticles;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
@@ -64,7 +64,7 @@ public class AirTrailEffect {
         double noiseY = (RAND.nextDouble() - 0.5) * 0.02;
         double noiseZ = (RAND.nextDouble() - 0.5) * 0.03;
 
-        TClientParticles.spawn(
+        EffectualClientParticles.spawn(
                 ModParticles.AIR_TRAIL.get(),
                 pos.x, pos.y, pos.z,
                 baseVel.x + noiseX, baseVel.y + noiseY, baseVel.z + noiseZ

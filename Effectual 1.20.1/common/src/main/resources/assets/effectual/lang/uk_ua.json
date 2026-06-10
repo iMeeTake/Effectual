@@ -64,6 +64,12 @@
     "text.autoconfig.effectual.option.metalHitSparks": "Іскри при ударі металу",
     "text.autoconfig.effectual.option.metalHitSparks.@Tooltip": "При ударі металевою зброєю або інструментом по металевому блоку з’являються іскри.",
 
+    "text.autoconfig.effectual.option.snowFootprints": "Сліди на снігу",
+    "text.autoconfig.effectual.option.snowFootprints.@Tooltip": "Залишає видимі сліди при ходьбі по снігу.",
+
+    "text.autoconfig.effectual.option.snowResidue": "Залишки снігу",
+    "text.autoconfig.effectual.option.snowResidue.@Tooltip": "Залишає сліди снігу на землі після сходження зі снігової поверхні.",
+
     "text.autoconfig.effectual.option.airTrail": "Повітряний слід",
     "text.autoconfig.effectual.option.airTrail.@Tooltip": "Залишає легкий слід під час польоту з елітрою.",
 

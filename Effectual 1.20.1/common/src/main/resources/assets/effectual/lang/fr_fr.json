@@ -64,6 +64,12 @@
     "text.autoconfig.effectual.option.metalHitSparks": "Étincelles lors des coups sur le métal",
     "text.autoconfig.effectual.option.metalHitSparks.@Tooltip": "Lorsque vous frappez un bloc métallique avec une arme ou un outil en métal, des étincelles apparaissent.",
 
+    "text.autoconfig.effectual.option.snowFootprints": "Empreintes dans la neige",
+    "text.autoconfig.effectual.option.snowFootprints.@Tooltip": "Laisse des empreintes visibles en marchant sur la neige.",
+
+    "text.autoconfig.effectual.option.snowResidue": "Résidus de neige",
+    "text.autoconfig.effectual.option.snowResidue.@Tooltip": "Laisse de petites traces de neige au sol après avoir quitté une surface enneigée.",
+
     "text.autoconfig.effectual.option.airTrail": "Traînée d'air (Elytra)",
     "text.autoconfig.effectual.option.airTrail.@Tooltip": "Laisse une traînée légère lors du vol avec des Elytras.",
 

@@ -1,28 +1,48 @@
 package com.imeetake.effectual.effects.Bubbles;
 
 import com.imeetake.effectual.EffectualConfig;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
+import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
+import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
+import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.List;
 
 public class BubbleBreathEffect {
     private static final RandomSource RANDOM = RandomSource.create();
-    private static final Map<Integer, Integer> lastAirValues = new HashMap<>();
-    private static final Map<Integer, Integer> breathingTimers = new HashMap<>();
+    private static final Int2IntOpenHashMap lastAirValues = new Int2IntOpenHashMap();
+    private static final Int2IntOpenHashMap breathingTimers = new Int2IntOpenHashMap();
 
     private static int cleanupTimer = 0;
+    private static ClientLevel lastLevel = null;
+
+    static {
+        lastAirValues.defaultReturnValue(-1);
+        breathingTimers.defaultReturnValue(0);
+    }
 
     public static void register() {
         ClientTickEvent.CLIENT_POST.register(client -> {
-            if (!EffectualConfig.get().bubbleBreath || client.level == null || client.isPaused()) return;
+            if (client.level == null) {
+                lastAirValues.clear();
+                breathingTimers.clear();
+                lastLevel = null;
+                return;
+            }
+
+            if (lastLevel != client.level) {
+                lastAirValues.clear();
+                breathingTimers.clear();
+                lastLevel = client.level;
+            }
+
+            if (!EffectualConfig.get().bubbleBreath || client.isPaused()) return;
 
             if (++cleanupTimer >= 100) {
                 cleanupMap(client.level.players());
@@ -34,7 +54,8 @@ public class BubbleBreathEffect {
 
                 if (shouldPlayEffect(player)) {
                     int currentAir = player.getAirSupply();
-                    int previousAir = lastAirValues.getOrDefault(id, currentAir);
+                    int previousAir = lastAirValues.get(id);
+                    if (previousAir == -1) previousAir = currentAir;
                     lastAirValues.put(id, currentAir);
 
                     boolean airDecreased = currentAir < previousAir;
@@ -48,7 +69,7 @@ public class BubbleBreathEffect {
                     breathingTimers.remove(id);
                 }
 
-                int breatheTicks = breathingTimers.getOrDefault(id, 0);
+                int breatheTicks = breathingTimers.get(id);
                 if (breatheTicks > 0) {
                     processBreathTick(player);
                     breathingTimers.put(id, breatheTicks - 1);
@@ -57,11 +78,18 @@ public class BubbleBreathEffect {
         });
     }
 
-    private static void cleanupMap(java.util.List<? extends Player> activePlayers) {
-        Iterator<Integer> iterator = lastAirValues.keySet().iterator();
+    private static void cleanupMap(List<? extends Player> activePlayers) {
+        if (lastAirValues.isEmpty()) return;
+
+        IntOpenHashSet activeIds = new IntOpenHashSet(activePlayers.size());
+        for (Player player : activePlayers) {
+            activeIds.add(player.getId());
+        }
+
+        var iterator = lastAirValues.keySet().intIterator();
         while (iterator.hasNext()) {
-            Integer id = iterator.next();
-            if (activePlayers.stream().noneMatch(p -> p.getId() == id)) {
+            int id = iterator.nextInt();
+            if (!activeIds.contains(id)) {
                 iterator.remove();
                 breathingTimers.remove(id);
             }
@@ -98,7 +126,7 @@ public class BubbleBreathEffect {
             double velocityY = (lookY * 0.1) + (playerVel.y * 0.8) + 0.05;
             double velocityZ = (lookZ * 0.1) + (playerVel.z * 0.8);
 
-            TClientParticles.spawn(
+            EffectualClientParticles.spawn(
                     ParticleTypes.BUBBLE,
                     originX, originY, originZ,
                     velocityX, velocityY, velocityZ

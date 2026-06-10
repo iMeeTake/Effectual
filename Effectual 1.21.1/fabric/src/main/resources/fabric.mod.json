@@ -34,8 +34,9 @@
         "minecraft": "1.21.1",
         "java": ">=21",
         "architectury": ">=13.0.8",
-        "fabric-api": "*",
-        "tlib": "*"
+        "fabric-api": ">=0.116.7+1.21.1",
+        "cloth-config": ">=15.0.140",
+        "tlib": ">=1.5.0-1.21.1"
     },
     "custom": {
         "modmenu": {
@@ -46,6 +47,6 @@
         }
     },
     "suggests": {
-        "another-mod": "*"
+        "modmenu": ">=11.0.3"
     }
 }

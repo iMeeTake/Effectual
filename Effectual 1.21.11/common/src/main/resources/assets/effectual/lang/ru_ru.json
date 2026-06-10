@@ -64,6 +64,12 @@
     "text.autoconfig.effectual.option.minecartSparks": "Искры от вагонетки",
     "text.autoconfig.effectual.option.minecartSparks.@Tooltip": "Искры при движении вагонетки на высокой скорости.",
 
+    "text.autoconfig.effectual.option.snowFootprints": "Следы на снегу",
+    "text.autoconfig.effectual.option.snowFootprints.@Tooltip": "Оставляет видимые следы при ходьбе по снегу.",
+
+    "text.autoconfig.effectual.option.snowResidue": "Остатки снега",
+    "text.autoconfig.effectual.option.snowResidue.@Tooltip": "Оставляет следы снега на земле после схода со снежной поверхности.",
+
     "text.autoconfig.effectual.option.airTrail": "Воздушный шлейф",
     "text.autoconfig.effectual.option.airTrail.@Tooltip": "Оставляет лёгкий шлейф при полёте на элитрах.",
 

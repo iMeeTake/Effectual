@@ -31,9 +31,6 @@ repositories {
         name = "iMeeTake GitHub Maven"
         url = "https://raw.githubusercontent.com/iMeeTake/tlib-maven/main"
     }
-    flatDir {
-        dirs "${rootProject.projectDir}/libs"
-    }
 }
 
 dependencies {
@@ -46,7 +43,7 @@ dependencies {
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
     modApi "me.shedaniel.cloth:cloth-config-fabric:21.11.153"
     modApi "com.terraformersmc:modmenu:17.0.0-beta.1"
-    modImplementation "com.imeetake:tlib-fabric:1.4.1-1.21.11"
+    modImplementation "com.imeetake:tlib-fabric:1.5.0-1.21.11"
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 }

@@ -2,39 +2,84 @@ package com.imeetake.effectual.effects.WaterDrip;
 
 import com.imeetake.effectual.EffectualConfig;
 import com.imeetake.effectual.ModParticles;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
+import it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap;
+import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
 
-import java.util.Map;
-import java.util.WeakHashMap;
+import java.util.List;
 
 public class WaterDripEffect {
     private static final RandomSource RANDOM = RandomSource.create();
-    private static final Map<Player, Long> lastFullySubmergedTicks = new WeakHashMap<>();
+    private static final Int2LongOpenHashMap lastFullySubmergedTicks = new Int2LongOpenHashMap();
+
+    private static int cleanupTimer = 0;
+    private static ClientLevel lastLevel = null;
+
+    static {
+        lastFullySubmergedTicks.defaultReturnValue(-200L);
+    }
 
     public static void register() {
         ClientTickEvent.CLIENT_POST.register(client -> {
-            if (!EffectualConfig.get().waterDrip || client.level == null || client.isPaused()) return;
-            ClientLevel level = client.level;
-            for (Player player : level.players()) {
-                if (shouldPlayEffect(player)) spawnWaterDripParticles(player);
+            if (client.level == null) {
+                lastFullySubmergedTicks.clear();
+                lastLevel = null;
+                return;
+            }
+
+            if (lastLevel != client.level) {
+                lastFullySubmergedTicks.clear();
+                lastLevel = client.level;
+            }
+
+            if (!EffectualConfig.get().waterDrip || client.isPaused()) return;
+
+            if (++cleanupTimer >= 100) {
+                cleanupTimer = 0;
+                cleanupMap(client.level.players());
+            }
+
+            for (Player player : client.level.players()) {
+                if (shouldPlayEffect(player)) {
+                    spawnWaterDripParticles(player);
+                }
             }
         });
     }
 
+    private static void cleanupMap(List<? extends Player> activePlayers) {
+        if (lastFullySubmergedTicks.isEmpty()) return;
+
+        IntOpenHashSet activeIds = new IntOpenHashSet(activePlayers.size());
+        for (Player player : activePlayers) {
+            activeIds.add(player.getId());
+        }
+
+        var iterator = lastFullySubmergedTicks.keySet().intIterator();
+        while (iterator.hasNext()) {
+            int id = iterator.nextInt();
+            if (!activeIds.contains(id)) {
+                iterator.remove();
+            }
+        }
+    }
+
     private static boolean shouldPlayEffect(Player player) {
         if (player.isSpectator() || player.isCreative()) return false;
+
+        int id = player.getId();
         long time = player.level().getGameTime();
 
         if (player.isUnderWater()) {
-            lastFullySubmergedTicks.put(player, time);
+            lastFullySubmergedTicks.put(id, time);
             return false;
         }
 
-        long last = lastFullySubmergedTicks.getOrDefault(player, -200L);
+        long last = lastFullySubmergedTicks.get(id);
         if (time - last > 100) return false;
 
         if (player.isInWater()) return true;
@@ -61,7 +106,7 @@ public class WaterDripEffect {
             double y = player.getY() + ly;
             double z = player.getZ() + rz;
 
-            TClientParticles.spawn(ModParticles.WATER_DRIP.get(), x, y, z, 0, 0, 0);
+            EffectualClientParticles.spawn(ModParticles.WATER_DRIP.get(), x, y, z, player.getId(), lx, lz);
         }
     }
 }

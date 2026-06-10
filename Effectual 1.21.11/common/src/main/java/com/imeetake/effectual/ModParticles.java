@@ -1,6 +1,6 @@
 package com.imeetake.effectual;
 
-import com.imeetake.tlib.client.particle.TParticles;
+import com.imeetake.tlib.particle.TParticleTypes;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.particles.ParticleType;
@@ -12,46 +12,39 @@ public class ModParticles {
             DeferredRegister.create(Effectual.MOD_ID, Registries.PARTICLE_TYPE);
 
     public static final RegistrySupplier<SimpleParticleType> SAND_DUST =
-            PARTICLE_TYPES.register("sand_dust", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "sand_dust");
     public static final RegistrySupplier<SimpleParticleType> RED_SAND_DUST =
-            PARTICLE_TYPES.register("red_sand_dust", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "red_sand_dust");
     public static final RegistrySupplier<SimpleParticleType> SNOW_DUST =
-            PARTICLE_TYPES.register("snow_dust", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "snow_dust");
     public static final RegistrySupplier<SimpleParticleType> GRAVEL_DUST =
-            PARTICLE_TYPES.register("gravel_dust", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "gravel_dust");
     public static final RegistrySupplier<SimpleParticleType> MUD_DUST =
-            PARTICLE_TYPES.register("mud_dust", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "mud_dust");
 
     public static final RegistrySupplier<SimpleParticleType> MOUTH_STEAM =
-            PARTICLE_TYPES.register("mouth_steam", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "mouth_steam");
     public static final RegistrySupplier<SimpleParticleType> WATER_DRIP =
-            PARTICLE_TYPES.register("water_drip", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "water_drip");
     public static final RegistrySupplier<SimpleParticleType> METAL_SPARK =
-            PARTICLE_TYPES.register("metal_spark", () -> new SimpleParticleType(false) {
-            });
+            TParticleTypes.simple(PARTICLE_TYPES, "metal_spark");
     public static final RegistrySupplier<SimpleParticleType> ENTITY_SPARK =
-            PARTICLE_TYPES.register("entity_spark", () -> new SimpleParticleType(false) {
-            });
-
+            TParticleTypes.simple(PARTICLE_TYPES, "entity_spark");
 
     public static final RegistrySupplier<SimpleParticleType> AIR_TRAIL =
-            TParticles.simple(PARTICLE_TYPES, "air_trail");
+            TParticleTypes.simple(PARTICLE_TYPES, "air_trail");
     public static final RegistrySupplier<SimpleParticleType> GOLD_GLOW =
-            TParticles.simple(PARTICLE_TYPES, "gold_glow");
+            TParticleTypes.simple(PARTICLE_TYPES, "gold_glow");
     public static final RegistrySupplier<SimpleParticleType> SOUL_GLOW =
-            TParticles.simple(PARTICLE_TYPES, "soul_glow");
+            TParticleTypes.simple(PARTICLE_TYPES, "soul_glow");
     public static final RegistrySupplier<SimpleParticleType> SPARK =
-            TParticles.simple(PARTICLE_TYPES, "spark");
+            TParticleTypes.simple(PARTICLE_TYPES, "spark");
     public static final RegistrySupplier<SimpleParticleType> SOUL_SPARK =
-            TParticles.simple(PARTICLE_TYPES, "soul_spark");
-
+            TParticleTypes.simple(PARTICLE_TYPES, "soul_spark");
+    public static final RegistrySupplier<SimpleParticleType> SNOW_FOOTPRINT =
+            TParticleTypes.simple(PARTICLE_TYPES, "snow_footprint");
+    public static final RegistrySupplier<SimpleParticleType> SNOW_RESIDUE =
+            TParticleTypes.simple(PARTICLE_TYPES, "snow_residue");
 
     public static void register() {
         PARTICLE_TYPES.register();

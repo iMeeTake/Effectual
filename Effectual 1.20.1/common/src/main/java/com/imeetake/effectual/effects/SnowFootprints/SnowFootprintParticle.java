@@ -8,7 +8,6 @@ import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.Mth;
-import net.minecraft.world.phys.Vec3;
 
 public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType> {
     private final float rotation;
@@ -42,10 +41,7 @@ public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType>
 
     @Override
     public void tick() {
-        if (this.age++ >= this.lifetime) {
-            this.remove();
-            return;
-        }
+        this.age++;
 
         BlockPos below = BlockPos.containing(this.x, this.y - 0.1, this.z);
         if (this.level.getBlockState(below).isAir()) {
@@ -55,18 +51,18 @@ public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType>
 
         float life = (float) this.age / (float) this.lifetime;
         if (life > 0.4f) {
-            float fadeProgress = (life - 0.4f) / 0.6f;
+            float fadeProgress = Math.min((life - 0.4f) / 0.6f, 1.0f);
             this.alpha = 0.3f * (1.0f - fadeProgress);
+        }
 
-            if (this.alpha < 0.01f) {
-                this.remove();
-            }
+        if (this.alpha <= 0.01f) {
+            this.remove();
         }
     }
 
     @Override
     public void buildGeometry(VertexConsumer vc, Camera camera, float tickDelta) {
-        Vec3 cam = camera.getPosition();
+        var cam = camera.getPosition();
         double px = this.x - cam.x;
         double py = this.y - cam.y;
         double pz = this.z - cam.z;
@@ -76,23 +72,14 @@ public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType>
 
         float half = 0.5f;
 
-        float[][] local = {
-                {-half, -half},
-                {-half, half},
-                {half, half},
-                {half, -half}
-        };
-
-        Vec3[] verts = new Vec3[4];
-        for (int i = 0; i < 4; i++) {
-            float lx = mirrored ? -local[i][0] : local[i][0];
-            float lz = local[i][1];
-
-            float rx = lx * cos - lz * sin;
-            float rz = lx * sin + lz * cos;
-
-            verts[i] = new Vec3(px + rx, py, pz + rz);
-        }
+        double x0 = vertexX(-half, -half, cos, sin, px);
+        double z0 = vertexZ(-half, -half, cos, sin, pz);
+        double x1 = vertexX(-half, half, cos, sin, px);
+        double z1 = vertexZ(-half, half, cos, sin, pz);
+        double x2 = vertexX(half, half, cos, sin, px);
+        double z2 = vertexZ(half, half, cos, sin, pz);
+        double x3 = vertexX(half, -half, cos, sin, px);
+        double z3 = vertexZ(half, -half, cos, sin, pz);
 
         float u0 = this.sprite.getU0();
         float u1 = this.sprite.getU1();
@@ -107,14 +94,24 @@ public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType>
 
         int light = this.getLightColor(tickDelta);
 
-        vc.vertex(verts[0].x, verts[0].y, verts[0].z).uv(u0, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
-        vc.vertex(verts[1].x, verts[1].y, verts[1].z).uv(u0, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
-        vc.vertex(verts[2].x, verts[2].y, verts[2].z).uv(u1, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
-        vc.vertex(verts[3].x, verts[3].y, verts[3].z).uv(u1, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x0, py, z0).uv(u0, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x1, py, z1).uv(u0, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x2, py, z2).uv(u1, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x3, py, z3).uv(u1, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
 
-        vc.vertex(verts[3].x, verts[3].y, verts[3].z).uv(u1, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
-        vc.vertex(verts[2].x, verts[2].y, verts[2].z).uv(u1, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
-        vc.vertex(verts[1].x, verts[1].y, verts[1].z).uv(u0, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
-        vc.vertex(verts[0].x, verts[0].y, verts[0].z).uv(u0, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x3, py, z3).uv(u1, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x2, py, z2).uv(u1, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x1, py, z1).uv(u0, v0).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+        vc.vertex(x0, py, z0).uv(u0, v1).color(rCol, gCol, bCol, alpha).uv2(light).endVertex();
+    }
+
+    private double vertexX(float localX, float localZ, float cos, float sin, double px) {
+        float lx = mirrored ? -localX : localX;
+        return px + lx * cos - localZ * sin;
+    }
+
+    private double vertexZ(float localX, float localZ, float cos, float sin, double pz) {
+        float lx = mirrored ? -localX : localX;
+        return pz + lx * sin + localZ * cos;
     }
 }

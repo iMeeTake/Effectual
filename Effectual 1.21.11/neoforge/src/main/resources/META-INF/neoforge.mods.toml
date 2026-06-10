@@ -1,6 +1,5 @@
 modLoader = "javafml"
 loaderVersion = "[10,)"
-#issueTrackerURL = ""
 license = "MIT"
 
 [[mods]]
@@ -11,7 +10,7 @@ authors = "iMeeTake"
 description = '''
 Atmospheric effects and decorative particles.
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.effectual]]
 modId = "neoforge"
@@ -32,7 +31,21 @@ modId = "architectury"
 type = "required"
 versionRange = "[19.0.1,)"
 ordering = "AFTER"
-side = "BOTH"
+side = "CLIENT"
+
+[[dependencies.effectual]]
+modId = "cloth_config"
+type = "required"
+versionRange = "[21.11.153,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.effectual]]
+modId = "tlib"
+type = "required"
+versionRange = "[1.5.0-1.21.11,)"
+ordering = "AFTER"
+side = "CLIENT"
 
 [[mixins]]
 config = "effectual.mixins.json"

@@ -1,25 +1,53 @@
 package com.imeetake.effectual.effects.MouthSteam;
 
 import com.imeetake.effectual.EffectualConfig;
+import com.imeetake.effectual.EffectualClientParticles;
 import com.imeetake.effectual.ModParticles;
-import com.imeetake.tlib.client.particle.TClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
+import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
+import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
+import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
+import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 public class MouthSteamEffect {
 
     private static final RandomSource RANDOM = RandomSource.create();
-    private static final Map<Integer, Integer> tickCounters = new HashMap<>();
-    private static final Map<Integer, MovementState> lastStates = new HashMap<>();
+    private static final Int2IntOpenHashMap tickCounters = new Int2IntOpenHashMap();
+    private static final Int2ObjectOpenHashMap<MovementState> lastStates = new Int2ObjectOpenHashMap<>();
+
+    private static int cleanupTimer = 0;
+    private static ClientLevel lastLevel = null;
+
+    static {
+        tickCounters.defaultReturnValue(0);
+    }
 
     public static void register() {
         ClientTickEvent.CLIENT_POST.register(client -> {
-            if (!EffectualConfig.get().mouthSteam || client.level == null || client.isPaused()) return;
+            if (client.level == null) {
+                tickCounters.clear();
+                lastStates.clear();
+                lastLevel = null;
+                return;
+            }
+
+            if (lastLevel != client.level) {
+                tickCounters.clear();
+                lastStates.clear();
+                lastLevel = client.level;
+            }
+
+            if (!EffectualConfig.get().mouthSteam || client.isPaused()) return;
+
+            if (++cleanupTimer >= 100) {
+                cleanupMaps(client.level.players());
+                cleanupTimer = 0;
+            }
 
             for (Player player : client.level.players()) {
                 int id = player.getId();
@@ -32,7 +60,7 @@ public class MouthSteamEffect {
 
                 MovementState current = getMovementState(player);
                 MovementState previous = lastStates.getOrDefault(id, MovementState.STANDING);
-                int tickCounter = tickCounters.getOrDefault(id, 0);
+                int tickCounter = tickCounters.get(id);
                 if (current != previous) tickCounter = 0;
                 tickCounter++;
 
@@ -46,6 +74,24 @@ public class MouthSteamEffect {
                 lastStates.put(id, current);
             }
         });
+    }
+
+    private static void cleanupMaps(List<? extends Player> activePlayers) {
+        if (tickCounters.isEmpty()) return;
+
+        IntOpenHashSet activeIds = new IntOpenHashSet(activePlayers.size());
+        for (Player player : activePlayers) {
+            activeIds.add(player.getId());
+        }
+
+        var iterator = tickCounters.keySet().intIterator();
+        while (iterator.hasNext()) {
+            int id = iterator.nextInt();
+            if (!activeIds.contains(id)) {
+                iterator.remove();
+                lastStates.remove(id);
+            }
+        }
     }
 
     private static boolean shouldPlayEffect(Player player) {
@@ -64,10 +110,10 @@ public class MouthSteamEffect {
         int count = 3 + RANDOM.nextInt(3);
 
         for (int i = 0; i < count; i++) {
-            TClientParticles.spawn(
-                    ModParticles.MOUTH_STEAM.get(),
+            EffectualClientParticles.spawn(
+                    ModParticles.MOUTH_STEAM,
                     player.getX(), player.getEyeY(), player.getZ(),
-                    0, 0, 0
+                    player.getId(), 0, 0
             );
         }
     }

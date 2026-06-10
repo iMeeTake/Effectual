@@ -1,8 +1,8 @@
 package com.imeetake.effectual.effects.FireEntitySparks;
 
+import com.imeetake.effectual.EffectualClientParticles;
 import com.imeetake.effectual.EffectualConfig;
 import com.imeetake.effectual.ModParticles;
-import com.imeetake.tlib.client.particle.TClientParticles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
@@ -42,7 +42,7 @@ public class FireEntitySparksEffect {
             double dy = vel.y + 0.04 + RAND.nextDouble() * 0.05;
             double dz = vel.z + Math.sin(angle) * driftSpeed;
 
-            TClientParticles.spawn(ModParticles.ENTITY_SPARK.get(), x, y, z, dx, dy, dz);
+            EffectualClientParticles.spawn(ModParticles.ENTITY_SPARK.get(), x, y, z, dx, dy, dz);
         }
     }
 }

@@ -1,17 +1,19 @@
 package com.imeetake.effectual.neoforge;
 
 import com.imeetake.effectual.Effectual;
+import com.imeetake.effectual.EffectualClient;
 import com.imeetake.effectual.EffectualConfig;
 import me.shedaniel.autoconfig.AutoConfigClient;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
-@Mod(Effectual.MOD_ID)
+@Mod(value = Effectual.MOD_ID, dist = Dist.CLIENT)
 public final class EffectualNeoForge {
     public EffectualNeoForge() {
-        // Run our common setup.
         Effectual.init();
+        EffectualClient.init();
 
         ModLoadingContext.get().registerExtensionPoint(
                 IConfigScreenFactory.class,

@@ -64,6 +64,12 @@
     "text.autoconfig.effectual.option.metalHitSparks": "击打金属时产生火花",
     "text.autoconfig.effectual.option.metalHitSparks.@Tooltip": "用金属武器或工具击打金属方块时，会出现火花。",
 
+    "text.autoconfig.effectual.option.snowFootprints": "雪地脚印",
+    "text.autoconfig.effectual.option.snowFootprints.@Tooltip": "在雪地行走时留下可见的脚印。",
+
+    "text.autoconfig.effectual.option.snowResidue": "雪迹残留",
+    "text.autoconfig.effectual.option.snowResidue.@Tooltip": "离开雪地后在地面上留下少量雪迹。",
+
     "text.autoconfig.effectual.option.airTrail": "鞘翅飞行轨迹",
     "text.autoconfig.effectual.option.airTrail.@Tooltip": "使用鞘翅滑翔时留下淡淡的轨迹。",
 

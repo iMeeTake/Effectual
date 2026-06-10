@@ -34,6 +34,15 @@
     "minecraft:gold_ingot",
     "minecraft:netherite_ingot",
     "minecraft:iron_nugget",
-    "minecraft:gold_nugget"
+    "minecraft:gold_nugget",
+    "minecraft:copper_block",
+    "minecraft:copper_ingot",
+    "minecraft:exposed_copper",
+    "minecraft:oxidized_copper",
+    "minecraft:waxed_copper_block",
+    "minecraft:waxed_exposed_copper",
+    "minecraft:waxed_oxidized_copper",
+    "minecraft:waxed_weathered_copper",
+    "minecraft:weathered_copper"
   ]
 }

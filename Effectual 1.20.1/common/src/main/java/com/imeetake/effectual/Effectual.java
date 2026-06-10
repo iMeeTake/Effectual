@@ -7,8 +7,10 @@ public class Effectual {
     public static final String MOD_ID = "effectual";
 
     public static void init() {
-        EffectualConfig.init();
-        EnvExecutor.runInEnv(Env.CLIENT, () -> EffectualClient::init);
-        ModParticles.register();
+        EnvExecutor.runInEnv(Env.CLIENT, () -> () -> {
+            EffectualConfig.init();
+            ModParticles.register();
+            EffectualClient.init();
+        });
     }
 }

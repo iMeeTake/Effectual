@@ -7,7 +7,6 @@ import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.Mth;
-import net.minecraft.world.phys.Vec3;
 
 public class SparkParticle extends TOrientedParticle<SimpleParticleType> {
     private final double roll;
@@ -103,29 +102,68 @@ public class SparkParticle extends TOrientedParticle<SimpleParticleType> {
         float y = (float) Mth.lerp(tickDelta, this.prevPosY, this.y);
         float z = (float) Mth.lerp(tickDelta, this.prevPosZ, this.z);
 
-        Vec3 cam = camera.position();
-        Vec3 center = new Vec3(x - cam.x, y - cam.y, z - cam.z);
+        var cam = camera.position();
+        double cx = x - cam.x;
+        double cy = y - cam.y;
+        double cz = z - cam.z;
 
-        Vec3 v = new Vec3(this.xd, this.yd, this.zd);
-        if (v.lengthSqr() < 1.0e-6) v = new Vec3(0, 1, 0);
+        double upX = this.xd;
+        double upY = this.yd;
+        double upZ = this.zd;
+        double upLenSqr = upX * upX + upY * upY + upZ * upZ;
+        if (upLenSqr < 1.0E-6) {
+            upX = 0.0;
+            upY = 1.0;
+            upZ = 0.0;
+            upLenSqr = 1.0;
+        }
 
-        Vec3 up = v.normalize();
+        double upInvLen = 1.0 / Math.sqrt(upLenSqr);
+        upX *= upInvLen;
+        upY *= upInvLen;
+        upZ *= upInvLen;
+
         double currentRoll = this.roll + (this.age + tickDelta) * this.rotSpeed;
 
-        Vec3 tmp = Math.abs(up.y) > 0.9 ? new Vec3(1, 0, 0) : new Vec3(0, 1, 0);
-        Vec3 right = up.cross(tmp).normalize();
-        right = rotateAroundAxis(right, up, currentRoll);
+        double rightX;
+        double rightY;
+        double rightZ;
+        if (Math.abs(upY) > 0.9) {
+            rightX = 0.0;
+            rightY = upZ;
+            rightZ = -upY;
+        } else {
+            rightX = -upZ;
+            rightY = 0.0;
+            rightZ = upX;
+        }
+
+        double rightInvLen = 1.0 / Math.sqrt(rightX * rightX + rightY * rightY + rightZ * rightZ);
+        rightX *= rightInvLen;
+        rightY *= rightInvLen;
+        rightZ *= rightInvLen;
+
+        double cos = Math.cos(currentRoll);
+        double sin = Math.sin(currentRoll);
+        double crossX = upY * rightZ - upZ * rightY;
+        double crossY = upZ * rightX - upX * rightZ;
+        double crossZ = upX * rightY - upY * rightX;
+        double dot = upX * rightX + upY * rightY + upZ * rightZ;
+        double oneMinusCos = 1.0 - cos;
+
+        double rotatedRightX = rightX * cos + crossX * sin + upX * dot * oneMinusCos;
+        double rotatedRightY = rightY * cos + crossY * sin + upY * dot * oneMinusCos;
+        double rotatedRightZ = rightZ * cos + crossZ * sin + upZ * dot * oneMinusCos;
 
         float halfW = this.scale * 0.8f;
         float halfH = this.scale * 1.2f;
 
-        Vec3 u = up.scale(halfH);
-        Vec3 r = right.scale(halfW);
-
-        Vec3 p1 = center.add(r).add(u);
-        Vec3 p2 = center.add(r).subtract(u);
-        Vec3 p3 = center.subtract(r).subtract(u);
-        Vec3 p4 = center.subtract(r).add(u);
+        double ux = upX * halfH;
+        double uy = upY * halfH;
+        double uz = upZ * halfH;
+        double rx = rotatedRightX * halfW;
+        double ry = rotatedRightY * halfW;
+        double rz = rotatedRightZ * halfW;
 
         var sprite = this.spriteSet.get(this.age, this.lifetime);
         float u1 = sprite.getU0();
@@ -135,31 +173,22 @@ public class SparkParticle extends TOrientedParticle<SimpleParticleType> {
 
         int light = 0xF000F0;
 
-        vertex(vc, p1, u2, v1, light);
-        vertex(vc, p2, u2, v2, light);
-        vertex(vc, p3, u1, v2, light);
-        vertex(vc, p4, u1, v1, light);
+        vertex(vc, cx + rx + ux, cy + ry + uy, cz + rz + uz, u2, v1, light);
+        vertex(vc, cx + rx - ux, cy + ry - uy, cz + rz - uz, u2, v2, light);
+        vertex(vc, cx - rx - ux, cy - ry - uy, cz - rz - uz, u1, v2, light);
+        vertex(vc, cx - rx + ux, cy - ry + uy, cz - rz + uz, u1, v1, light);
 
-        vertex(vc, p4, u1, v1, light);
-        vertex(vc, p3, u1, v2, light);
-        vertex(vc, p2, u2, v2, light);
-        vertex(vc, p1, u2, v1, light);
+        vertex(vc, cx - rx + ux, cy - ry + uy, cz - rz + uz, u1, v1, light);
+        vertex(vc, cx - rx - ux, cy - ry - uy, cz - rz - uz, u1, v2, light);
+        vertex(vc, cx + rx - ux, cy + ry - uy, cz + rz - uz, u2, v2, light);
+        vertex(vc, cx + rx + ux, cy + ry + uy, cz + rz + uz, u2, v1, light);
     }
 
-    private void vertex(VertexConsumer vc, Vec3 pos, float u, float v, int light) {
-        vc.addVertex((float) pos.x, (float) pos.y, (float) pos.z)
+    private void vertex(VertexConsumer vc, double x, double y, double z, float u, float v, int light) {
+        vc.addVertex((float) x, (float) y, (float) z)
                 .setUv(u, v)
                 .setColor(this.rCol, this.gCol, this.bCol, this.alpha)
                 .setLight(light);
-    }
-
-    private Vec3 rotateAroundAxis(Vec3 vec, Vec3 axis, double angle) {
-        double c = Math.cos(angle);
-        double s = Math.sin(angle);
-        Vec3 a = axis.normalize();
-        return vec.scale(c)
-                .add(a.cross(vec).scale(s))
-                .add(a.scale(a.dot(vec) * (1 - c)));
     }
 
     private float smoothstep(float edge0, float edge1, float x) {

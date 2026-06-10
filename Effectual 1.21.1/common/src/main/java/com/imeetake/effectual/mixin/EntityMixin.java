@@ -20,7 +20,7 @@ public abstract class EntityMixin {
 
     @Inject(method = "tick", at = @At("TAIL"))
     private void effectual$tick(CallbackInfo ci) {
-        if (this.level.isClientSide && this.isOnFire()) {
+        if (this.level != null && this.level.isClientSide && this.isOnFire()) {
             FireEntitySparksEffect.tick((Entity) (Object) this);
         }
     }

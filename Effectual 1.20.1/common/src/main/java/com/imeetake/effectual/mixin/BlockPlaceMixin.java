@@ -1,7 +1,7 @@
 package com.imeetake.effectual.mixin;
 
 import com.imeetake.effectual.EffectualConfig;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
@@ -45,7 +45,7 @@ public class BlockPlaceMixin {
             RandomSource random = world.random;
 
             for (int i = 0; i < 12; i++) {
-                TClientParticles.spawn(
+                EffectualClientParticles.spawnVanilla(
                         new BlockParticleOption(ParticleTypes.BLOCK, state),
                         placedBlockPos.getX() + random.nextDouble(),
                         placedBlockPos.getY() + 0.2,

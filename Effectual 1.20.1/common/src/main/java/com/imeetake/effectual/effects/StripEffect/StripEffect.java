@@ -1,7 +1,7 @@
 package com.imeetake.effectual.effects.StripEffect;
 
 import com.imeetake.effectual.EffectualConfig;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import dev.architectury.event.EventResult;
 import dev.architectury.event.events.client.ClientTickEvent;
 import dev.architectury.event.events.common.InteractionEvent;
@@ -24,11 +24,13 @@ import java.util.Map;
 public class StripEffect {
 
     private static final RandomSource RAND = RandomSource.create();
+    private static final int MAX_PENDING_ENTRIES = 64;
 
     private record Pending(BlockState oldState, Direction face, long expiresAt) {
     }
 
     private static final Map<BlockPos, Pending> PENDING = new HashMap<>();
+    private static ClientLevel lastLevel = null;
 
     public static void register() {
         InteractionEvent.RIGHT_CLICK_BLOCK.register((player, hand, pos, face) -> {
@@ -41,13 +43,32 @@ public class StripEffect {
             BlockState state = player.level().getBlockState(pos);
             if (!isLog(state)) return EventResult.pass();
 
+            if (PENDING.size() >= MAX_PENDING_ENTRIES) {
+                return EventResult.pass();
+            }
+
             long now = player.level().getGameTime();
             PENDING.put(pos.immutable(), new Pending(state, face, now + 6L));
             return EventResult.pass();
         });
 
         ClientTickEvent.CLIENT_POST.register(client -> {
-            if (!EffectualConfig.get().stripEffect || client.level == null || client.isPaused()) return;
+            if (client.level == null) {
+                PENDING.clear();
+                lastLevel = null;
+                return;
+            }
+
+            if (lastLevel != client.level) {
+                PENDING.clear();
+                lastLevel = client.level;
+            }
+
+            if (!EffectualConfig.get().stripEffect || client.isPaused()) {
+                PENDING.clear();
+                return;
+            }
+
             tick(client);
         });
     }
@@ -101,7 +122,7 @@ public class StripEffect {
             double vy = ny * (0.04 + RAND.nextDouble() * 0.03);
             double vz = nz * (0.04 + RAND.nextDouble() * 0.03);
 
-            TClientParticles.spawn(
+            EffectualClientParticles.spawnVanilla(
                     new BlockParticleOption(ParticleTypes.BLOCK, state),
                     cx + sx, cy + sy, cz + sz,
                     vx, vy, vz

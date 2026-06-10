@@ -1,12 +1,14 @@
 package com.imeetake.effectual.effects.CauldronFill;
 
 import com.imeetake.effectual.EffectualConfig;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import dev.architectury.event.events.client.ClientTickEvent;
+import it.unimi.dsi.fastutil.longs.Long2ObjectLinkedOpenHashMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -14,10 +16,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 
 public class CauldronFillEffect {
 
@@ -33,29 +31,48 @@ public class CauldronFillEffect {
         }
     }
 
-    private static final Map<Long, Snapshot> stateCache = new HashMap<>();
+    private static final int MAX_CACHE_SIZE = 256;
+    private static final Long2ObjectLinkedOpenHashMap<Snapshot> stateCache = new Long2ObjectLinkedOpenHashMap<>();
     private static final RandomSource RAND = RandomSource.create();
+
+    private static final int SAMPLES_PER_TICK = 50;
+    private static final int RADIUS = 6;
+
+    private static final BlockPos.MutableBlockPos scanPos = new BlockPos.MutableBlockPos();
 
     private static int backgroundScanTimer = 0;
     private static int cleanupTimer = 0;
+    private static Level lastLevel = null;
+    private static BlockPos lastPlayerPos = null;
 
     public static void register() {
         ClientTickEvent.CLIENT_POST.register(client -> {
-            if (!EffectualConfig.get().cauldronFillEffect
-                    || client.level == null
-                    || client.player == null
-                    || client.isPaused())
-                return;
+            if (client.isPaused()) return;
+            if (!EffectualConfig.get().cauldronFillEffect) return;
+            if (client.level == null || client.player == null) return;
+
+            if (lastLevel != client.level) {
+                stateCache.clear();
+                lastLevel = client.level;
+                lastPlayerPos = null;
+            }
+
+            BlockPos playerPos = client.player.blockPosition();
+
+            if (lastPlayerPos != null && playerPos.distSqr(lastPlayerPos) > 256) {
+                stateCache.clear();
+            }
+            lastPlayerPos = playerPos;
 
             scanTargetedBlock(client);
 
             if (++backgroundScanTimer >= 10) {
-                scanArea(client);
+                scanArea(client.level, playerPos);
                 backgroundScanTimer = 0;
             }
 
-            if (++cleanupTimer >= 100) {
-                cleanup(client.player.blockPosition());
+            if (++cleanupTimer >= 60) {
+                cleanup(playerPos);
                 cleanupTimer = 0;
             }
         });
@@ -70,41 +87,39 @@ public class CauldronFillEffect {
 
         if (client.player.distanceToSqr(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5) > 36) return;
 
-        checkBlock(client, pos.getX(), pos.getY(), pos.getZ());
+        checkBlock(client.level, pos.getX(), pos.getY(), pos.getZ());
     }
 
-    private static void scanArea(Minecraft client) {
-        BlockPos center = client.player.blockPosition();
-        int radius = 6;
-        int cx = center.getX();
-        int cy = center.getY();
-        int cz = center.getZ();
+    private static void scanArea(Level level, BlockPos center) {
+        int startX = center.getX();
+        int startY = center.getY();
+        int startZ = center.getZ();
 
-        for (int dx = -radius; dx <= radius; dx++) {
-            for (int dy = -1; dy <= 2; dy++) {
-                for (int dz = -radius; dz <= radius; dz++) {
-                    checkBlock(client, cx + dx, cy + dy, cz + dz);
-                }
-            }
+        for (int i = 0; i < SAMPLES_PER_TICK; i++) {
+            int dx = RAND.nextInt(RADIUS * 2 + 1) - RADIUS;
+            int dy = RAND.nextInt(4) - 1;
+            int dz = RAND.nextInt(RADIUS * 2 + 1) - RADIUS;
+
+            checkBlock(level, startX + dx, startY + dy, startZ + dz);
         }
     }
 
-    /**
-     * Единая логика проверки состояния блока
-     */
-    private static void checkBlock(Minecraft client, int x, int y, int z) {
-        BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos(x, y, z);
-        BlockState state = client.level.getBlockState(pos);
+    private static void checkBlock(Level level, int x, int y, int z) {
+        scanPos.set(x, y, z);
+        BlockState state = level.getBlockState(scanPos);
 
         Kind kind = kindOf(state.getBlock());
         if (kind == null) return;
 
         long posKey = BlockPos.asLong(x, y, z);
-        int level = currentLevel(state, kind);
+        int currentLevel = currentLevel(state, kind);
         Snapshot prev = stateCache.get(posKey);
 
         if (prev == null) {
-            stateCache.put(posKey, new Snapshot(kind, level));
+            if (stateCache.size() >= MAX_CACHE_SIZE) {
+                stateCache.removeFirst();
+            }
+            stateCache.put(posKey, new Snapshot(kind, currentLevel));
             return;
         }
 
@@ -112,42 +127,46 @@ public class CauldronFillEffect {
 
         if (kind != prev.kind) {
             if (kind != Kind.EMPTY) {
-                spawnBurst(pos, kind, Math.max(1, level));
+                spawnBurst(scanPos, kind, Math.max(1, currentLevel));
             }
             changed = true;
-        } else if (level > prev.level) {
-            spawnBurst(pos, kind, level - prev.level);
+        } else if (currentLevel > prev.level) {
+            spawnBurst(scanPos, kind, currentLevel - prev.level);
             changed = true;
-        } else if (level != prev.level) {
+        } else if (currentLevel != prev.level) {
             changed = true;
         }
 
         if (changed) {
-            stateCache.put(posKey, new Snapshot(kind, level));
+            stateCache.getAndMoveToLast(posKey);
+            stateCache.put(posKey, new Snapshot(kind, currentLevel));
         }
     }
 
     private static void cleanup(BlockPos center) {
-        long maxDistSqr = 16 * 16;
-        Iterator<Map.Entry<Long, Snapshot>> it = stateCache.entrySet().iterator();
+        if (stateCache.isEmpty()) return;
 
+        long maxDistSqr = 10L * 10L;
         int cx = center.getX();
         int cy = center.getY();
         int cz = center.getZ();
 
-        while (it.hasNext()) {
-            long posLong = it.next().getKey();
+        var iterator = stateCache.long2ObjectEntrySet().fastIterator();
+        while (iterator.hasNext()) {
+            var entry = iterator.next();
+            long posLong = entry.getLongKey();
+
             int x = BlockPos.getX(posLong);
             int y = BlockPos.getY(posLong);
             int z = BlockPos.getZ(posLong);
 
-            double dX = cx - x;
-            double dY = cy - y;
-            double dZ = cz - z;
-            double distSqr = dX * dX + dY * dY + dZ * dZ;
+            long dX = cx - x;
+            long dY = cy - y;
+            long dZ = cz - z;
+            long distSqr = dX * dX + dY * dY + dZ * dZ;
 
             if (distSqr > maxDistSqr) {
-                it.remove();
+                iterator.remove();
             }
         }
     }
@@ -186,21 +205,21 @@ public class CauldronFillEffect {
             switch (kind) {
                 case WATER -> {
                     double vy = 0.05 + RAND.nextDouble() * 0.05;
-                    TClientParticles.spawn(ParticleTypes.SPLASH, x + ox, y, z + oz, vx, vy, vz);
+                    EffectualClientParticles.spawnVanilla(ParticleTypes.SPLASH, x + ox, y, z + oz, vx, vy, vz);
                     if (RAND.nextFloat() < 0.4f) {
-                        TClientParticles.spawn(ParticleTypes.BUBBLE, x + ox * 0.7, y - 0.2, z + oz * 0.7, 0, 0.02 + RAND.nextDouble() * 0.02, 0);
+                        EffectualClientParticles.spawnVanilla(ParticleTypes.BUBBLE, x + ox * 0.7, y - 0.2, z + oz * 0.7, 0, 0.02 + RAND.nextDouble() * 0.02, 0);
                     }
                 }
                 case LAVA -> {
                     double vy = 0.04 + RAND.nextDouble() * 0.04;
-                    TClientParticles.spawn(ParticleTypes.LAVA, x + ox, y, z + oz, vx, vy, vz);
+                    EffectualClientParticles.spawnVanilla(ParticleTypes.LAVA, x + ox, y, z + oz, vx, vy, vz);
                     if (RAND.nextFloat() < 0.3f) {
-                        TClientParticles.spawn(ParticleTypes.SMOKE, x + ox, y + 0.1, z + oz, 0, 0.02, 0);
+                        EffectualClientParticles.spawnVanilla(ParticleTypes.SMOKE, x + ox, y + 0.1, z + oz, 0, 0.02, 0);
                     }
                 }
                 case POWDER -> {
                     double vy = 0.03 + RAND.nextDouble() * 0.04;
-                    TClientParticles.spawn(ParticleTypes.SNOWFLAKE, x + ox, y + 0.1, z + oz, vx * 0.5, vy, vz * 0.5);
+                    EffectualClientParticles.spawnVanilla(ParticleTypes.SNOWFLAKE, x + ox, y + 0.1, z + oz, vx * 0.5, vy, vz * 0.5);
                 }
                 default -> {
                 }

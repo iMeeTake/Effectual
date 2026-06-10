@@ -1,7 +1,6 @@
 package com.imeetake.effectual.mixin;
 
 import com.imeetake.effectual.effects.Sparks.CampfireImprovements;
-import com.imeetake.effectual.effects.SparksSoul.SoulCampfireImprovements;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
@@ -20,10 +19,7 @@ public class CampfireBlockMixin {
     private void effectual$onAnimateTick(BlockState state, Level level, BlockPos pos, RandomSource random, CallbackInfo ci) {
         if (!state.getValue(CampfireBlock.LIT)) return;
 
-        if (state.is(Blocks.SOUL_CAMPFIRE)) {
-            SoulCampfireImprovements.animateTick(level, pos, random);
-        } else {
-            CampfireImprovements.animateTick(level, pos, random);
-        }
+        boolean isSoul = state.is(Blocks.SOUL_CAMPFIRE);
+        CampfireImprovements.animateTick(level, pos, random, isSoul);
     }
 }

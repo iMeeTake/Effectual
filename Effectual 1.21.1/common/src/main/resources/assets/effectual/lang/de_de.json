@@ -64,6 +64,12 @@
     "text.autoconfig.effectual.option.metalHitSparks": "Funken beim Schlagen von Metall",
     "text.autoconfig.effectual.option.metalHitSparks.@Tooltip": "Wenn man mit einer Metallwaffe oder einem Metallwerkzeug auf einen Metallblock schlägt, erscheinen Funken.",
 
+    "text.autoconfig.effectual.option.snowFootprints": "Fußspuren im Schnee",
+    "text.autoconfig.effectual.option.snowFootprints.@Tooltip": "Hinterlässt sichtbare Fußspuren beim Gehen auf Schnee.",
+
+    "text.autoconfig.effectual.option.snowResidue": "Schneereste",
+    "text.autoconfig.effectual.option.snowResidue.@Tooltip": "Hinterlässt kleine Schneespuren auf dem Boden nach dem Verlassen einer Schneefläche.",
+
     "text.autoconfig.effectual.option.airTrail": "Luftspur (Elytra)",
     "text.autoconfig.effectual.option.airTrail.@Tooltip": "Hinterlässt eine leichte Spur beim Fliegen mit Elytren.",
 

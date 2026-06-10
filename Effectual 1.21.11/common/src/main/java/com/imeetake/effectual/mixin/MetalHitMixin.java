@@ -2,7 +2,7 @@ package com.imeetake.effectual.mixin;
 
 import com.imeetake.effectual.EffectualConfig;
 import com.imeetake.effectual.ModParticles;
-import com.imeetake.tlib.client.particle.TClientParticles;
+import com.imeetake.effectual.EffectualClientParticles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
@@ -21,12 +21,25 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(MultiPlayerGameMode.class)
 public class MetalHitMixin {
+
+    @Unique
+    private static final TagKey<Item> METAL_ITEMS_TAG = TagKey.create(
+            Registries.ITEM,
+            Identifier.fromNamespaceAndPath("effectual", "metal_items")
+    );
+
+    @Unique
+    private static final TagKey<Block> METAL_BLOCKS_TAG = TagKey.create(
+            Registries.BLOCK,
+            Identifier.fromNamespaceAndPath("effectual", "metal_blocks")
+    );
 
     @Inject(method = "startDestroyBlock", at = @At("HEAD"))
     private void onMetalHit(BlockPos pos, Direction direction, CallbackInfoReturnable<Boolean> cir) {
@@ -44,19 +57,13 @@ public class MetalHitMixin {
 
         ItemStack mainHandItem = player.getMainHandItem();
 
-        TagKey<Item> metalItemsTag = TagKey.create(Registries.ITEM,
-                Identifier.fromNamespaceAndPath("effectual", "metal_items"));
-
-        if (!mainHandItem.is(metalItemsTag)) {
+        if (!mainHandItem.is(METAL_ITEMS_TAG)) {
             return;
         }
 
         BlockState blockState = world.getBlockState(pos);
 
-        TagKey<Block> metalBlocksTag = TagKey.create(Registries.BLOCK,
-                Identifier.fromNamespaceAndPath("effectual", "metal_blocks"));
-
-        if (!blockState.is(metalBlocksTag)) {
+        if (!blockState.is(METAL_BLOCKS_TAG)) {
             return;
         }
 
@@ -76,6 +83,7 @@ public class MetalHitMixin {
         spawnSparks(world, hitPos, direction);
     }
 
+    @Unique
     private void spawnSparks(ClientLevel world, Vec3 pos, Direction direction) {
         RandomSource random = world.random;
 
@@ -88,7 +96,7 @@ public class MetalHitMixin {
             double velocityY = (random.nextDouble() - 0.5) * 0.1 + direction.getStepY() * 0.1;
             double velocityZ = (random.nextDouble() - 0.5) * 0.1 + direction.getStepZ() * 0.1;
 
-            TClientParticles.spawn(ModParticles.METAL_SPARK.get(), offsetX, offsetY, offsetZ, velocityX, velocityY, velocityZ);
+            EffectualClientParticles.spawn(ModParticles.METAL_SPARK.get(), offsetX, offsetY, offsetZ, velocityX, velocityY, velocityZ);
         }
     }
 }
