@@ -22,7 +22,7 @@ public class EffectualConfig implements ConfigData {
     }
 
     @ConfigEntry.Gui.Tooltip
-    public boolean mouthSteam = true;
+    public boolean mouthSteam = false;
 
     @ConfigEntry.Gui.Tooltip
     public boolean dynamicBreathSpeed = true;

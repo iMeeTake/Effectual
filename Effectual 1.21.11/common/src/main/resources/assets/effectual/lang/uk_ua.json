@@ -31,7 +31,7 @@
     "text.autoconfig.effectual.option.cauldronFillEffect": "Частинки при наповненні казана",
     "text.autoconfig.effectual.option.cauldronFillEffect.@Tooltip": "Бризки/дим під час наповнення казана водою, лавою або пухким снігом.",
 
-    "text.autoconfig.effectual.option.mouthSteam": "Пар з рота",
+    "text.autoconfig.effectual.option.mouthSteam": "Пар з рота (WIP)",
     "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "В холодних біомах з рота гравця йде видимий пар.",
 
     "text.autoconfig.effectual.option.dynamicBreathSpeed": "Динамічна швидкість дихання",

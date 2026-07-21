@@ -31,7 +31,7 @@
     "text.autoconfig.effectual.option.cauldronFillEffect": "Particules lors du remplissage du chaudron",
     "text.autoconfig.effectual.option.cauldronFillEffect.@Tooltip": "Éclaboussures/fumée lors du remplissage des chaudrons avec de l’eau, de la lave ou de la neige poudreuse.",
 
-    "text.autoconfig.effectual.option.mouthSteam": "Vapeur de respiration",
+    "text.autoconfig.effectual.option.mouthSteam": "Vapeur de respiration (WIP)",
     "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "Ajoute une vapeur visible lorsque l'on respire dans les biomes froids.",
 
     "text.autoconfig.effectual.option.dynamicBreathSpeed": "Vitesse de respiration dynamique",

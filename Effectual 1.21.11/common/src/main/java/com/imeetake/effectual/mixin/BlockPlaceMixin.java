@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -33,14 +34,16 @@ public class BlockPlaceMixin {
         ClientLevel world = Minecraft.getInstance().level;
         if (world == null) return;
 
-        BlockPos placedBlockPos = hitResult.getBlockPos().relative(hitResult.getDirection());
+        BlockPos clickedPos = hitResult.getBlockPos();
+        BlockPos placedBlockPos = clickedPos.relative(hitResult.getDirection());
         BlockState state = world.getBlockState(placedBlockPos);
+        if (!effectual$isDust(state.getBlock())) {
+            placedBlockPos = clickedPos;
+            state = world.getBlockState(placedBlockPos);
+        }
         Block block = state.getBlock();
 
-        if (block == Blocks.SNOW || block == Blocks.SNOW_BLOCK || block == Blocks.POWDER_SNOW ||
-                block == Blocks.SAND || block == Blocks.SUSPICIOUS_SAND ||
-                block == Blocks.GRAVEL || block == Blocks.SUSPICIOUS_GRAVEL ||
-                block == Blocks.RED_SAND) {
+        if (effectual$isDust(block)) {
 
             RandomSource random = world.random;
 
@@ -56,5 +59,13 @@ public class BlockPlaceMixin {
                 );
             }
         }
+    }
+
+    @Unique
+    private static boolean effectual$isDust(Block block) {
+        return block == Blocks.SNOW || block == Blocks.SNOW_BLOCK || block == Blocks.POWDER_SNOW ||
+                block == Blocks.SAND || block == Blocks.SUSPICIOUS_SAND ||
+                block == Blocks.GRAVEL || block == Blocks.SUSPICIOUS_GRAVEL ||
+                block == Blocks.RED_SAND;
     }
 }

@@ -24,7 +24,7 @@ public class AirTrailEffect {
             tickCounter = 0;
 
             for (Player player : client.level.players()) {
-                if (!player.isFallFlying() || player.isSpectator() || player.isInvisible()) {
+                if (!player.isFallFlying() || player.getAbilities().flying || player.isSpectator() || player.isInvisible()) {
                     continue;
                 }
                 spawnAirTrail(player);

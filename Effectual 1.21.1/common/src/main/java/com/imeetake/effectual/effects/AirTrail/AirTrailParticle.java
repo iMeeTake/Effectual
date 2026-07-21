@@ -14,6 +14,7 @@ public class AirTrailParticle extends TOrientedParticle<SimpleParticleType> {
     private final double initialVelocityY;
     private final double initialVelocityZ;
     private final double rotationAngle;
+    private final float baseScale;
 
     public AirTrailParticle(ClientLevel level,
                             double x, double y, double z,
@@ -21,7 +22,8 @@ public class AirTrailParticle extends TOrientedParticle<SimpleParticleType> {
                             SpriteSet spriteSet) {
         super(level, x, y, z, velocityX, velocityY, velocityZ, spriteSet);
 
-        this.scale = 0.04f + random.nextFloat() * 0.01f;
+        this.baseScale = 0.15f + random.nextFloat() * 0.1f;
+        this.scale = this.baseScale;
         this.lifetime = 10 + random.nextInt(5);
         this.alpha = 0.4f;
 
@@ -46,7 +48,7 @@ public class AirTrailParticle extends TOrientedParticle<SimpleParticleType> {
         float alphaFactor = 1.0f - (ageRatio * ageRatio);
         this.alpha = 0.4f * alphaFactor;
 
-        this.scale = (0.15f + random.nextFloat() * 0.1f) * (1.0f + ageRatio * 0.3f);
+        this.scale = this.baseScale * (1.0f + ageRatio * 0.3f);
     }
 
     @Override

@@ -31,7 +31,7 @@
     "text.autoconfig.effectual.option.cauldronFillEffect": "炼药锅填充粒子",
     "text.autoconfig.effectual.option.cauldronFillEffect.@Tooltip": "向炼药锅注入水、岩浆或粉雪时出现溅水/烟雾粒子。",
 
-    "text.autoconfig.effectual.option.mouthSteam": "呼吸蒸汽",
+    "text.autoconfig.effectual.option.mouthSteam": "呼吸蒸汽 (WIP)",
     "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "在寒冷生物群系中会出现可见的呼吸蒸汽。",
 
     "text.autoconfig.effectual.option.dynamicBreathSpeed": "动态呼吸速度",

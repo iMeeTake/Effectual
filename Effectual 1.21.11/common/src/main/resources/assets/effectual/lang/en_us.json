@@ -31,7 +31,7 @@
     "text.autoconfig.effectual.option.cauldronFillEffect": "Cauldron fill particles",
     "text.autoconfig.effectual.option.cauldronFillEffect.@Tooltip": "Splash/smoke particles when filling cauldrons with water, lava, or powder snow.",
 
-    "text.autoconfig.effectual.option.mouthSteam": "Breath Steam",
+    "text.autoconfig.effectual.option.mouthSteam": "Breath Steam (WIP)",
     "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "Adds visible breath steam in cold biomes.",
 
     "text.autoconfig.effectual.option.dynamicBreathSpeed": "Dynamic Breath Speed",

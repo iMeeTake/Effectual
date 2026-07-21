@@ -1,0 +1,52 @@
+{
+    "schemaVersion": 1,
+    "id": "effectual",
+    "version": "${version}",
+    "name": "Effectual",
+    "description": "modmenu.descriptionTranslation.effectual",
+    "authors": [
+        "iMeeTake"
+    ],
+    "contact": {
+        "homepage": "https://www.curseforge.com/minecraft/mc-mods/effectual",
+        "sources": "https://github.com/iMeeTake/Effectual",
+        "issues": "https://github.com/iMeeTake/Effectual/issues"
+    },
+    "license": "MIT",
+    "icon": "assets/effectual/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "main": [
+            "com.imeetake.effectual.fabric.EffectualFabric"
+        ],
+        "client": [
+            "com.imeetake.effectual.fabric.client.EffectualFabricClient"
+        ],
+        "modmenu": [
+            "com.imeetake.effectual.fabric.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        "effectual.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.19.3",
+        "minecraft": "26.1.2",
+        "architectury": ">=20.0.5",
+        "java": ">=25",
+        "fabric-api": ">=0.150.0+26.1.2",
+        "cloth-config": ">=26.1.154",
+        "tlib": ">=1.5.0-26.1.2"
+    },
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.modrinth": "https://modrinth.com/mod/effectual",
+                "modmenu.discord": "https://discord.gg/ZBzupfYZ6K"
+            }
+        }
+    },
+    "suggests": {
+        "modmenu": ">=18.0.0-beta.1"
+    }
+}

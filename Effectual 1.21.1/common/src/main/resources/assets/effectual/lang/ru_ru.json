@@ -1,7 +1,7 @@
 {
     "text.autoconfig.effectual.title": "Настройки Effectual",
 
-    "text.autoconfig.effectual.option.mouthSteam": "Пар изо рта",
+    "text.autoconfig.effectual.option.mouthSteam": "Пар изо рта (WIP)",
     "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "Добавляет пар при дыхании в холодных биомах.",
 
     "text.autoconfig.effectual.option.dynamicBreathSpeed": "Динамическая скорость дыхания",

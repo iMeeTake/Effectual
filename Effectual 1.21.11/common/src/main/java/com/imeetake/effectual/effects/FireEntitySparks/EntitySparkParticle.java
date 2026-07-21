@@ -70,8 +70,9 @@ public class EntitySparkParticle extends SingleQuadParticle {
         this.yd *= 0.96;
         this.zd *= 0.96;
 
-        if (this.age > this.lifetime / 2) {
-            float progress = (float) (this.age - this.lifetime / 2) / (this.lifetime / 2);
+        float half = this.lifetime / 2.0F;
+        if (this.age > half) {
+            float progress = Math.min(1.0F, (this.age - half) / half);
             this.quadSize = this.baseSize * (1.0F - progress);
         }
     }

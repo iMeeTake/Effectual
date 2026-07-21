@@ -31,7 +31,7 @@
     "text.autoconfig.effectual.option.cauldronFillEffect": "Partikel beim Befüllen des Kessels",
     "text.autoconfig.effectual.option.cauldronFillEffect.@Tooltip": "Spritz-/Rauchpartikel beim Befüllen von Kesseln mit Wasser, Lava oder Pulverschnee.",
 
-    "text.autoconfig.effectual.option.mouthSteam": "Atemdampf",
+    "text.autoconfig.effectual.option.mouthSteam": "Atemdampf (WIP)",
     "text.autoconfig.effectual.option.mouthSteam.@Tooltip": "Sichtbarer Atemdampf in kalten Biomen.",
 
     "text.autoconfig.effectual.option.dynamicBreathSpeed": "Dynamische Atemgeschwindigkeit",
