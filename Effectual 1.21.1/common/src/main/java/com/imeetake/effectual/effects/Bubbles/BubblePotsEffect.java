@@ -22,13 +22,13 @@ public class BubblePotsEffect {
 
     public static void register() {
         ClientTickEvent.CLIENT_POST.register(client -> {
-            if (!EffectualConfig.get().bubblePots || client.isPaused()) return;
             if (client.level == null) {
                 resetScanPosition();
                 lastLevel = null;
                 lastPlayerPos = null;
                 return;
             }
+            if (!EffectualConfig.get().bubblePots || client.isPaused()) return;
             if (client.player == null) return;
 
             ClientLevel level = client.level;

@@ -1,5 +1,11 @@
 {
   "textures": [
-    "effectual:mouth_steam_all"
+    "effectual:mouth_steam_0",
+    "effectual:mouth_steam_1",
+    "effectual:mouth_steam_2",
+    "effectual:mouth_steam_3",
+    "effectual:mouth_steam_4",
+    "effectual:mouth_steam_5",
+    "effectual:mouth_steam_6"
   ]
 }

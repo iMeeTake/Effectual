@@ -74,6 +74,8 @@ public class StripEffect {
     }
 
     private static void tick(Minecraft client) {
+        if (PENDING.isEmpty()) return;
+
         ClientLevel level = client.level;
         long now = level.getGameTime();
 

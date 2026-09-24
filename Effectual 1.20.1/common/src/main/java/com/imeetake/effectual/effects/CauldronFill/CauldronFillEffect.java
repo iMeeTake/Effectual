@@ -47,9 +47,15 @@ public class CauldronFillEffect {
 
     public static void register() {
         ClientTickEvent.CLIENT_POST.register(client -> {
+            if (client.level == null) {
+                stateCache.clear();
+                lastLevel = null;
+                lastPlayerPos = null;
+                return;
+            }
             if (client.isPaused()) return;
             if (!EffectualConfig.get().cauldronFillEffect) return;
-            if (client.level == null || client.player == null) return;
+            if (client.player == null) return;
 
             if (lastLevel != client.level) {
                 stateCache.clear();

@@ -19,10 +19,13 @@ public class WaterDripParticleFactory implements ParticleProvider<SimpleParticle
     @Nullable
     @Override
     public Particle createParticle(SimpleParticleType type, ClientLevel level, double x, double y, double z, double dx, double dy, double dz) {
-        Player player = getPlayer(level, dx, x, y, z);
+        if (WaterDripEffect.isDripSuppressed(level)) return null;
+
+        Player encoded = getEncodedPlayer(level, dx);
+        Player player = encoded != null ? encoded : level.getNearestPlayer(x, y, z, 1.2, false);
         if (player == null) return null;
 
-        if (isEncodedPlayerId(level, dx)) {
+        if (encoded != null) {
             return new WaterDripParticle(level, player, dy, y - player.getY(), dz, this.spriteSet);
         }
 
@@ -38,20 +41,14 @@ public class WaterDripParticleFactory implements ParticleProvider<SimpleParticle
         return new WaterDripParticle(level, player, lx, ly, lz, this.spriteSet);
     }
 
-    private Player getPlayer(ClientLevel level, double encodedId, double x, double y, double z) {
+    @Nullable
+    private Player getEncodedPlayer(ClientLevel level, double encodedId) {
         int id = (int) encodedId;
-        if (encodedId == id) {
-            Entity entity = level.getEntity(id);
-            if (entity instanceof Player player) {
-                return player;
-            }
+        if (encodedId != id) {
+            return null;
         }
 
-        return level.getNearestPlayer(x, y, z, 1.2, false);
-    }
-
-    private boolean isEncodedPlayerId(ClientLevel level, double encodedId) {
-        int id = (int) encodedId;
-        return encodedId == id && level.getEntity(id) instanceof Player;
+        Entity entity = level.getEntity(id);
+        return entity instanceof Player player ? player : null;
     }
 }

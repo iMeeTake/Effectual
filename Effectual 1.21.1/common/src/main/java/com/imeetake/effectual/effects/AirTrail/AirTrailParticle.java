@@ -83,7 +83,7 @@ public class AirTrailParticle extends TOrientedParticle<SimpleParticleType> {
         double fy = axisY * forwardScale;
         double fz = axisZ * forwardScale;
 
-        var cameraLook = TClientRenderUtils.getCameraLookVector().normalize();
+        var cameraLook = TClientRenderUtils.getCameraLookVector();
         double ux = cameraLook.y * fz - cameraLook.z * fy;
         double uy = cameraLook.z * fx - cameraLook.x * fz;
         double uz = cameraLook.x * fy - cameraLook.y * fx;

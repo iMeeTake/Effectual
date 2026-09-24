@@ -123,45 +123,38 @@ public class SoulSparkParticle extends TOrientedParticle<SimpleParticleType> {
 
         double currentRoll = this.roll + (this.age + tickDelta) * this.rotSpeed;
 
-        double rightX;
-        double rightY;
-        double rightZ;
-        if (Math.abs(upY) > 0.9) {
-            rightX = 0.0;
-            rightY = upZ;
-            rightZ = -upY;
-        } else {
-            rightX = -upZ;
-            rightY = 0.0;
-            rightZ = upX;
+        double rightX = cy * upZ - cz * upY;
+        double rightY = cz * upX - cx * upZ;
+        double rightZ = cx * upY - cy * upX;
+        double rightLenSqr = rightX * rightX + rightY * rightY + rightZ * rightZ;
+        if (rightLenSqr < 1.0E-12) {
+            if (Math.abs(upY) > 0.9) {
+                rightX = 0.0;
+                rightY = upZ;
+                rightZ = -upY;
+            } else {
+                rightX = -upZ;
+                rightY = 0.0;
+                rightZ = upX;
+            }
+            rightLenSqr = rightX * rightX + rightY * rightY + rightZ * rightZ;
         }
 
-        double rightInvLen = 1.0 / Math.sqrt(rightX * rightX + rightY * rightY + rightZ * rightZ);
+        double rightInvLen = 1.0 / Math.sqrt(rightLenSqr);
         rightX *= rightInvLen;
         rightY *= rightInvLen;
         rightZ *= rightInvLen;
 
-        double cos = Math.cos(currentRoll);
-        double sin = Math.sin(currentRoll);
-        double crossX = upY * rightZ - upZ * rightY;
-        double crossY = upZ * rightX - upX * rightZ;
-        double crossZ = upX * rightY - upY * rightX;
-        double dot = upX * rightX + upY * rightY + upZ * rightZ;
-        double oneMinusCos = 1.0 - cos;
-
-        double rotatedRightX = rightX * cos + crossX * sin + upX * dot * oneMinusCos;
-        double rotatedRightY = rightY * cos + crossY * sin + upY * dot * oneMinusCos;
-        double rotatedRightZ = rightZ * cos + crossZ * sin + upZ * dot * oneMinusCos;
-
-        float halfW = this.scale * 0.8f;
+        float rollFlatten = 0.35f + 0.65f * (float) Math.abs(Math.cos(currentRoll));
+        float halfW = this.scale * 0.8f * rollFlatten;
         float halfH = this.scale * 1.2f;
 
         double ux = upX * halfH;
         double uy = upY * halfH;
         double uz = upZ * halfH;
-        double rx = rotatedRightX * halfW;
-        double ry = rotatedRightY * halfW;
-        double rz = rotatedRightZ * halfW;
+        double rx = rightX * halfW;
+        double ry = rightY * halfW;
+        double rz = rightZ * halfW;
 
         var sprite = this.spriteSet.get(this.age, this.lifetime);
         float u1 = sprite.getU0();

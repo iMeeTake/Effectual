@@ -3,6 +3,7 @@ package com.imeetake.effectual.mixin;
 import com.imeetake.effectual.EffectualConfig;
 import com.imeetake.effectual.ModParticles;
 import com.imeetake.effectual.EffectualClientParticles;
+import com.imeetake.effectual.effects.MetalSparks.MetalSparkTargets;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
@@ -57,13 +58,13 @@ public class MetalHitMixin {
 
         ItemStack mainHandItem = player.getMainHandItem();
 
-        if (!mainHandItem.is(METAL_ITEMS_TAG)) {
+        if (!mainHandItem.is(METAL_ITEMS_TAG) && !MetalSparkTargets.isMetalItem(mainHandItem.getItem())) {
             return;
         }
 
         BlockState blockState = world.getBlockState(pos);
 
-        if (!blockState.is(METAL_BLOCKS_TAG)) {
+        if (!blockState.is(METAL_BLOCKS_TAG) && !MetalSparkTargets.isMetalBlock(blockState.getBlock())) {
             return;
         }
 

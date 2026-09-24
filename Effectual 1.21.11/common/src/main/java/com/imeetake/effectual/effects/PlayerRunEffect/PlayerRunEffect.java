@@ -18,6 +18,8 @@ import net.minecraft.world.phys.Vec3;
 
 public class PlayerRunEffect {
 
+    private static final BlockPos.MutableBlockPos BELOW = new BlockPos.MutableBlockPos();
+
     public static void register() {
         ClientTickEvent.CLIENT_POST.register(client -> {
             if (!EffectualConfig.get().runDust || client.level == null || client.isPaused()) return;
@@ -44,7 +46,7 @@ public class PlayerRunEffect {
         BlockPos pos = player.blockPosition();
 
         BlockState atFeet = level.getBlockState(pos);
-        BlockState below = level.getBlockState(pos.below());
+        BlockState below = level.getBlockState(BELOW.set(pos.getX(), pos.getY() - 1, pos.getZ()));
 
         Vec3 velocity = player.getDeltaMovement();
         double speedFactor = 0.5;

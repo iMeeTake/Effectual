@@ -14,6 +14,7 @@ public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType>
     private final TextureAtlasSprite sprite;
     private final float rotation;
     private final boolean mirrored;
+    private final BlockPos belowPos;
 
     public SnowFootprintParticle(ClientLevel level,
                                  double x, double y, double z,
@@ -30,6 +31,7 @@ public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType>
 
         this.rotation = (float) velocityX;
         this.mirrored = velocityY > 0.5;
+        this.belowPos = BlockPos.containing(x, y - 0.1, z);
         this.sprite = spriteSet.get(this.random);
 
         this.hasPhysics = false;
@@ -44,8 +46,7 @@ public class SnowFootprintParticle extends TOrientedParticle<SimpleParticleType>
     public void tick() {
         this.age++;
 
-        BlockPos below = BlockPos.containing(this.x, this.y - 0.1, this.z);
-        if (this.level.getBlockState(below).isAir()) {
+        if (this.level.getBlockState(this.belowPos).isAir()) {
             this.remove();
             return;
         }

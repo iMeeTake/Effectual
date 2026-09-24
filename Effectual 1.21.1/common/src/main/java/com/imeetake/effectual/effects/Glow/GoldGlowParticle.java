@@ -139,13 +139,19 @@ public class GoldGlowParticle extends TOrientedParticle<SimpleParticleType> {
         fy *= fInvLen;
         fz *= fInvLen;
 
-        double refX = 0.0;
-        double refY = Math.abs(fy) > 0.99 ? 0.0 : 1.0;
-        double refZ = Math.abs(fy) > 0.99 ? 1.0 : 0.0;
-        double rightX = fy * refZ - fz * refY;
-        double rightY = fz * refX - fx * refZ;
-        double rightZ = fx * refY - fy * refX;
-        double rightInvLen = 1.0 / Math.sqrt(rightX * rightX + rightY * rightY + rightZ * rightZ);
+        double rightX = cy * fz - cz * fy;
+        double rightY = cz * fx - cx * fz;
+        double rightZ = cx * fy - cy * fx;
+        double rightLenSqr = rightX * rightX + rightY * rightY + rightZ * rightZ;
+        if (rightLenSqr < 1.0E-12) {
+            double refY = Math.abs(fy) > 0.99 ? 0.0 : 1.0;
+            double refZ = Math.abs(fy) > 0.99 ? 1.0 : 0.0;
+            rightX = fy * refZ - fz * refY;
+            rightY = -fx * refZ;
+            rightZ = fx * refY;
+            rightLenSqr = rightX * rightX + rightY * rightY + rightZ * rightZ;
+        }
+        double rightInvLen = 1.0 / Math.sqrt(rightLenSqr);
         rightX *= rightInvLen;
         rightY *= rightInvLen;
         rightZ *= rightInvLen;
@@ -172,6 +178,11 @@ public class GoldGlowParticle extends TOrientedParticle<SimpleParticleType> {
         vertex(vc, cx + noseX - rightOffsetX, cy + noseY - rightOffsetY, cz + noseZ - rightOffsetZ, u1, v1, light);
         vertex(vc, cx - noseX - rightOffsetX, cy - noseY - rightOffsetY, cz - noseZ - rightOffsetZ, u1, v2, light);
         vertex(vc, cx - noseX + rightOffsetX, cy - noseY + rightOffsetY, cz - noseZ + rightOffsetZ, u2, v2, light);
+
+        vertex(vc, cx - noseX + rightOffsetX, cy - noseY + rightOffsetY, cz - noseZ + rightOffsetZ, u2, v2, light);
+        vertex(vc, cx - noseX - rightOffsetX, cy - noseY - rightOffsetY, cz - noseZ - rightOffsetZ, u1, v2, light);
+        vertex(vc, cx + noseX - rightOffsetX, cy + noseY - rightOffsetY, cz + noseZ - rightOffsetZ, u1, v1, light);
+        vertex(vc, cx + noseX + rightOffsetX, cy + noseY + rightOffsetY, cz + noseZ + rightOffsetZ, u2, v1, light);
     }
 
     private void vertex(VertexConsumer vc, double x, double y, double z, float u, float v, int light) {

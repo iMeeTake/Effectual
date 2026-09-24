@@ -1,5 +1,6 @@
 package com.imeetake.effectual.mixin;
 
+import com.imeetake.effectual.EffectualConfig;
 import com.imeetake.effectual.effects.FireEntitySparks.FireEntitySparksEffect;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
@@ -20,7 +21,9 @@ public abstract class EntityMixin {
 
     @Inject(method = "tick", at = @At("TAIL"))
     private void effectual$tick(CallbackInfo ci) {
-        if (this.level != null && this.level.isClientSide() && this.isOnFire()) {
+        if (this.level == null || !this.level.isClientSide()) return;
+        if (!EffectualConfig.get().fireEntitySparks) return;
+        if (this.isOnFire()) {
             FireEntitySparksEffect.tick((Entity) (Object) this);
         }
     }

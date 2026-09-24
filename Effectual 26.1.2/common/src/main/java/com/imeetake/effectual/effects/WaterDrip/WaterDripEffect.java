@@ -9,6 +9,7 @@ import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
 
 import java.util.List;
 
@@ -34,6 +35,11 @@ public class WaterDripEffect {
             if (lastLevel != client.level) {
                 lastFullySubmergedTicks.clear();
                 lastLevel = client.level;
+            }
+
+            if (isDripSuppressed(client.level)) {
+                if (!lastFullySubmergedTicks.isEmpty()) lastFullySubmergedTicks.clear();
+                return;
             }
 
             if (!EffectualConfig.get().waterDrip || client.isPaused()) return;
@@ -68,7 +74,12 @@ public class WaterDripEffect {
         }
     }
 
+    public static boolean isDripSuppressed(Level level) {
+        return level.dimension() == Level.NETHER;
+    }
+
     private static boolean shouldPlayEffect(Player player) {
+        if (isDripSuppressed(player.level())) return false;
         if (player.isSpectator() || player.isCreative()) return false;
 
         int id = player.getId();

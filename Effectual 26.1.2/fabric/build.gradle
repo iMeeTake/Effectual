@@ -64,3 +64,5 @@ shadowJar {
     configurations = [project.configurations.shadowBundle]
     archiveClassifier = null
 }
+
+assemble.dependsOn shadowJar
